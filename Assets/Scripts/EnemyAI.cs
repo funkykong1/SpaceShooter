@@ -35,12 +35,7 @@ public class EnemyAI : MonoBehaviour
 
             if (enemyLaserCooldown == false) {
 
-        //Laukaise 1  **Oranssia** Lazer projektiilia vihollisista, mutta ainoastaan niistä-
-        //mitkä eivät ole kamikaze vihollisia
-        //Teen varmaan jokaiselle eri vihollistyypille oman skriptin? en tiedä
-
-        // ei tehdä kamikaze vihollista. Miksi? Sprite liian vaikea :[
-
+        //laukaisee muutama oranssia laaseria vihollisesta
         StartCoroutine(shootEnemyLaser());
 
 
@@ -49,8 +44,6 @@ public class EnemyAI : MonoBehaviour
     }
     void Awake()
     {
-        //mtv tämä edes tarkoittaa
-        //se varmaan tekee jotain hyödyllistä joten en kehtaa poistaa
         Instance = this;
     }
     void Start()

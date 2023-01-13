@@ -40,7 +40,6 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         playerLocation = transform.position;
-        //rajat pelaajalle. 4.3.2022
         if (transform.position.x < -xRange)
         {
             transform.position = new Vector3(-xRange, transform.position.y, transform.position.z);
@@ -50,7 +49,6 @@ public class PlayerController : MonoBehaviour
         {
             transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
         }
-        //yläraja pelaajalle 25.4.2022 -_-
         if (transform.position.y < -yRange)
         {
             transform.position = new Vector3(transform.position.x, -yRange, transform.position.z);
@@ -68,7 +66,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && (cooldown == false)) {
 
-        //laukaise -Sandwich- -AMMUS!!!!- KOLME (tai neljä) AMMUSTA!!!!! pelaajasta
+        //Laukaise neljä ammusta pelaajasta
         StartCoroutine(shootBurst());
 
 
@@ -84,11 +82,6 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-
-//      Inhottava osio koodia, en edes tiedä mitä IEnumerator tai yield return tarkoittaa
-//      Kesti aidosti jokin 4 tuntia etsiä jokin keino, jolla pistää koodi odottamaan noin .3 sekuntia
-//      jokaisen ammuksen jälkeen
-//      tehty valmiiksi klo 4:00, en enää ikinä koske tähän*
 
     IEnumerator shootBurst() {
 
