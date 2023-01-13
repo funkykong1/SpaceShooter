@@ -31,6 +31,11 @@ public class Bullet : MonoBehaviour
 
     void Update() {
         transform.Translate(Vector3.up * Time.deltaTime * speed);
+
+    if (transform.position.y < 25)
+    {
+        Destroy(gameObject); 
+    }
     }
     public void OnTriggerEnter2D(Collider2D collision)
     {

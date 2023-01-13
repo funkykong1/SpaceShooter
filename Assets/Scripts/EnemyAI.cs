@@ -15,23 +15,37 @@ public class EnemyAI : MonoBehaviour
     public float  enemyLaserTimer = 800;
     public bool enemyLaserCooldown = true;
 
-    void Update() {
-        if (enemyLaserTimer > 0) {
-           enemyLaserTimer--; 
-        } else {
-            enemyLaserCooldown = false;
-        } 
 
-        if (enemyLaserCooldown == false) {
+    public bool enemyActive = false;
+
+    void Update() {
+        if (transform.position.y < 17)
+        {
+            enemyActive = true;
+        }
+
+        if (enemyActive == true) {
+
+        
+            if (enemyLaserTimer > 0) {
+              enemyLaserTimer--; 
+            } else {
+                enemyLaserCooldown = false;
+            } 
+
+            if (enemyLaserCooldown == false) {
 
         //Laukaise 1  **Oranssia** Lazer projektiilia vihollisista, mutta ainoastaan niistä-
         //mitkä eivät ole kamikaze vihollisia
         //Teen varmaan jokaiselle eri vihollistyypille oman skriptin? en tiedä
 
+        // ei tehdä kamikaze vihollista. Miksi? Sprite liian vaikea :[
+
         StartCoroutine(shootEnemyLaser());
 
 
         }
+    }
     }
     void Awake()
     {
