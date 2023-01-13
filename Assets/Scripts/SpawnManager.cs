@@ -28,7 +28,7 @@ public class SpawnManager : MonoBehaviour
     }
     void SpawnRandomEnemy()
     {
-        Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 10, 0);
+        Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 25, 0);
 
         int enemyIndex = Random.Range(0, enemyPrefabs.Length);
 
