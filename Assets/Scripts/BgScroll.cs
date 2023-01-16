@@ -5,9 +5,11 @@ using UnityEngine;
 public class BgScroll : MonoBehaviour
 {
 
-public float scrollSpeed = 0.1f;
+public float scrollSpeed = 0.04f;
 
 private MeshRenderer mesh;
+
+private float y_Scroll;
 
     void Awake()
     {
@@ -22,9 +24,9 @@ private MeshRenderer mesh;
 
     void Scroll()
     {
-        x_Scroll = Time.time * scrollSpeed;
+        y_Scroll = Time.time * scrollSpeed;
 
-        Vector2 offset = new Vector2(x_Scroll, 0f);
+        Vector2 offset = new Vector2(0f, y_Scroll);
         mesh.sharedMaterial.SetTextureOffset("_MainTex", offset);
     }
 }
