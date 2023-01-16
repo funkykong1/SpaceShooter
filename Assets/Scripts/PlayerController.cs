@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
     public float verticalInput;
 
     public bool cooldown = false;
-    public float speed = 13.0f;
+    public float speed = 15.0f;
     public float xRange = 21.5f;
     public float yRange = 15.5f;
 
