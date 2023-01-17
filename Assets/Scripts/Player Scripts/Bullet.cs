@@ -22,35 +22,20 @@ public class Bullet : MonoBehaviour
 
 
         //rb.velocity = new Vector2(moveDirection.x, moveDirection.y);
-
-        Destroy(gameObject, 5f);
     }
 
     // Update is called once per frame
 
 
     void Update() {
-        transform.Translate(Vector3.up * Time.deltaTime * speed);
 
-    if (transform.position.y < 25)
-    {
-        Destroy(gameObject); 
-    }
-    }
-    public void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.TryGetComponent<EnemyAI>(out EnemyAI _enemy))
-        {
-            Destroy(gameObject);
-            _enemy.healthSystem.Damage(bulletDamage);
-            Debug.Log("Hit" + " for " + bulletDamage + " damage!!!");
+    //move the thing up
+    transform.Translate(Vector3.up * Time.deltaTime * speed);
 
-            if (_enemy.healthSystem.GetHealth() <= 0)
-            {
-                _enemy.Die();
-            }
-        }
 
+    // fucks off bullet when it goes offscreen
+    // prevents player from cheesing foes 
+    if (transform.position.y > 19)
+        Destroy(gameObject);
     }
 }
-

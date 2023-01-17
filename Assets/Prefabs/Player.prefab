@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 8095083837175839657}
   - component: {fileID: 8095083837175839638}
   - component: {fileID: 8095083837175839656}
+  - component: {fileID: 7267591747988395915}
+  - component: {fileID: 8609413536178471628}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -101,10 +103,62 @@ MonoBehaviour:
   verticalInput: 0
   cooldown: 0
   speed: 10
-  xRange: 21.5
+  xRange: 19.5
   yRange: 15.5
   playerHp: 100
   projectilePrefab: {fileID: 5255558826599111075, guid: c252037593fc8bf499f822056f817f92, type: 3}
   burstCooldown: 0
   beam: 0
   playerLocation: {x: 0, y: 0, z: 0}
+--- !u!50 &7267591747988395915
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8095083837175839639}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!68 &8609413536178471628
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8095083837175839639}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 1.2839338, y: -1.3883696}
+  - {x: -1.2717373, y: -1.3734226}
+  - {x: -1.8770165, y: -0.037373543}
+  - {x: -0.573591, y: 0.8412943}
+  - {x: -0.0015262179, y: 1.7005491}
+  - {x: 0.5657822, y: 0.8030424}
+  - {x: 1.92, y: 0}
+  - {x: 1.92, y: 0}
+  - {x: 1.92, y: 0}
+  - {x: 1.92, y: 0}
+  - {x: 1.285276, y: -1.3835812}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0

@@ -8,21 +8,27 @@ public class PlayerController : MonoBehaviour
 {
 
 
-
+    //used for movement
     public float horizontalInput;
     public float verticalInput;
-
+    
+    //burst laser cd
     public bool cooldown = false;
-    public float speed = 15.0f;
-    public float xRange = 21.5f;
-    public float yRange = 15.5f;
 
+    //adjust via editor
+    public float speed;
+    public float xRange;
+    public float yRange;
+
+    //idk
     public static PlayerController Instance;
     
+    //health (do not steal)
     public HealthSystem healthSystem;
     Rigidbody2D rb;
     public float playerHp = 100f;
-        
+    
+    //fix this
     public GameObject projectilePrefab;
 
     public float burstCooldown = 0;
