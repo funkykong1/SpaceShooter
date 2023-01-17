@@ -12,14 +12,12 @@ public class PointManager : MonoBehaviour
     public GameObject[] LowPoints;
     public GameObject[] BossPoints;
 
-    private MeshRenderer rend;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        //make the dots go away :)
-        rend = GetComponent<MeshRenderer>();
-        rend.enabled = false;
+
     }
 
     // Update is called once per frame
