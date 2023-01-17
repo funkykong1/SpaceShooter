@@ -226,6 +226,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefabs:
   - {fileID: 7339741673325006680, guid: ed0663f95247040408b0893b8745b67f, type: 3}
+  - {fileID: 7339741673325006680, guid: ed0663f95247040408b0893b8745b67f, type: 3}
 --- !u!4 &191623913
 Transform:
   m_ObjectHideFlags: 0
@@ -1422,7 +1423,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7339741673325006680, guid: ed0663f95247040408b0893b8745b67f, type: 3}
       propertyPath: m_Name
-      value: Enemy
+      value: EnemyLaser
       objectReference: {fileID: 0}
     - target: {fileID: 8549378977495851963, guid: ed0663f95247040408b0893b8745b67f, type: 3}
       propertyPath: m_RootOrder

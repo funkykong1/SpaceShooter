@@ -38,7 +38,7 @@ public class PlayerAltController : MonoBehaviour
 
         } else if(Input.GetAxisRaw("Vertical") < 0f) {
             Vector3 temp = transform.position;
-            temp.y -= speed; * Time.deltaTime;
+            temp.y -= speed * Time.deltaTime;
 
             if (temp.y < min_Y)
                 temp.y = min_Y;
