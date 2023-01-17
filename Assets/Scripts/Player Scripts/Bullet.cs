@@ -38,4 +38,18 @@ public class Bullet : MonoBehaviour
     if (transform.position.y > 19)
         Destroy(gameObject);
     }
+        void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Enemy"))
+        {
+            Destroy(gameObject);
+            //player.healthSystem.Damage(enemyBulletDamage);
+            Debug.Log("Hit the bad guy for " + bulletDamage + " damage!");
+
+            //if (player.healthSystem.GetHealth() <= 0)
+            {
+              //  Destroy(player);
+            }
+        }
+    }
 }
