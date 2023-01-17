@@ -18,6 +18,8 @@ public class EnemyAI : MonoBehaviour
 
     public bool enemyActive = false;
 
+    public float health = 100;
+
     void Update() {
         if (transform.position.y < 17)
         {
