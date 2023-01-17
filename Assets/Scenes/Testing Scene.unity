@@ -227,7 +227,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 948425700901762622, guid: c252037593fc8bf499f822056f817f92, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 948425700901762622, guid: c252037593fc8bf499f822056f817f92, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1679,6 +1679,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7267591747988395915, guid: 5edf27bd6ee705946bd012460eda3cf3, type: 3}
+      propertyPath: m_Mass
+      value: 0.0001
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267591747988395915, guid: 5edf27bd6ee705946bd012460eda3cf3, type: 3}
+      propertyPath: m_Simulated
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267591747988395915, guid: 5edf27bd6ee705946bd012460eda3cf3, type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267591747988395915, guid: 5edf27bd6ee705946bd012460eda3cf3, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267591747988395915, guid: 5edf27bd6ee705946bd012460eda3cf3, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8095083837175839639, guid: 5edf27bd6ee705946bd012460eda3cf3, type: 3}
       propertyPath: m_Name
       value: Player
@@ -1841,7 +1861,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8549378977495851963, guid: ed0663f95247040408b0893b8745b67f, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8549378977495851963, guid: ed0663f95247040408b0893b8745b67f, type: 3}
       propertyPath: m_LocalPosition.x

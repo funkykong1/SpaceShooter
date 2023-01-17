@@ -34,7 +34,7 @@ public class Bullet : MonoBehaviour
 
 
     // fucks off bullet when it goes offscreen
-    // prevents player from cheesing foes 
+    // prevents player from cheesing foes
     if (transform.position.y > 19)
         Destroy(gameObject);
     }
