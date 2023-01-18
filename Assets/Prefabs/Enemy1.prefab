@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: -1988650890255794984}
   - component: {fileID: 5890778636982782848}
   - component: {fileID: 169450240517525190}
-  - component: {fileID: 5709794090767083175}
   m_Layer: 0
   m_Name: Enemy1
   m_TagString: Enemy
@@ -125,6 +124,7 @@ MonoBehaviour:
   enemyLaserTimer: 350
   enemyLaserCooldown: 1
   enemyActive: 0
+  health: 100
 --- !u!68 &169450240517525190
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -146,28 +146,6 @@ EdgeCollider2D:
   - {x: 0.013889819, y: -1.5836751}
   - {x: 1.92, y: 0}
   - {x: 1.6421622, y: 1.4447565}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
---- !u!68 &5709794090767083175
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7339741673325006680}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -1.92, y: 0}
-  - {x: 1.92, y: 0}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
