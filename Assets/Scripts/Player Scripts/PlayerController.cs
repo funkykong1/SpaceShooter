@@ -31,10 +31,14 @@ public class PlayerController : MonoBehaviour
     //fix this
     public GameObject projectilePrefab;
 
+
+    //note: make the guns separate gameobjects
+    //put the firing script there when its time
+    public GameObject playerBeam;
+    public GameObject playerLaser;
+
     public float burstCooldown = 0;
     public bool beam = false;
-
-    public Vector3 playerLocation;
 
     // Start is called before the first frame update
     void Start()
@@ -45,7 +49,10 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        playerLocation = transform.position;
+        
+        
+
+        //handles game screen borders
         if (transform.position.x < -xRange)
         {
             transform.position = new Vector3(-xRange, transform.position.y, transform.position.z);
@@ -64,6 +71,8 @@ public class PlayerController : MonoBehaviour
         {
             transform.position = new Vector3(transform.position.x, yRange, transform.position.z);
         }
+
+        //moves the plane
         horizontalInput = Input.GetAxis("Horizontal");
         transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
 
@@ -113,6 +122,7 @@ public class PlayerController : MonoBehaviour
         Destroy(gameObject);
         //FindObjectOfType<AudioManager>().Play("EnemyDeath");
     }
+
 
     }
 

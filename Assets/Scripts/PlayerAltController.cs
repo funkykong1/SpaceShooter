@@ -9,6 +9,15 @@ public class PlayerAltController : MonoBehaviour
     public float min_Y, max_Y;
     //public float min_X, max_X;
 
+
+    private float attackTimer = 0.35f;
+    private float currentAttackTimer;
+    private bool canAttack;
+
+    
+
+    public GameObject projectilePrefab;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -47,4 +56,22 @@ public class PlayerAltController : MonoBehaviour
 
         }
     }
+        void Attack()
+    {
+        attackTimer += Time.deltaTime;
+        if(attackTimer > currentAttackTimer)
+        {
+            if(canAttack)
+            {
+                canAttack = false;
+                attackTimer = 0f;
+
+                Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+
+                //sound fx here 
+                
+            }
+        }
+    }
+
 }
