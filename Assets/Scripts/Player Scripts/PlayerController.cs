@@ -98,9 +98,11 @@ public class PlayerController : MonoBehaviour
     }
 
 
+
     IEnumerator shootBurst() {
 
-
+        //shoots i < x amount of times
+        //probably need to adjust burst cd
          for (int i = 0; i < 4; i++) {
 
                 cooldown = true;
