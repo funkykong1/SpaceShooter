@@ -15,20 +15,28 @@ public class EnemyAI : MonoBehaviour
     public float  enemyLaserTimer = 800;
     public bool enemyLaserCooldown = true;
 
-
+    //bullets will phase through inactive enemies
     public bool enemyActive = false;
-
+    //enemy will move to assigned patrol point until true
+    public bool enemyReady = false;
     public float health = 100;
 
     void Update() {
         if (transform.position.y < 17)
         {
+            //start firing and become hittable
             enemyActive = true;
+        }
+        if (enemyReady == true)
+        {
+            //stop moving
+
+
         }
 
         if (enemyActive == true) {
 
-        
+            //enemy shooting
             if (enemyLaserTimer > 0) {
               enemyLaserTimer--; 
             } else {
@@ -39,8 +47,6 @@ public class EnemyAI : MonoBehaviour
 
         //laukaisee muutama oranssia laaseria vihollisesta
         StartCoroutine(shootEnemyLaser());
-
-
         }
     }
     }
@@ -62,8 +68,9 @@ public class EnemyAI : MonoBehaviour
 
         IEnumerator shootEnemyLaser() {
 
-
-         for (int i = 0; i < 2; i++) {
+        //enemylasertimer is how often the thing fires
+        //timers within the for loop were meant for 2 shots, they dont do anything right now
+         for (int i = 0; i < 1; i++) {
             enemyLaserCooldown = true;
             enemyLaserTimer = 60;
                 Instantiate(projectilePrefabEnemy, transform.position, projectilePrefabEnemy.transform.rotation);
