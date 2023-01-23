@@ -13,7 +13,7 @@ public class EnemyAI : MonoBehaviour
     public GameObject projectilePrefabEnemy;
 
     public float  enemyLaserTimer = 800;
-    public bool firing = false;
+    public bool enemyLaserCooldown = true;
 
     //bullets will phase through inactive enemies
     public bool enemyActive = false;
@@ -23,7 +23,7 @@ public class EnemyAI : MonoBehaviour
 
     //references 2 animator
     private Animator anim;
-    
+    public bool firing = false;
 
     void Awake()
     {
@@ -60,10 +60,10 @@ public class EnemyAI : MonoBehaviour
             if (enemyLaserTimer > 0) {
               enemyLaserTimer--; 
             } else {
-                firing = false;
+                enemyLaserCooldown = false;
             } 
 
-            if (firing == true) {
+            if (enemyLaserCooldown == false) {
             //laukaisee yhden oranssia laaseria vihollisesta
             StartCoroutine(shootEnemyLaser());
         }
@@ -76,18 +76,20 @@ public class EnemyAI : MonoBehaviour
         IEnumerator shootEnemyLaser() {
 
         //enemylasertimer is how often the thing fires
+         for (int i = 0; i < 1; i++) {
+            enemyLaserCooldown = true;
+                firing = true;
+                Instantiate(projectilePrefabEnemy, transform.position, projectilePrefabEnemy.transform.rotation);
 
-        //makes the animation happen
-        firing = true;
-        //spawn lazer
-        Instantiate(projectilePrefabEnemy, transform.position, projectilePrefabEnemy.transform.rotation);
+                yield return new WaitUntil(() =>   enemyLaserTimer <= 0);
 
-        //myöhemmin vvvv, ehkä
-        //FindObjectOfType<AudioManager>().Play("Pew");
-        enemyLaserTimer = 700;
-        firing = false;
+            }
+            //myöhemmin vvvv, ehkä
+             //FindObjectOfType<AudioManager>().Play("Pew");
+            enemyLaserTimer = 500;
+        enemyLaserCooldown = true;
 
-        yield return new WaitUntil(() =>   enemyLaserTimer <= 0);
+
     }
 
 
