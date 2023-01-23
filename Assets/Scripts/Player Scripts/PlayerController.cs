@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb;
     public float playerHp = 100f;
     
-    //fix this
+    //fix this --done
     public GameObject projectilePrefab;
 
 
@@ -36,14 +36,16 @@ public class PlayerController : MonoBehaviour
     //put the firing script there when its time
     public GameObject playerBeam;
     public GameObject playerLaser;
-
-    public float burstCooldown = 0;
+    public float burstCooldown;
     public bool beam = false;
+
+    private Animator playerAnim;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        playerAnim = GetComponent<Animator>();
+        burstCooldown = 0;
     }
 
     // Update is called once per frame

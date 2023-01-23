@@ -13,7 +13,7 @@ public class EnemyAI : MonoBehaviour
     public GameObject projectilePrefabEnemy;
 
     public float  enemyLaserTimer = 800;
-    public bool enemyLaserCooldown = true;
+    public bool firing = false;
 
     //bullets will phase through inactive enemies
     public bool enemyActive = false;
@@ -21,7 +21,27 @@ public class EnemyAI : MonoBehaviour
     public bool enemyReady = false;
     public float health = 100;
 
+    //references 2 animator
+    private Animator anim;
+    
+
+    void Awake()
+    {
+        Instance = this;
+    }
+    void Start()
+    {
+        anim = GetComponent<Animator>();
+        healthSystem = new HealthSystem(100);
+
+        rb = GetComponent<Rigidbody2D>();
+
+    }
     void Update() {
+        //play firing lazer animation if firing true
+        if (firing)
+        anim.SetBool("firing", true);
+
         if (transform.position.y < 17)
         {
             //start firing and become hittable
@@ -40,51 +60,34 @@ public class EnemyAI : MonoBehaviour
             if (enemyLaserTimer > 0) {
               enemyLaserTimer--; 
             } else {
-                enemyLaserCooldown = false;
+                firing = false;
             } 
 
-            if (enemyLaserCooldown == false) {
-
-        //laukaisee muutama oranssia laaseria vihollisesta
-        StartCoroutine(shootEnemyLaser());
+            if (firing == true) {
+            //laukaisee yhden oranssia laaseria vihollisesta
+            StartCoroutine(shootEnemyLaser());
+        }
         }
     }
-    }
-    void Awake()
-    {
-        Instance = this;
-    }
-    void Start()
-    {
-        healthSystem = new HealthSystem(100);
 
-        rb = GetComponent<Rigidbody2D>();
-
-
-
-    }
 
 
 
         IEnumerator shootEnemyLaser() {
 
         //enemylasertimer is how often the thing fires
-        //timers within the for loop were meant for 2 shots, they dont do anything right now
-         for (int i = 0; i < 1; i++) {
-            enemyLaserCooldown = true;
-            enemyLaserTimer = 60;
-                Instantiate(projectilePrefabEnemy, transform.position, projectilePrefabEnemy.transform.rotation);
 
-                yield return new WaitUntil(() =>   enemyLaserTimer <= 0);
+        //makes the animation happen
+        firing = true;
+        //spawn lazer
+        Instantiate(projectilePrefabEnemy, transform.position, projectilePrefabEnemy.transform.rotation);
 
-            enemyLaserTimer = 60;
-            }
-            //myöhemmin vvvv, ehkä
-             //FindObjectOfType<AudioManager>().Play("Pew");
-            enemyLaserTimer = 500;
-        enemyLaserCooldown = true;
+        //myöhemmin vvvv, ehkä
+        //FindObjectOfType<AudioManager>().Play("Pew");
+        enemyLaserTimer = 700;
+        firing = false;
 
-
+        yield return new WaitUntil(() =>   enemyLaserTimer <= 0);
     }
 
 

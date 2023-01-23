@@ -9,10 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8549378977495851963}
+  - component: {fileID: 5890778636982782848}
+  - component: {fileID: 7888656577379554730}
+  - component: {fileID: 169450240517525190}
   - component: {fileID: 3354526121319833853}
   - component: {fileID: -1988650890255794984}
-  - component: {fileID: 5890778636982782848}
-  - component: {fileID: 169450240517525190}
   m_Layer: 0
   m_Name: Enemy1
   m_TagString: Enemy
@@ -35,6 +36,69 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5890778636982782848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7339741673325006680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05b6634472a78364c890e3b92a500a13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefabEnemy: {fileID: 5928799821694733750, guid: d28256693f6988f4a991ede2cf71af47, type: 3}
+  enemyLaserTimer: 350
+  enemyLaserCooldown: 1
+  enemyActive: 0
+  enemyReady: 0
+  health: 100
+--- !u!95 &7888656577379554730
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7339741673325006680}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!68 &169450240517525190
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7339741673325006680}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -1.6884685, y: 1.4910634}
+  - {x: -1.9217358, y: -0.107661724}
+  - {x: 0.013889819, y: -1.5836751}
+  - {x: 1.92, y: 0}
+  - {x: 1.6421622, y: 1.4447565}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!212 &3354526121319833853
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -76,7 +140,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 20d800c4627bca44f94375e0bed0fff9, type: 3}
+  m_Sprite: {fileID: -469124881, guid: 858e2130033e11f418121afc72b070a2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -108,45 +172,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!114 &5890778636982782848
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7339741673325006680}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05b6634472a78364c890e3b92a500a13, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectilePrefabEnemy: {fileID: 5928799821694733750, guid: d28256693f6988f4a991ede2cf71af47, type: 3}
-  enemyLaserTimer: 350
-  enemyLaserCooldown: 1
-  enemyActive: 0
-  health: 100
---- !u!68 &169450240517525190
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7339741673325006680}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -1.6884685, y: 1.4910634}
-  - {x: -1.9217358, y: -0.107661724}
-  - {x: 0.013889819, y: -1.5836751}
-  - {x: 1.92, y: 0}
-  - {x: 1.6421622, y: 1.4447565}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
