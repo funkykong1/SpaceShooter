@@ -25,6 +25,9 @@ public class EnemyAI : MonoBehaviour
     private Animator anim;
     public bool firing = false;
 
+    //holds the pos of assigned patrol point
+    private Vector2 destination;
+
     void Awake()
     {
         Instance = this;
@@ -101,7 +104,7 @@ public class EnemyAI : MonoBehaviour
 
     public void reachPoint()
     {
-
+        transform.down;
     }
 
     // private void FindDirectionToEnemy()
