@@ -16,7 +16,7 @@ public class EnemyAI : MonoBehaviour
     public bool enemyLaserCooldown = true;
 
     //bullets will phase through inactive enemies
-    public bool enemyActive = false;
+    public bool enemyVisible = false;
     //enemy will move to assigned patrol point until true
     public bool enemyReady = false;
     public float health = 100;
@@ -45,16 +45,22 @@ public class EnemyAI : MonoBehaviour
         if (transform.position.y < 17)
         {
             //start firing and become hittable
-            enemyActive = true;
+            enemyVisible = true;
         }
         if (enemyReady == true)
         {
             //stop moving
 
-
         }
 
-        if (enemyActive == true) {
+        if (enemyReady = false;)
+        {
+        //go down when active false
+        reachPoint();
+        }
+        
+
+        if (enemyVisible == true) {
 
             //enemy shooting
             if (enemyLaserTimer > 0) {
@@ -93,7 +99,10 @@ public class EnemyAI : MonoBehaviour
     }
 
 
+    public void reachPoint()
+    {
 
+    }
 
     // private void FindDirectionToEnemy()
     // {
