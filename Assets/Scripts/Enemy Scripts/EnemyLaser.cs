@@ -63,12 +63,12 @@ public class EnemyLaser : MonoBehaviour
         if (enemyVisible == true) {
 
             if(anim.GetCurrentAnimatorStateInfo(0).IsName("LaserFiring") &&
-            anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= animations[0].length)
+            anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1)
             {
                 firing = false;
             } 
             else if (anim.GetCurrentAnimatorStateInfo(0).IsName("LaserCharging") &&
-                    anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= animations[1].length)
+                    anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1)
                     {
                         firing = true;
                         Invoke("ShootLaser", 0.3f);

@@ -49,13 +49,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletBad: {fileID: 5928799821694733750, guid: d28256693f6988f4a991ede2cf71af47, type: 3}
-  bulletPos: {fileID: 0}
   enemyVisible: 0
   enemyStopped: 0
   enemySpeed: 5
   firing: 0
-  laserFiring: {fileID: 7400000, guid: b8595a6c156b23d4abd71ab13a558a93, type: 2}
-  laserCharging: {fileID: 7400000, guid: e0c9bda6f3ae811409a49c82bebf18d5, type: 2}
+  animations:
+  - {fileID: 7400000, guid: e0c9bda6f3ae811409a49c82bebf18d5, type: 2}
+  - {fileID: 7400000, guid: b8595a6c156b23d4abd71ab13a558a93, type: 2}
 --- !u!95 &7888656577379554730
 Animator:
   serializedVersion: 4
