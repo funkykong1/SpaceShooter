@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -463,7 +463,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      beamfire-export_13: 271181315
+      beamfire-export_10: 986108291
       beamfire-export_14: 13975428
       beamfire-export_9: -1329811029
       beamfire-export_12: -345574079
@@ -478,7 +478,7 @@ TextureImporter:
       beamfire-export_5: -1335231765
       beamfire-export_3: -721899330
       beamfire-export_2: 1110974005
-      beamfire-export_10: 986108291
+      beamfire-export_13: 271181315
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

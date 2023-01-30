@@ -3,23 +3,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyAI : MonoBehaviour
+public class EnemyLaser : MonoBehaviour
 {
-    public static EnemyAI Instance;
-
-    public HealthSystem healthSystem;
-    Rigidbody2D rb;
     
-    public GameObject projectilePrefabEnemy;
+    public GameObject bulletBad;
+    public Transform bulletPos;
 
-    public float  enemyLaserTimer = 800;
-    public bool enemyLaserCooldown = true;
 
     //bullets will phase through inactive enemies
     public bool enemyVisible = false;
+
     //enemy will move to assigned patrol point until true
-    public bool enemyReady = false;
-    public float health = 100;
+    public bool enemyStopped = false;
+    public float enemySpeed = 5f;
 
     //references 2 animator
     private Animator anim;
@@ -44,22 +40,20 @@ public class EnemyAI : MonoBehaviour
         //play firing lazer animation if firing true
         if (firing)
         anim.SetBool("firing", true);
+        else
+        anim.Setbool("firing", false);
 
         if (transform.position.y < 17)
         {
             //start firing and become hittable
             enemyVisible = true;
         }
-        if (enemyReady == true)
-        {
-            //stop moving
 
-        }
 
-        if (enemyReady = false;)
+        if (enemyStopped = false;)
         {
-        //go down when active false
-        reachPoint();
+        //go down when enemyStopped false
+        MoveToPoint();
         }
         
 
@@ -74,7 +68,7 @@ public class EnemyAI : MonoBehaviour
 
             if (enemyLaserCooldown == false) {
             //laukaisee yhden oranssia laaseria vihollisesta
-            StartCoroutine(shootEnemyLaser());
+            StartCoroutine(ShootLaser());
         }
         }
     }
@@ -82,13 +76,13 @@ public class EnemyAI : MonoBehaviour
 
 
 
-        IEnumerator shootEnemyLaser() {
+        IEnumerator ShootLaser() {
 
         //enemylasertimer is how often the thing fires
          for (int i = 0; i < 1; i++) {
             enemyLaserCooldown = true;
                 firing = true;
-                Instantiate(projectilePrefabEnemy, transform.position, projectilePrefabEnemy.transform.rotation);
+                Instantiate(bulletBad, transform.position, bulletBad.transform.rotation);
 
                 yield return new WaitUntil(() =>   enemyLaserTimer <= 0);
 
@@ -102,30 +96,12 @@ public class EnemyAI : MonoBehaviour
     }
 
 
-    public void reachPoint()
+    public void MoveToPoint()
     {
-        transform.down;
+        while(!enemyStopped)
+        transform.Translate(Vector3.down * Time.deltaTime * enemySpeed);
     }
 
-    // private void FindDirectionToEnemy()
-    // {
-    //     dirToPlayer = PlayerMovement.Instance.gameObject.transform.position - transform.position;
-    // }
-
-    // private void FindTarget()
-    // {
-    //     float targetRange = 50f;
-    //     if (Vector3.Distance(transform.position, PlayerMovement.Instance.transform.position) < targetRange)
-    //     {
-    //         transform.up = dirToPlayer;
-    //         Vector2 targetPosition = Vector2.MoveTowards(transform.position, PlayerMovement.Instance.transform.position, speed * Time.deltaTime);
-    //         rb.MovePosition(targetPosition);
-    //     }
-    //     else
-    //     {
-    //         Destroy(gameObject);
-    //     }
-    // }
 
     public void OnTriggerEnter2D(Collider2D collision)
     {

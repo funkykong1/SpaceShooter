@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class EnemyBullet : MonoBehaviour
+public class EnemyBulletScript : MonoBehaviour
 {
 
     [SerializeField]
