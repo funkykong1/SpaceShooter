@@ -6,20 +6,14 @@ using System;
 public class EnemyBulletScript : MonoBehaviour
 {
 
-    [SerializeField]
-    private float speed = 10f;
-
-    Rigidbody2D rb;
-
-
+    
+    public float speed = 10f;
     public int enemyBulletDamage = 25;
 
     // Start is called before the first frame update
     void Start()
     {        
-        rb = GetComponent<Rigidbody2D>();
 
-        Destroy(gameObject, 5f);
     }
 
     // Update is called once per frame
