@@ -105,18 +105,17 @@ public class PlayerController : MonoBehaviour
 
         //shoots i < x amount of times
         //probably need to adjust burst cd
-         for (int i = 0; i < 4; i++) {
+         for (int i = 0; i < 3; i++) {
 
                 cooldown = true;
-                burstCooldown = 8;
                 Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
-                yield return new WaitUntil(() => burstCooldown <= 0);
 
-                burstCooldown = 8;
+                burstCooldown = 100;
+                yield return new WaitUntil(() => burstCooldown <= 0);
             }
 
              //FindObjectOfType<AudioManager>().Play("Pew");
-             burstCooldown = 100;
+             burstCooldown = 500;
         
 
     }

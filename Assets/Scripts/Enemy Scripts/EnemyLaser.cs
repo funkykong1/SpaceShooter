@@ -8,7 +8,6 @@ public class EnemyLaser : MonoBehaviour
     
     public GameObject bulletBad;
 
-
     //bullets will phase through inactive enemies
     public bool enemyVisible;
 
@@ -19,11 +18,6 @@ public class EnemyLaser : MonoBehaviour
     //references 2 animator
     private Animator anim;
     public bool firing;
-
-    //git lengths of animashion clips for instantaneous and incredible switching from one to nother
-    //charging 0 firing 1
-    public AnimationClip[] animations;
-
 
     void Awake()
     {
