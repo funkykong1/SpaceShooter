@@ -11,7 +11,7 @@ public class EnemyLaser : MonoBehaviour
 
 
     //bullets will phase through inactive enemies
-    public bool enemyVisible = false;
+    public bool enemyVisible;
 
     //enemy will move to assigned patrol point until true
     public bool enemyStopped = false;
@@ -19,29 +19,39 @@ public class EnemyLaser : MonoBehaviour
 
     //references 2 animator
     private Animator anim;
-    public bool firing = false;
+    public bool firing;
+
+    //git lengths of animashion clips for instantaneous and incredible switching from one to nother
+
+    public Animation laserFiring;
+    public Animation laserCharging;
+    
+    float firingLength;
+    float chargingLength;
 
     //holds the pos of assigned patrol point
     private Vector2 destination;
 
+
     void Awake()
     {
-        Instance = this;
+        //tell script which is what
+        anim = GetComponent<Animator>();
     }
+
     void Start()
     {
-        anim = GetComponent<Animator>();
-        healthSystem = new HealthSystem(100);
-
-        rb = GetComponent<Rigidbody2D>();
+        //start of round enemy not visible
+        enemyVisible = false;
 
     }
     void Update() {
-        //play firing lazer animation if firing true
-        if (firing)
+        //fucking KILL yourself
+        if(firing)
         anim.SetBool("firing", true);
-        else
-        anim.Setbool("firing", false);
+        else 
+        anim.SetBool("firing", false);
+        
 
         if (transform.position.y < 17)
         {
@@ -50,55 +60,42 @@ public class EnemyLaser : MonoBehaviour
         }
 
 
-        if (enemyStopped = false;)
+        if (enemyStopped == false)
         {
         //go down when enemyStopped false
-        MoveToPoint();
+        //MoveToPoint();
         }
         
 
         if (enemyVisible == true) {
 
-            //enemy shooting
-            if (enemyLaserTimer > 0) {
-              enemyLaserTimer--; 
-            } else {
-                enemyLaserCooldown = false;
+            if(anim.GetCurrentAnimatorStateInfo(0).IsName("LaserFiring") &&
+            anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.7f)
+            {
+                firing = false;
             } 
-
-            if (enemyLaserCooldown == false) {
-            //laukaisee yhden oranssia laaseria vihollisesta
-            StartCoroutine(ShootLaser());
+            else if (anim.GetCurrentAnimatorStateInfo(0).IsName("LaserCharging") &&
+                    anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.5f)
+                    {
+                        firing = true;
+                        Invoke("ShootLaser", 0.2f);
+                    }
         }
-        }
+    }
+    
+    void ShootLaser()
+    {
+        Instantiate(bulletBad, transform.position, bulletBad.transform.rotation);
     }
 
 
 
 
-        IEnumerator ShootLaser() {
-
-        //enemylasertimer is how often the thing fires
-         for (int i = 0; i < 1; i++) {
-            enemyLaserCooldown = true;
-                firing = true;
-                Instantiate(bulletBad, transform.position, bulletBad.transform.rotation);
-
-                yield return new WaitUntil(() =>   enemyLaserTimer <= 0);
-
-            }
-            //myöhemmin vvvv, ehkä
-             //FindObjectOfType<AudioManager>().Play("Pew");
-            enemyLaserTimer = 500;
-        enemyLaserCooldown = true;
-
-
-    }
 
 
     public void MoveToPoint()
     {
-        while(!enemyStopped)
+        //idk add the patrol shit later lol
         transform.Translate(Vector3.down * Time.deltaTime * enemySpeed);
     }
 
@@ -130,3 +127,4 @@ public class EnemyLaser : MonoBehaviour
     }
     
 }
+

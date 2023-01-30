@@ -48,12 +48,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05b6634472a78364c890e3b92a500a13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectilePrefabEnemy: {fileID: 5928799821694733750, guid: d28256693f6988f4a991ede2cf71af47, type: 3}
-  enemyLaserTimer: 350
-  enemyLaserCooldown: 1
-  enemyActive: 0
-  enemyReady: 0
-  health: 100
+  bulletBad: {fileID: 5928799821694733750, guid: d28256693f6988f4a991ede2cf71af47, type: 3}
+  bulletPos: {fileID: 0}
+  enemyVisible: 0
+  enemyStopped: 0
+  enemySpeed: 5
+  firing: 0
 --- !u!95 &7888656577379554730
 Animator:
   serializedVersion: 4
@@ -64,7 +64,7 @@ Animator:
   m_GameObject: {fileID: 7339741673325006680}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5bcfab69335046e48a1df82f3aa3d877, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
