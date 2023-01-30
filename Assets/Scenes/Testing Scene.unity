@@ -1988,6 +1988,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5890778636982782848, guid: ed0663f95247040408b0893b8745b67f, type: 3}
+      propertyPath: animations.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5890778636982782848, guid: ed0663f95247040408b0893b8745b67f, type: 3}
+      propertyPath: animations.Array.data[0]
+      value: 
+      objectReference: {fileID: 7400000, guid: e0c9bda6f3ae811409a49c82bebf18d5, type: 2}
+    - target: {fileID: 5890778636982782848, guid: ed0663f95247040408b0893b8745b67f, type: 3}
+      propertyPath: animations.Array.data[1]
+      value: 
+      objectReference: {fileID: 7400000, guid: b8595a6c156b23d4abd71ab13a558a93, type: 2}
     - target: {fileID: 7339741673325006680, guid: ed0663f95247040408b0893b8745b67f, type: 3}
       propertyPath: m_Name
       value: Enemy1

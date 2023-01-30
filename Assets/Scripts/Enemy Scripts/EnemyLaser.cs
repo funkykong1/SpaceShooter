@@ -7,7 +7,6 @@ public class EnemyLaser : MonoBehaviour
 {
     
     public GameObject bulletBad;
-    public Transform bulletPos;
 
 
     //bullets will phase through inactive enemies
@@ -22,15 +21,8 @@ public class EnemyLaser : MonoBehaviour
     public bool firing;
 
     //git lengths of animashion clips for instantaneous and incredible switching from one to nother
-
-    public Animation laserFiring;
-    public Animation laserCharging;
-    
-    float firingLength;
-    float chargingLength;
-
-    //holds the pos of assigned patrol point
-    private Vector2 destination;
+    //charging 0 firing 1
+    public AnimationClip[] animations;
 
 
     void Awake()
@@ -51,7 +43,7 @@ public class EnemyLaser : MonoBehaviour
         anim.SetBool("firing", true);
         else 
         anim.SetBool("firing", false);
-        
+
 
         if (transform.position.y < 17)
         {
@@ -65,27 +57,29 @@ public class EnemyLaser : MonoBehaviour
         //go down when enemyStopped false
         //MoveToPoint();
         }
-        
+
+
 
         if (enemyVisible == true) {
 
             if(anim.GetCurrentAnimatorStateInfo(0).IsName("LaserFiring") &&
-            anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.7f)
+            anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= animations[0].length)
             {
                 firing = false;
             } 
             else if (anim.GetCurrentAnimatorStateInfo(0).IsName("LaserCharging") &&
-                    anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.5f)
+                    anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= animations[1].length)
                     {
                         firing = true;
-                        Invoke("ShootLaser", 0.2f);
+                        Invoke("ShootLaser", 0.3f);
                     }
         }
     }
     
     void ShootLaser()
     {
-        Instantiate(bulletBad, transform.position, bulletBad.transform.rotation);
+        Vector3 laserBarrel = new Vector3(transform.position.x, transform.position.y - 1.7f, 0);
+        Instantiate(bulletBad, laserBarrel, bulletBad.transform.rotation);
     }
 
 
