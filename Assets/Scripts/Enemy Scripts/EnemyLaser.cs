@@ -59,7 +59,7 @@ public class EnemyLaser : MonoBehaviour
         }
 
 
-
+        //normalized time means value of 0.00-1.00 dictates anim length
         if (enemyVisible == true) {
 
             if(anim.GetCurrentAnimatorStateInfo(0).IsName("LaserFiring") &&
