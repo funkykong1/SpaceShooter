@@ -24,9 +24,8 @@ public class PlayerController : MonoBehaviour
     public static PlayerController Instance;
     
     //health (do not steal)
-    public HealthSystem healthSystem;
-    Rigidbody2D rb;
-    public float playerHp = 100f;
+    public float playerHp;
+    public float maxPlayerHp = 100f;
     
     //fix this --done
     public GameObject projectilePrefab;
@@ -46,6 +45,7 @@ public class PlayerController : MonoBehaviour
     {
         playerAnim = GetComponent<Animator>();
         burstCooldown = 0;
+        playerHp = 100f;
     }
 
     // Update is called once per frame
