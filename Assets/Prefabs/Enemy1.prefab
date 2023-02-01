@@ -53,9 +53,6 @@ MonoBehaviour:
   enemyStopped: 0
   enemySpeed: 5
   firing: 0
-  animations:
-  - {fileID: 7400000, guid: e0c9bda6f3ae811409a49c82bebf18d5, type: 2}
-  - {fileID: 7400000, guid: b8595a6c156b23d4abd71ab13a558a93, type: 2}
 --- !u!95 &7888656577379554730
 Animator:
   serializedVersion: 4
@@ -142,7 +139,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -469124881, guid: 858e2130033e11f418121afc72b070a2, type: 3}
+  m_Sprite: {fileID: -35796417, guid: 06cc7b4ff7d48824299e6f0fa943a536, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

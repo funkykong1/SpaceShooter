@@ -72,7 +72,7 @@ public class EnemyLaser : MonoBehaviour
     
     void ShootLaser()
     {
-        Vector3 laserBarrel = new Vector3(transform.position.x, transform.position.y - 1.7f, 0);
+        Vector3 laserBarrel = new Vector3(transform.position.x, transform.position.y - 1.5f, 0);
         Instantiate(bulletBad, laserBarrel, bulletBad.transform.rotation);
     }
 

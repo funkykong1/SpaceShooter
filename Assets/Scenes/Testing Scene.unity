@@ -2314,34 +2314,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 169450240517525190, guid: ed0663f95247040408b0893b8745b67f, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3354526121319833853, guid: ed0663f95247040408b0893b8745b67f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -35796417, guid: 06cc7b4ff7d48824299e6f0fa943a536, type: 3}
-    - target: {fileID: 3354526121319833853, guid: ed0663f95247040408b0893b8745b67f, type: 3}
-      propertyPath: m_DrawMode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3354526121319833853, guid: ed0663f95247040408b0893b8745b67f, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5890778636982782848, guid: ed0663f95247040408b0893b8745b67f, type: 3}
-      propertyPath: animations.Array.data[0]
-      value: 
-      objectReference: {fileID: 7400000, guid: e0c9bda6f3ae811409a49c82bebf18d5, type: 2}
     - target: {fileID: 7339741673325006680, guid: ed0663f95247040408b0893b8745b67f, type: 3}
       propertyPath: m_Name
       value: Enemy1
       objectReference: {fileID: 0}
-    - target: {fileID: 7888656577379554730, guid: ed0663f95247040408b0893b8745b67f, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 5bcfab69335046e48a1df82f3aa3d877, type: 2}
     - target: {fileID: 8549378977495851963, guid: ed0663f95247040408b0893b8745b67f, type: 3}
       propertyPath: m_RootOrder
       value: 3
