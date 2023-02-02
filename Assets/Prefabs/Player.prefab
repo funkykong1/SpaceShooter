@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8095083837175839657}
   - component: {fileID: 8095083837175839656}
+  - component: {fileID: 4963278362751990495}
   - component: {fileID: 1012429633678996286}
   - component: {fileID: 7267591747988395915}
   - component: {fileID: 8609413536178471628}
@@ -55,11 +56,27 @@ MonoBehaviour:
   xRange: 19.5
   yRange: 15.5
   playerHp: 100
+  maxPlayerHp: 100
   projectilePrefab: {fileID: 5255558826599111075, guid: c252037593fc8bf499f822056f817f92, type: 3}
   playerBeam: {fileID: 0}
   playerLaser: {fileID: 0}
   burstCooldown: 0
   beam: 0
+--- !u!114 &4963278362751990495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8095083837175839639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36a538926dc0d0847a2aa7cbf135c60e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
+  maxHealth: 0
+  healthBar: {fileID: 0}
 --- !u!95 &1012429633678996286
 Animator:
   serializedVersion: 4
@@ -172,7 +189,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 1552432341, guid: 713965ce49063d64aa42ff84bc8b3071, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

@@ -148,3 +148,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 15
   enemyBulletDamage: 25
+  pHealth: {fileID: 0}

@@ -76,11 +76,6 @@ public class EnemyLaser : MonoBehaviour
         Instantiate(bulletBad, laserBarrel, bulletBad.transform.rotation);
     }
 
-
-
-
-
-
     public void MoveToPoint()
     {
         //idk add the patrol shit later lol
