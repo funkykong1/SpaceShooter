@@ -24,7 +24,7 @@ public class PlayerHealth : MonoBehaviour
     {
         healthBar.fillAmount = Mathf.Clamp(health / maxHealth, 0, 1);
 
-        //0 is empty and 1 is compeltely full, therefore we divide by the amount of health in the plane
+        //0 is empty and 1 is completely full, therefore we divide by the amount of health in the plane
         healthBar.color = gradient.Evaluate(health / 100);
     }
 }
