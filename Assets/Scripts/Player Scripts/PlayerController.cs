@@ -23,10 +23,6 @@ public class PlayerController : MonoBehaviour
     //idk
     public static PlayerController Instance;
     
-    //health (do not steal)
-    public float playerHp;
-    public float maxPlayerHp = 100f;
-    
     //fix this --done
     public GameObject projectilePrefab;
 
@@ -45,7 +41,6 @@ public class PlayerController : MonoBehaviour
     {
         playerAnim = GetComponent<Animator>();
         burstCooldown = 0;
-        playerHp = 100f;
     }
 
     // Update is called once per frame
