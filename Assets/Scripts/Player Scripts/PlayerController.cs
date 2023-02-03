@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
 
     //idk
     public static PlayerController Instance;
+    public PlayerHealth PlayerHealth;
     
     //fix this --done
     public GameObject projectilePrefab;
@@ -36,18 +37,27 @@ public class PlayerController : MonoBehaviour
 
     private Animator playerAnim;
 
+    //menu screen or ingame?
+    private bool GameActive;
+
     // Start is called before the first frame update
     void Start()
     {
+        GameActive = true;
         playerAnim = GetComponent<Animator>();
         burstCooldown = 0;
+    }
+
+    public void Die()
+    {
+        Destroy(gameObject);
+        GameActive = false;
+        //FindObjectOfType<AudioManager>().Play("EnemyDeath");
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-        
 
         //handles game screen borders
         if (transform.position.x < -xRange)
@@ -96,12 +106,12 @@ public class PlayerController : MonoBehaviour
 
 
 
-    IEnumerator shootBurst() {
-
+    IEnumerator shootBurst() 
+    {
         //shoots i < x amount of times
         //probably need to adjust burst cd
-         for (int i = 0; i < 3; i++) {
-
+         for (int i = 0; i < 3; i++) 
+         {
                 cooldown = true;
                 Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
 
@@ -112,17 +122,8 @@ public class PlayerController : MonoBehaviour
              //FindObjectOfType<AudioManager>().Play("Pew");
              burstCooldown = 500;
         
-
     }
-
-        public void Die()
-    {
-        Destroy(gameObject);
-        //FindObjectOfType<AudioManager>().Play("EnemyDeath");
-    }
-
-
-    }
+}
 
     
 

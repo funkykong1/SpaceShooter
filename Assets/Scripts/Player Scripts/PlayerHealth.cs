@@ -12,6 +12,9 @@ public class PlayerHealth : MonoBehaviour
     public Image healthBar;
     public Gradient gradient;
 
+    //use list instead of just an image[]
+    //BECAUSE the count function is exclusive to list
+    //I don't know
     public List<Image> bothBars = new List<Image>();
     public float fadeSpeed;
     public float fadeTimer;
