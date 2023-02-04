@@ -26,10 +26,13 @@ public class PlayerHealth : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //set bools
         CR_running = false;
         maxHealth = health;
         m_health = health;
+        //update hp bar color once
         healthBar.color = gradient.Evaluate(health / 100);
+        //hp bar fade out timer
         ResetTimer();
 
     }
