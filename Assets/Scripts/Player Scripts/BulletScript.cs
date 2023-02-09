@@ -8,9 +8,10 @@ public class BulletScript : MonoBehaviour
     public float speed = 7f;
 
     Rigidbody2D rb;
-    
 
     public int bulletDamage = 34;
+
+    //TODO: Replace bullet sprites
 
     
     // Start is called before the first frame update

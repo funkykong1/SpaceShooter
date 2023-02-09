@@ -373,7 +373,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08eea7f0162191344b3d1f012addd65c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  beamDamage: 2
+  beam: {fileID: 5220944321064231183}
   firing: 0
 --- !u!1 &1915672583
 GameObject:
@@ -451,7 +451,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -433954786, guid: 5bba5706c36f75c4484ea00c44edb22b, type: 3}
+  m_Sprite: {fileID: 647478876, guid: d2155b39d39f60f48af4054261a5e765, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -496,9 +496,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerBarrel: {fileID: 1138077063155436120}
   playerLaser: {fileID: 5255558826599111075, guid: c252037593fc8bf499f822056f817f92, type: 3}
-  laserFiring: {fileID: 0}
   firing: 0
-  loops: 0
+  burstCount: 0
 --- !u!1 &6662651390703665696
 GameObject:
   m_ObjectHideFlags: 0
@@ -830,6 +829,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7fdd953d96f7d140b0e3fe551630209, type: 3}
+--- !u!1 &5220944321064231183 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2739736258533216536, guid: c7fdd953d96f7d140b0e3fe551630209, type: 3}
+  m_PrefabInstance: {fileID: 7958417642929336343}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8933763355164955797 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1552300267700184194, guid: c7fdd953d96f7d140b0e3fe551630209, type: 3}

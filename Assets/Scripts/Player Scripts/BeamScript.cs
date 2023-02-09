@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class BeamScript : MonoBehaviour
 {
+
+    //Add damage scripts here!
+
     public BeamTurret turret;
     // Start is called before the first frame update
     void Start()

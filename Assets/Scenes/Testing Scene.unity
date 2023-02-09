@@ -123,11 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &13123179 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5220944321064231183, guid: 5edf27bd6ee705946bd012460eda3cf3, type: 3}
-  m_PrefabInstance: {fileID: 1842829797}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &28919233
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2330,7 +2325,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!64 &1833189231
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2430,22 +2425,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1663120774, guid: 5edf27bd6ee705946bd012460eda3cf3, type: 3}
-      propertyPath: beam
-      value: 
-      objectReference: {fileID: 13123179}
-    - target: {fileID: 1915672586, guid: 5edf27bd6ee705946bd012460eda3cf3, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 647478876, guid: d2155b39d39f60f48af4054261a5e765, type: 3}
-    - target: {fileID: 1915672586, guid: 5edf27bd6ee705946bd012460eda3cf3, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5220944321064231183, guid: 5edf27bd6ee705946bd012460eda3cf3, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8095083837175839639, guid: 5edf27bd6ee705946bd012460eda3cf3, type: 3}
       propertyPath: m_Name
       value: Player
@@ -2714,18 +2693,6 @@ PrefabInstance:
     - target: {fileID: 8549378977495851963, guid: ed0663f95247040408b0893b8745b67f, type: 3}
       propertyPath: m_RootOrder
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8549378977495851963, guid: ed0663f95247040408b0893b8745b67f, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8549378977495851963, guid: ed0663f95247040408b0893b8745b67f, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8549378977495851963, guid: ed0663f95247040408b0893b8745b67f, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 8549378977495851963, guid: ed0663f95247040408b0893b8745b67f, type: 3}
       propertyPath: m_LocalPosition.x
