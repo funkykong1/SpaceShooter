@@ -11,7 +11,7 @@ public class BeamTurret : MonoBehaviour
 {
 
     private Animator anim;
-    public int beamDamage = 2;
+    public GameObject beam;
 
     public bool firing;
 
@@ -28,13 +28,24 @@ public class BeamTurret : MonoBehaviour
         //historic v
         //transform.position = new Vector3 (playerLocation);
 
-        if(firing)
-        anim.SetBool("firing", true);
-        else 
-        anim.SetBool("firing", false);
+        if (Input.GetKeyDown(KeyCode.Q) && firingReady())
+        {
+            ShootBeam();
+        }
     }
+
     public void ShootBeam()
     {
-        
+        anim.SetTrigger("firing");
+    }
+
+    bool firingReady()
+    {
+        if((anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1) && anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerBeamCharge"))
+        {
+            return true;
+        } else {
+            return false;
+        }
     }
 }

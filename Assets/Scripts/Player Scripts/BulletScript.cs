@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class Bullet : MonoBehaviour
+public class BulletScript : MonoBehaviour
 {
-    [SerializeField]
     public float speed = 7f;
 
     Rigidbody2D rb;

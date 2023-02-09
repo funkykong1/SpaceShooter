@@ -8,14 +8,14 @@ public class LaserTurret : MonoBehaviour
     public GameObject playerLaser;
 
     private Animator anim;
-    private Animation clip;
+    
     public bool firing;
     public int burstCount;
 
     // Start is called before the first frame update
     void Start()
     {
-        clip = GetComponent<Animation>();
+        
         anim = GetComponent<Animator>();
         firing = false;
         burstCount = 0;
