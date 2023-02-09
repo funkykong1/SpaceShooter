@@ -10,8 +10,7 @@ public class LaserTurret : MonoBehaviour
     private Animator anim;
     private Animation clip;
     public bool firing;
-    public int loops;
-    private bool Crunning;
+    public int burstCount;
 
     // Start is called before the first frame update
     void Start()
@@ -19,43 +18,42 @@ public class LaserTurret : MonoBehaviour
         clip = GetComponent<Animation>();
         anim = GetComponent<Animator>();
         firing = false;
-        Crunning = false;
-        loops = 0;
+        burstCount = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerLaserCharge"))
+
+        if (Input.GetKeyDown(KeyCode.E) && anim.GetCurrentAnimatorStateInfo(0).IsName("StartCharge") && anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1)
         {
-            loops = 0;
-            Crunning = false;
+            anim.SetTrigger("firing");
         }
 
-        if (Input.GetKeyDown(KeyCode.Q))
+
+
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerLaserCharge") && anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1)
         {
-            Instantiate(playerLaser, playerBarrel.transform.position, playerLaser.transform.rotation);
+            burstCount = 0;
         }
 
-        Debug.Log(loops);
-        anim.SetInteger("loops", loops);
+
+        Debug.Log(anim.GetCurrentAnimatorStateInfo(0).normalizedTime);
 
         if (Input.GetKeyDown(KeyCode.E) && (anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerLaserCharge") && anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1))
         {
             anim.SetTrigger("firing");
-            StartCoroutine(Shoot());
         }
     }
 
 
-    IEnumerator Shoot() 
+    void Shoot() 
     {
-        Crunning = true;
-        for (int i = 0; i < 3; i++)
-        {
         Instantiate(playerLaser, playerBarrel.transform.position, playerLaser.transform.rotation);
-        loops++;
-        yield return new WaitWhile(() => anim.GetCurrentAnimatorStateInfo(0).normalizedTime <= loops);
+        burstCount++;
+        if(burstCount == 3)
+        {
+            anim.SetTrigger("reload");
         }
     }
 }
