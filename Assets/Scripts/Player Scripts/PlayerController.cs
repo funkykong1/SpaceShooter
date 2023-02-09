@@ -32,7 +32,6 @@ public class PlayerController : MonoBehaviour
     //put the firing script there when its time
     public GameObject playerBeam;
     public GameObject playerLaser;
-    public float burstCooldown;
     public bool beam = false;
 
     private Animator playerAnim;
@@ -45,7 +44,7 @@ public class PlayerController : MonoBehaviour
     {
         GameActive = true;
         playerAnim = GetComponent<Animator>();
-        burstCooldown = 0;
+
     }
 
     public void Die()
@@ -95,13 +94,7 @@ public class PlayerController : MonoBehaviour
         }
         //scuffed tapa pistää laser ase ampumaan neljä kertaa, eikä kaikkia neljää
         //-ammusta samaan aikaan
-        if (burstCooldown > 0) {
-            burstCooldown--;
 
-        } else {
-            cooldown = false;
-
-        }
     }
 
 
@@ -110,18 +103,12 @@ public class PlayerController : MonoBehaviour
     {
         //shoots i < x amount of times
         //probably need to adjust burst cd
-         for (int i = 0; i < 3; i++) 
-         {
-                cooldown = true;
-                Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+        for (int i = 0; i < 3; i++) 
+        {
+            yield return Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+        }
 
-                burstCooldown = 100;
-                yield return new WaitUntil(() => burstCooldown <= 0);
-            }
-
-             //FindObjectOfType<AudioManager>().Play("Pew");
-             burstCooldown = 500;
-        
+        //FindObjectOfType<AudioManager>().Play("Pew");   
     }
 }
 
