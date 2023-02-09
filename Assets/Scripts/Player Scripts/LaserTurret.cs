@@ -25,35 +25,37 @@ public class LaserTurret : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.E) && anim.GetCurrentAnimatorStateInfo(0).IsName("StartCharge") && anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1)
+        if (Input.GetKeyDown(KeyCode.E) && firingReady())
         {
             anim.SetTrigger("firing");
         }
 
 
-
-        if (anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerLaserCharge") && anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1)
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerLaserCharge"))
         {
             burstCount = 0;
         }
 
-
         Debug.Log(anim.GetCurrentAnimatorStateInfo(0).normalizedTime);
-
-        if (Input.GetKeyDown(KeyCode.E) && (anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerLaserCharge") && anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1))
-        {
-            anim.SetTrigger("firing");
-        }
     }
 
 
     void Shoot() 
     {
         Instantiate(playerLaser, playerBarrel.transform.position, playerLaser.transform.rotation);
+
         burstCount++;
-        if(burstCount == 3)
+        anim.SetInteger("burstCount", burstCount);
+        
+    }
+    bool firingReady()
+    {
+        if((anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1) && anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerLaserCharge") || (anim.GetCurrentAnimatorStateInfo(0).IsName("StartCharge")
+         && anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1))
         {
-            anim.SetTrigger("reload");
+            return true;
+        } else {
+            return false;
         }
     }
 }
