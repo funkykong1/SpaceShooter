@@ -12,13 +12,14 @@ public class BeamTurret : MonoBehaviour
 
     private Animator anim;
     public GameObject beam;
-
+    private BeamScript beamScript;
     public bool firing;
 
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
+        beamScript = GameObject.Find("PlayerBeam").GetComponent<BeamScript>();
         firing = false;
     }
 
