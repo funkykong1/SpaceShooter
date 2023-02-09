@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -127,7 +127,532 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: PlrLaserCharge-export_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 582
+        width: 72
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b8e2039e9484ef40add083e0a2825a6
+      internalID: -433954786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlrLaserCharge-export_1
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 582
+        width: 72
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b39e6a3a3133a534583e56fe4439a43a
+      internalID: 133093473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlrLaserCharge-export_2
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 582
+        width: 72
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5157e687b748364399f7f09e9d48f36
+      internalID: -510759870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlrLaserCharge-export_3
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 582
+        width: 72
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57d17964cfe226b4798a20f1d1a4842e
+      internalID: 1530847291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlrLaserCharge-export_4
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 582
+        width: 72
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb31b6cab1cb6bf4d84df87450f68134
+      internalID: -1708098368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlrLaserCharge-export_5
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 438
+        width: 72
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c74b78e3ce56ae045ab97f174a097dce
+      internalID: 69485797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlrLaserCharge-export_6
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 438
+        width: 72
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8619d75551b0ec4abef7b1e26d2641c
+      internalID: 1337741819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlrLaserCharge-export_7
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 438
+        width: 72
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3558a31aad1fb4498687f1801e96733
+      internalID: -1811962164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlrLaserCharge-export_8
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 438
+        width: 72
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c84f68870b75694fa960693e17ecaa3
+      internalID: 689393657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlrLaserCharge-export_9
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 438
+        width: 72
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 920148be5d8c4b6488e29b0dfee49815
+      internalID: -961902393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlrLaserCharge-export_10
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 294
+        width: 72
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22b06bc3bd1475e40a8353fc3ea6e15d
+      internalID: -2053878006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlrLaserCharge-export_11
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 294
+        width: 72
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 379279b4813cd1e4db4cb137fee6b9c0
+      internalID: 1281371337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlrLaserCharge-export_12
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 294
+        width: 72
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c1b6ee947a46b340b2734c63d6741dd
+      internalID: -2085294429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlrLaserCharge-export_13
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 294
+        width: 72
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19fb72ddc59628947a00c622b26c48a6
+      internalID: 2023456649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlrLaserCharge-export_14
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 294
+        width: 72
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df8e68a257188c44b8b8c74d79551767
+      internalID: 357279836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlrLaserCharge-export_15
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 150
+        width: 72
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 305a2ff905347da4eb2c646d1e9e6f8d
+      internalID: -758574512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlrLaserCharge-export_16
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 150
+        width: 72
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae3047dbc0f878b40866589e2cadc9ef
+      internalID: -1194221732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlrLaserCharge-export_17
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 150
+        width: 72
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 890a76c6eb010ad428b617bd75a3108b
+      internalID: -226928373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlrLaserCharge-export_18
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 150
+        width: 72
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff62b1f409c498c4c8de1095e480c2b5
+      internalID: -1721685055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlrLaserCharge-export_19
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 150
+        width: 72
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2820db55f5695d43ae5330f7224ff4c
+      internalID: -1549414855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlrLaserCharge-export_20
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 6
+        width: 72
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d85f6918ad6c244c98ac7578f5777ec
+      internalID: 118033083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlrLaserCharge-export_21
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 6
+        width: 72
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 795c3af1f42c3d9488ea7f517cf73267
+      internalID: -232716245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlrLaserCharge-export_22
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 6
+        width: 72
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61985bcb4f5636f44ba398b0137675f9
+      internalID: 1751702639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlrLaserCharge-export_23
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 6
+        width: 72
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edf70c5e1d226c7468392d1a3635cede
+      internalID: -5366998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlrLaserCharge-export_24
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 6
+        width: 72
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de32504898bc91142a42fdd8a43e6e3e
+      internalID: -1457473680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -138,7 +663,32 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PlrLaserCharge-export_5: 69485797
+      PlrLaserCharge-export_20: 118033083
+      PlrLaserCharge-export_19: -1549414855
+      PlrLaserCharge-export_23: -5366998
+      PlrLaserCharge-export_8: 689393657
+      PlrLaserCharge-export_11: 1281371337
+      PlrLaserCharge-export_0: -433954786
+      PlrLaserCharge-export_21: -232716245
+      PlrLaserCharge-export_15: -758574512
+      PlrLaserCharge-export_22: 1751702639
+      PlrLaserCharge-export_1: 133093473
+      PlrLaserCharge-export_12: -2085294429
+      PlrLaserCharge-export_16: -1194221732
+      PlrLaserCharge-export_4: -1708098368
+      PlrLaserCharge-export_24: -1457473680
+      PlrLaserCharge-export_6: 1337741819
+      PlrLaserCharge-export_3: 1530847291
+      PlrLaserCharge-export_2: -510759870
+      PlrLaserCharge-export_17: -226928373
+      PlrLaserCharge-export_13: 2023456649
+      PlrLaserCharge-export_18: -1721685055
+      PlrLaserCharge-export_7: -1811962164
+      PlrLaserCharge-export_10: -2053878006
+      PlrLaserCharge-export_9: -961902393
+      PlrLaserCharge-export_14: 357279836
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
