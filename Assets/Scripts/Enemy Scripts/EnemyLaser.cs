@@ -66,7 +66,7 @@ public class EnemyLaser : MonoBehaviour
                     anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1)
                     {
                         firing = true;
-                        Invoke("ShootLaser", 0.3f);
+                        Invoke("ShootLaser", 0.15f);
                     }
         }
     }
@@ -74,10 +74,7 @@ public class EnemyLaser : MonoBehaviour
     void ShootLaser()
     {
         Vector3 laserBarrel = new Vector3(transform.position.x, transform.position.y - 1.5f, 0);
-        for (int i = 0; i < 1; i++)
-        {
         Instantiate(bulletBad, laserBarrel, bulletBad.transform.rotation);
-        }
     }
 
     public void MoveToPoint()

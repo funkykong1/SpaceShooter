@@ -8,59 +8,55 @@ public class LaserTurret : MonoBehaviour
     public GameObject playerLaser;
 
     private Animator anim;
-
+    private Animation clip;
     public bool firing;
-    private bool done;
+    public int loops;
+    private bool Crunning;
 
     // Start is called before the first frame update
     void Start()
     {
+        clip = GetComponent<Animation>();
         anim = GetComponent<Animator>();
         firing = false;
+        Crunning = false;
+        loops = 0;
     }
 
     // Update is called once per frame
     void Update()
-    {        
-        if(firing)
-        anim.SetBool("firing", true);
-        else 
-        anim.SetBool("firing", false);
+    {
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerLaserCharge"))
+        {
+            loops = 0;
+            Crunning = false;
+        }
 
-        if (Input.GetKeyDown(KeyCode.E) && (anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerLaserCharge") &&
-                                            anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
-            ShootBurst();
+            Instantiate(playerLaser, playerBarrel.transform.position, playerLaser.transform.rotation);
+        }
+
+        Debug.Log(loops);
+        anim.SetInteger("loops", loops);
+
+        if (Input.GetKeyDown(KeyCode.E) && (anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerLaserCharge") && anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1))
+        {
+            anim.SetTrigger("firing");
+            StartCoroutine(Shoot());
         }
     }
-    IEnumerator ShootBurst()
+
+
+    IEnumerator Shoot() 
     {
-        firing = true;
-        for (int i = 0; i < 3; i++) 
+        Crunning = true;
+        for (int i = 0; i < 3; i++)
         {
-            if(anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1)
-            anim.Play("PlayerLaserFire");
-            Invoke("FireLaser", 0.2f);
-            
-        }
-        yield return firing = false;
-    }
-    private void FireLaser()
-    {
         Instantiate(playerLaser, playerBarrel.transform.position, playerLaser.transform.rotation);
-    }
-    void Animate()
-    {
-            if(anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerLaserFire") &&
-            anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1)
-            {
-                firing = false;
-            } 
-            else if (anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerLaserCharging") &&
-                    anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1)
-                    {
-                        firing = true;
-                        Invoke("ShootLaser", 0.3f);
-                    }
+        loops++;
+        yield return new WaitWhile(() => anim.GetCurrentAnimatorStateInfo(0).normalizedTime <= loops);
+        }
     }
 }
+

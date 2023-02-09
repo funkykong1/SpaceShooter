@@ -36,6 +36,7 @@ public class PlayerController : MonoBehaviour
     private LaserTurret laserScript;
 
 
+
     public Transform playerBarrel;
 
     private Animator playerAnim;

@@ -265,6 +265,7 @@ GameObject:
   - component: {fileID: 1663120771}
   - component: {fileID: 1663120773}
   - component: {fileID: 1663120772}
+  - component: {fileID: 1663120774}
   m_Layer: 0
   m_Name: Player Beam
   m_TagString: Untagged
@@ -360,6 +361,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1663120774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663120770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08eea7f0162191344b3d1f012addd65c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  beamDamage: 2
+  firing: 0
 --- !u!1 &1915672583
 GameObject:
   m_ObjectHideFlags: 0
@@ -371,6 +386,7 @@ GameObject:
   - component: {fileID: 1915672584}
   - component: {fileID: 1915672586}
   - component: {fileID: 1915672585}
+  - component: {fileID: 1915672587}
   m_Layer: 0
   m_Name: Player Laser
   m_TagString: Untagged
@@ -466,6 +482,23 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1915672587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1915672583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8feca81f29f51de40ab96dd89da673a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerBarrel: {fileID: 1138077063155436120}
+  playerLaser: {fileID: 5255558826599111075, guid: c252037593fc8bf499f822056f817f92, type: 3}
+  laserFiring: {fileID: 0}
+  firing: 0
+  loops: 0
 --- !u!1 &6662651390703665696
 GameObject:
   m_ObjectHideFlags: 0
@@ -556,11 +589,9 @@ MonoBehaviour:
   xRange: 19.5
   yRange: 15.5
   PlayerHealth: {fileID: 0}
-  projectilePrefab: {fileID: 5255558826599111075, guid: c252037593fc8bf499f822056f817f92, type: 3}
   playerBeam: {fileID: 1663120770}
   playerLaser: {fileID: 1915672583}
   playerBarrel: {fileID: 1138077063155436120}
-  beam: 0
 --- !u!114 &4963278362751990495
 MonoBehaviour:
   m_ObjectHideFlags: 0
