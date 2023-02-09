@@ -7,14 +7,14 @@ public class EnemyLaser : MonoBehaviour
 {
     
     public GameObject bulletBad;
-
     //bullets will phase through inactive enemies
     public bool enemyVisible;
 
     //enemy will move to assigned patrol point until true
     public bool enemyStopped = false;
     public float enemySpeed = 5f;
-
+    public float enemyHealth;
+    public float enemyMaxHealth = 100;
     //references 2 animator
     private Animator anim;
     public bool firing;
@@ -28,6 +28,7 @@ public class EnemyLaser : MonoBehaviour
     void Start()
     {
         //start of round enemy not visible
+        enemyHealth = enemyMaxHealth;
         enemyVisible = false;
 
     }

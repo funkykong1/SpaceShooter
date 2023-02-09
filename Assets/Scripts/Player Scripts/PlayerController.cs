@@ -25,32 +25,35 @@ public class PlayerController : MonoBehaviour
     public PlayerHealth PlayerHealth;
     
     //fix this --done
-    public GameObject projectilePrefab;
 
 
     //note: make the guns separate gameobjects
     //put the firing script there when its time
     public GameObject playerBeam;
+    private BeamTurret beamScript;
+
     public GameObject playerLaser;
-    public bool beam = false;
+    private LaserTurret laserScript;
+
+
+    public Transform playerBarrel;
 
     private Animator playerAnim;
 
-    //menu screen or ingame?
-    private bool GameActive;
 
     // Start is called before the first frame update
     void Start()
     {
-        GameActive = true;
         playerAnim = GetComponent<Animator>();
+        laserScript = GameObject.Find("Player Laser").GetComponent<LaserTurret>();
+        beamScript = GameObject.Find("Player Beam").GetComponent<BeamTurret>();
 
     }
 
     public void Die()
     {
         Destroy(gameObject);
-        GameActive = false;
+        //GameManager.GameActive = false;
         //FindObjectOfType<AudioManager>().Play("EnemyDeath");
     }
 
@@ -85,30 +88,6 @@ public class PlayerController : MonoBehaviour
         verticalInput = Input.GetAxis("Vertical");
         transform.Translate(Vector3.up * verticalInput * Time.deltaTime * speed);
 
-        if (Input.GetKeyDown(KeyCode.Space) && (cooldown == false)) {
-
-        //Laukaise neljä ammusta pelaajasta
-        StartCoroutine(shootBurst());
-
-
-        }
-        //scuffed tapa pistää laser ase ampumaan neljä kertaa, eikä kaikkia neljää
-        //-ammusta samaan aikaan
-
-    }
-
-
-
-    IEnumerator shootBurst() 
-    {
-        //shoots i < x amount of times
-        //probably need to adjust burst cd
-        for (int i = 0; i < 3; i++) 
-        {
-            yield return Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
-        }
-
-        //FindObjectOfType<AudioManager>().Play("Pew");   
     }
 }
 
