@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class BulletScript : MonoBehaviour
+public class LaserScript : MonoBehaviour
 {
     public float speed = 7f;
 
