@@ -5,10 +5,12 @@ using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
+    //playr hp.
     public float health;
     public float maxHealth;
     private float m_health;
 
+    //hp bar references
     public Image healthBar;
     public Gradient gradient;
 

@@ -584,7 +584,7 @@ MonoBehaviour:
   horizontalInput: 0
   verticalInput: 0
   cooldown: 0
-  speed: 10
+  speed: 14
   xRange: 19.5
   yRange: 15.5
   PlayerHealth: {fileID: 0}

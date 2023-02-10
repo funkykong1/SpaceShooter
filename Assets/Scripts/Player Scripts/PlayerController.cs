@@ -42,26 +42,25 @@ public class PlayerController : MonoBehaviour
     private Animator playerAnim;
 
 
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         playerAnim = GetComponent<Animator>();
         laserScript = GameObject.Find("Player Laser").GetComponent<LaserTurret>();
         beamScript = GameObject.Find("Player Beam").GetComponent<BeamTurret>();
-
+        PlayerHealth = GetComponent<PlayerHealth>();
     }
-
-    public void Die()
+    void Start()
     {
-        Destroy(gameObject);
-        //GameManager.GameActive = false;
-        //FindObjectOfType<AudioManager>().Play("EnemyDeath");
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        if(PlayerHealth.health <= 0)
+        {
+            GameOver();
+        }
         //handles game screen borders
         if (transform.position.x < -xRange)
         {
@@ -89,6 +88,12 @@ public class PlayerController : MonoBehaviour
         verticalInput = Input.GetAxis("Vertical");
         transform.Translate(Vector3.up * verticalInput * Time.deltaTime * speed);
 
+    }
+        public void GameOver()
+    {
+        Destroy(gameObject);
+        //GameManager.GameActive = false;
+        //FindObjectOfType<AudioManager>().Play("EnemyDeath");
     }
 }
 
