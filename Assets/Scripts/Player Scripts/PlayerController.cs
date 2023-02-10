@@ -22,28 +22,29 @@ public class PlayerController : MonoBehaviour
 
     //idk
     public static PlayerController Instance;
-    public PlayerHealth playerHealth;
+    private PlayerHealth playerHealth;
     
     //fix this --done
 
 
     //note: make the guns separate gameobjects
     //put the firing script there when its time
+    //note: ok done
     public GameObject playerBeam;
     private BeamTurret beamScript;
 
     public GameObject playerLaser;
     private LaserTurret laserScript;
-
-
-
     public Transform playerBarrel;
 
     private Animator playerAnim;
+    private GameManager gameManager;
 
 
     void Awake()
     {
+        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
+
         playerAnim = GetComponent<Animator>();
         laserScript = GameObject.Find("Player Laser").GetComponent<LaserTurret>();
         beamScript = GameObject.Find("Player Beam").GetComponent<BeamTurret>();
@@ -59,7 +60,7 @@ public class PlayerController : MonoBehaviour
     {
         if(playerHealth.health <= 0)
         {
-            GameOver();
+            gameManager.GameOver();
         }
         //handles game screen borders
         if (transform.position.x < -xRange)
@@ -89,13 +90,6 @@ public class PlayerController : MonoBehaviour
         transform.Translate(Vector3.up * verticalInput * Time.deltaTime * speed);
 
     }
-        public void GameOver()
-    {
-        Destroy(gameObject);
-        //GameManager.GameActive = false;
-        //FindObjectOfType<AudioManager>().Play("EnemyDeath");
-    }
 }
-
     
 

@@ -8,17 +8,21 @@ public class EnemyLaser : MonoBehaviour
     
     public GameObject bulletBad;
     private Animator anim;
-    private EnemyHealth enemyHealth;
+
 
     //bullets will phase through inactive enemies
     public bool enemyVisible;
+
 
     //enemy will move to assigned patrol point until true
     public bool enemyStopped = false;
     public float enemySpeed = 5f;
     private float hp;
+
     //references 2 animator
     public bool firing;
+
+    public Transform enemyBarrel;
 
     void Awake()
     {
@@ -30,7 +34,6 @@ public class EnemyLaser : MonoBehaviour
     {
         //start of round enemy not visible
         enemyVisible = false;
-
     }
     void Update() {
         //fucking KILL yourself
@@ -38,8 +41,7 @@ public class EnemyLaser : MonoBehaviour
         anim.SetBool("firing", true);
         else 
         anim.SetBool("firing", false);
-
-
+        
         if (transform.position.y < 17)
         {
             //start firing and become hittable
@@ -73,35 +75,13 @@ public class EnemyLaser : MonoBehaviour
     
     void ShootLaser()
     {
-        Vector3 laserBarrel = new Vector3(transform.position.x, transform.position.y - 1.5f, 0);
-        Instantiate(bulletBad, laserBarrel, bulletBad.transform.rotation);
+        Instantiate(bulletBad, enemyBarrel.transform.position, bulletBad.transform.rotation);
     }
 
     public void MoveToPoint()
     {
         //idk add the patrol shit later lol
         transform.Translate(Vector3.down * Time.deltaTime * enemySpeed);
-    }
-
-
-    public void OnTriggerEnter2D(Collider2D collision)
-    {
-        /*if (collision.CompareTag("Bullet"))
-        {
-            healthSystem.Damage(50);
-            // Debug.Log("EnemyHP: " + healthSystem.GetHealthPercent());
-            print("Hit");
-
-            if (healthSystem.GetHealth() <= 0)
-            {
-                Die();
-            }
-        }*/
-        if (collision.CompareTag("Player"))
-        {
-            Die();
-        }
-
     }
     
     public void Die()
