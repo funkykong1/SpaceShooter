@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpriteBegone : MonoBehaviour
+public class PointScript : MonoBehaviour
 {
     private SpriteRenderer rend;
 
