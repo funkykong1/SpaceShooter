@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
 
     //idk
     public static PlayerController Instance;
-    public PlayerHealth PlayerHealth;
+    public PlayerHealth playerHealth;
     
     //fix this --done
 
@@ -47,7 +47,7 @@ public class PlayerController : MonoBehaviour
         playerAnim = GetComponent<Animator>();
         laserScript = GameObject.Find("Player Laser").GetComponent<LaserTurret>();
         beamScript = GameObject.Find("Player Beam").GetComponent<BeamTurret>();
-        PlayerHealth = GetComponent<PlayerHealth>();
+        playerHealth = GetComponent<PlayerHealth>();
     }
     void Start()
     {
@@ -57,7 +57,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(PlayerHealth.health <= 0)
+        if(playerHealth.health <= 0)
         {
             GameOver();
         }
