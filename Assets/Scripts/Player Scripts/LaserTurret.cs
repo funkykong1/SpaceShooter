@@ -44,7 +44,8 @@ public class LaserTurret : MonoBehaviour
             burstCount = 0;
         }
 
-        Debug.Log(anim.GetCurrentAnimatorStateInfo(0).normalizedTime);
+        //prints animator state -> 1 = 100%
+        //Debug.Log(anim.GetCurrentAnimatorStateInfo(0).normalizedTime);
     }
 
 
