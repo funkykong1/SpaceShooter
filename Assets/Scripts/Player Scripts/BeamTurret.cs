@@ -24,13 +24,16 @@ public class BeamTurret : MonoBehaviour
     //animator bool
     public bool firing;
 
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         //tell script what is what
         anim = GetComponent<Animator>();
         beamScript = GameObject.Find("Beam").GetComponent<BeamScript>();
         firing = false;
+    }
+    void Start()
+    {
+        
     }
 
     // Update is called once per frame

@@ -18,7 +18,8 @@ public class BeamScript : MonoBehaviour
     }
     void Start()
     {
-        beamDamage = 1;
+        gameObject.SetActive(false);
+        beamDamage = 0.5f;
         hitDone = false;
     }
 
@@ -29,18 +30,28 @@ public class BeamScript : MonoBehaviour
     }
 
     //initial bit of damage, explosion here
-    void OnTriggerEnter2D(Collider2D other)
+    void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.CompareTag("Enemy") && !hitDone)
-        {
-            Debug.Log("Hit the bad guy for " + explosionDamage + " INITIAL damage!");
-
-            Vector3 explodeHere = other.ClosestPoint(transform.position);
-            Instantiate(explosion, explodeHere, other.transform.rotation);
-            hitDone = true;
-            Invoke("hitReset", 3f);
-        }
+            foreach(ContactPoint2D hitPos in other.contacts)
+            {
+                Instantiate(explosion, hitPos.point, Quaternion.identity);
+                Debug.Log(hitPos.point);
+            }
+        
     }
+    // void OnTriggerEnter2D(Collider2D other)
+    // {
+    //     if (other.CompareTag("Enemy") && !hitDone)
+    //     {
+    //         Debug.Log("Hit the bad guy for " + explosionDamage + " INITIAL damage!");
+
+    //         Vector2 explodeHere = transform.position;
+    //         Instantiate(explosion, explodeHere, other.transform.rotation);
+    //         hitDone = true;
+    //         Invoke("hitReset", 3f);
+    //     }
+    // }
+
     //secondary bit of damage, welding effect? here
     void OnTriggerStay2D(Collider2D other)
     {
