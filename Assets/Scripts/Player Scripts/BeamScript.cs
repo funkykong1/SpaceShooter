@@ -32,17 +32,11 @@ public class BeamScript : MonoBehaviour
     }
     
     //initial bit of damage, explosion here
-
-
-        
-    
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Enemy"))
+        if (other.CompareTag("Enemy") && !hitDone)
         {
-            Debug.Log("Hit the bad guy for " + explosionDamage + " INITIAL damage!");
             Fire();
-            Invoke("hitReset", 2.5f);
         }
     }
 
@@ -57,19 +51,25 @@ public class BeamScript : MonoBehaviour
         }
     }
 
+
+    //Shoot the raycast and detect initial beam explosion
     void Fire()
     {
         RaycastHit2D[] hits;
         hits = Physics2D.RaycastAll(barrel.transform.position, transform.up, Mathf.Infinity, LayerMask.GetMask("Enemy"));
 
-        for (int i = 0; i < hits.Length; i++)
+        //spawn beam explosions if its the first tick
+        if (!hitDone)
         {
-            RaycastHit2D hit = hits[i];
-            Instantiate(explosion, hit.point, transform.rotation);
-            Debug.Log("pierce hit " + i + " times!");
+            for (int i = 0; i < hits.Length; i++)
+            {
+                RaycastHit2D hit = hits[i];
+                Instantiate(explosion, hit.point, transform.rotation);
+                Debug.Log("initial pierce hit " + i+1 + " times!");
+
+                hitDone = true;
+            }
         }
-
-
         //old
 
         // if(Physics2D.Raycast(barrel.transform.position, transform.up, Mathf.Infinity, LayerMask.GetMask("Enemy")))
@@ -82,8 +82,9 @@ public class BeamScript : MonoBehaviour
         //     Debug.Log("ignored");
         // }
     }
-    void hitReset()
+    public void hitFalse()
     {
         hitDone = false;
+        Debug.Log("reset explosion tag!");
     }
 }

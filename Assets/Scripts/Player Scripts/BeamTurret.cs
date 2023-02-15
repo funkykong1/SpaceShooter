@@ -60,6 +60,7 @@ public class BeamTurret : MonoBehaviour
     }
     public void DeactivateBeam()
     {
+        beamScript.hitFalse();
         beam.SetActive(false);
         anim.SetTrigger("reload");
     }
@@ -73,5 +74,11 @@ public class BeamTurret : MonoBehaviour
         } else {
             return false;
         }
+    }
+
+    //ANIMATION EVENTS
+    public void hitTrue()
+    {
+        beamScript.hitDone = true;
     }
 }
