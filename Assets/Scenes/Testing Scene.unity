@@ -698,18 +698,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3995437719181859355, guid: 5edf27bd6ee705946bd012460eda3cf3, type: 3}
-      propertyPath: m_Simulated
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3995437719181859355, guid: 5edf27bd6ee705946bd012460eda3cf3, type: 3}
-      propertyPath: m_CollisionDetection
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5788362729547658597, guid: 5edf27bd6ee705946bd012460eda3cf3, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
+    - target: {fileID: 1368315537, guid: 5edf27bd6ee705946bd012460eda3cf3, type: 3}
+      propertyPath: barrel
+      value: 
+      objectReference: {fileID: 1878061071}
+    - target: {fileID: 5498345378540306368, guid: 5edf27bd6ee705946bd012460eda3cf3, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 6662651390703665696, guid: 5edf27bd6ee705946bd012460eda3cf3, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 8095083837175839639, guid: 5edf27bd6ee705946bd012460eda3cf3, type: 3}
       propertyPath: m_Name
       value: Player
@@ -758,12 +758,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8609413536178471628, guid: 5edf27bd6ee705946bd012460eda3cf3, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5edf27bd6ee705946bd012460eda3cf3, type: 3}
+--- !u!4 &1878061071 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1543335144704427337, guid: 5edf27bd6ee705946bd012460eda3cf3, type: 3}
+  m_PrefabInstance: {fileID: 1842829797}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1921425770
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -771,10 +772,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 169450240517525190, guid: ed0663f95247040408b0893b8745b67f, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7339741673325006680, guid: ed0663f95247040408b0893b8745b67f, type: 3}
       propertyPath: m_Name
       value: Enemy1

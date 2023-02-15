@@ -60,7 +60,7 @@ public class PlayerController : MonoBehaviour
     {
         if(playerHealth.health <= 0)
         {
-            gameManager.GameOver();
+            // nuh gameManager.GameOver();
         }
         //handles game screen borders
         if (transform.position.x < -xRange)

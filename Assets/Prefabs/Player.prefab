@@ -286,6 +286,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8933763355164955797}
+  - {fileID: 1543335144704427337}
   m_Father: {fileID: 8095083837175839657}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -498,6 +499,37 @@ MonoBehaviour:
   playerLaser: {fileID: 5255558826599111075, guid: c252037593fc8bf499f822056f817f92, type: 3}
   firing: 0
   burstCount: 0
+--- !u!1 &5498345378540306368
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1543335144704427337}
+  m_Layer: 0
+  m_Name: Barrel
+  m_TagString: Untagged
+  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1543335144704427337
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5498345378540306368}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.06, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1663120771}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6662651390703665696
 GameObject:
   m_ObjectHideFlags: 0
@@ -510,7 +542,7 @@ GameObject:
   m_Layer: 0
   m_Name: Barrel
   m_TagString: Untagged
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -845,27 +877,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2739736258533216536, guid: c7fdd953d96f7d140b0e3fe551630209, type: 3}
   m_PrefabInstance: {fileID: 7958417642929336343}
   m_PrefabAsset: {fileID: 0}
---- !u!50 &3995437719181859355
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5220944321064231183}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 0.0001
-  m_LinearDrag: 0
-  m_AngularDrag: 0
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 0
 --- !u!114 &1368315537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -882,6 +893,7 @@ MonoBehaviour:
   explosionDamage: 0
   beamDamage: 1
   hitDone: 0
+  barrel: {fileID: 1543335144704427337}
 --- !u!4 &8933763355164955797 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1552300267700184194, guid: c7fdd953d96f7d140b0e3fe551630209, type: 3}
