@@ -29,7 +29,7 @@ public class BeamTurret : MonoBehaviour
     {
         //tell script what is what
         anim = GetComponent<Animator>();
-        beamScript = GameObject.Find("Player Beam").GetComponent<BeamScript>();
+        beamScript = GameObject.Find("Beam").GetComponent<BeamScript>();
         firing = false;
     }
 
@@ -38,7 +38,6 @@ public class BeamTurret : MonoBehaviour
     {
         //historic vv
         //transform.position = new Vector3 (playerLocation);
-
 
 
         //press Q to vaporize them!
