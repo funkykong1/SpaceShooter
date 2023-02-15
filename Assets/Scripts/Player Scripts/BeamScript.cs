@@ -38,13 +38,11 @@ public class BeamScript : MonoBehaviour
     
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Enemy") && !hitDone)
+        if (other.CompareTag("Enemy"))
         {
             Debug.Log("Hit the bad guy for " + explosionDamage + " INITIAL damage!");
-
             Fire();
-            hitDone = true;
-            Invoke("hitReset", 3f);
+            Invoke("hitReset", 2.5f);
         }
     }
 

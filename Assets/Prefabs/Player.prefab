@@ -890,7 +890,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosion: {fileID: 6367605799563120569, guid: f62b72242e8d7314190bbf2ce0cab476, type: 3}
-  explosionDamage: 0
+  explosionDamage: 15
   beamDamage: 1
   hitDone: 0
   barrel: {fileID: 1543335144704427337}
