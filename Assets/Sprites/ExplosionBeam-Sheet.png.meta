@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 777ce740b3cf62d4f8c2e133393955b4
+guid: f8a7af3676cbb5944b66b7a62e3f0860
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -129,85 +129,211 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PLACEHOLDER-Sheet_0
+      name: ExplosionBeam-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 201
-        height: 192
-      alignment: 9
-      pivot: {x: 0.47761193, y: 0.515625}
-      border: {x: 0, y: 0, z: 10, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ffafcc2a4c5c7b94290b79e995c2526f
-      internalID: 260578652
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PLACEHOLDER-Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 201
-        y: 0
-        width: 200
-        height: 192
-      alignment: 9
-      pivot: {x: 0.49499997, y: 0.515625}
+        width: 274.8
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f38bba5624a296b4fa73ae7f7f3f5f42
-      internalID: 817678621
+      spriteID: 2a23126f9af73f84fb648ef96e82fa20
+      internalID: -111899058
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PLACEHOLDER-Sheet_2
+      name: ExplosionBeam-Sheet_1
       rect:
         serializedVersion: 2
-        x: 402
+        x: 274
         y: 0
-        width: 201
-        height: 192
-      alignment: 9
-      pivot: {x: 0.5074627, y: 0.515625}
+        width: 274.8
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 01378e8383bd67e4dad4b55c80c4b8eb
-      internalID: -1319246167
+      spriteID: 0a3b7973946915645afedbf99e973e39
+      internalID: -847844263
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PLACEHOLDER-Sheet_3
+      name: ExplosionBeam-Sheet_2
       rect:
         serializedVersion: 2
-        x: 611
+        x: 548
         y: 0
-        width: 193
-        height: 192
-      alignment: 9
-      pivot: {x: 0.50259066, y: 0.515625}
+        width: 274.8
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b76fadc66caf4fc47871b58d2d7d6bbc
-      internalID: -1066226328
+      spriteID: 38515e935db1ea1489633db598c5f1be
+      internalID: -1656175325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionBeam-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 0
+        width: 275
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaa2a74497c6e5a4085013a566f415c6
+      internalID: -651659167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionBeam-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 0
+        width: 274.8
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ba9c4e458a1dce4a921e24272ae2a83
+      internalID: -557620446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionBeam-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1370
+        y: 0
+        width: 275
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5ad3f48ef0b376459b1362516f85d95
+      internalID: 162835533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionBeam-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1644
+        y: 0
+        width: 275
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b9c0c5de1fc7974fb2d40a9b52655fe
+      internalID: -642099635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionBeam-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1918
+        y: 0
+        width: 274.8
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9de0095a17680ae4691f0abbf39f3d8e
+      internalID: 1413447541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionBeam-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 2192
+        y: 0
+        width: 275
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c325a02210067d40ae09fdf9416d08c
+      internalID: 1728572003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionBeam-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 2473
+        y: 0
+        width: 275
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0bcf74beb9cfa14ab146c5904ea5c5c
+      internalID: -41781440
       vertices: []
       indices: 
       edges: []
@@ -223,10 +349,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      PLACEHOLDER-Sheet_2: -1319246167
-      PLACEHOLDER-Sheet_3: -1066226328
-      PLACEHOLDER-Sheet_0: 260578652
-      PLACEHOLDER-Sheet_1: 817678621
+      ExplosionBeam-Sheet_5: 162835533
+      ExplosionBeam-Sheet_2: -1656175325
+      ExplosionBeam-Sheet_3: -651659167
+      ExplosionBeam-Sheet_8: 1728572003
+      ExplosionBeam-Sheet_6: -642099635
+      ExplosionBeam-Sheet_1: -847844263
+      ExplosionBeam-Sheet_4: -557620446
+      ExplosionBeam-Sheet_9: -41781440
+      ExplosionBeam-Sheet_0: -111899058
+      ExplosionBeam-Sheet_7: 1413447541
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -55,6 +55,7 @@ public class BeamScript : MonoBehaviour
     //Shoot the raycast and detect initial beam explosion
     void Fire()
     {
+        //RaycastAll enables piercing
         RaycastHit2D[] hits;
         hits = Physics2D.RaycastAll(barrel.transform.position, transform.up, Mathf.Infinity, LayerMask.GetMask("Enemy"));
 
@@ -65,14 +66,23 @@ public class BeamScript : MonoBehaviour
             {
                 RaycastHit2D hit = hits[i];
                 Instantiate(explosion, hit.point, transform.rotation);
-                Debug.Log("initial pierce hit " + i+1 + " times!");
+                Debug.Log("initial pierce hit " + (i+1) + " times!");
 
                 hitDone = true;
             }
         }
-        //old
+    }
+    public void hitFalse()
+    {
+        hitDone = false;
+        Debug.Log("reset explosion tag!");
+    }
 
-        // if(Physics2D.Raycast(barrel.transform.position, transform.up, Mathf.Infinity, LayerMask.GetMask("Enemy")))
+    //OLD LINES HERE
+    
+    //FIRST RAYCAST
+
+            // if(Physics2D.Raycast(barrel.transform.position, transform.up, Mathf.Infinity, LayerMask.GetMask("Enemy")))
         // {
         //     RaycastHit2D hit = Physics2D.Raycast(barrel.transform.position, transform.up, Mathf.Infinity, LayerMask.GetMask("Enemy"));
         //     Instantiate(explosion, hit.point, transform.rotation);
@@ -81,10 +91,14 @@ public class BeamScript : MonoBehaviour
         // {
         //     Debug.Log("ignored");
         // }
-    }
-    public void hitFalse()
-    {
-        hitDone = false;
-        Debug.Log("reset explosion tag!");
-    }
+
+
+                //RANDOM EXPLOSION ROTATION
+
+                // float randomZ = Random.Range(0, 359);
+                // GameObject spawned = Instantiate(explosion);
+
+                // spawned.transform.position = hit.point;
+                // spawned.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, randomZ));
+
 }
