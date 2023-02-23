@@ -7,10 +7,11 @@ public class PointManager : MonoBehaviour
 
     // points where the bad guys go upon spawning
     // numbered left to right
-    public GameObject[] HighPoints;
-    public GameObject[] MidPoints;
-    public GameObject[] LowPoints;
-    public GameObject[] BossPoints;
+    public Transform[] highPoints;
+    public Transform[] midPoints;
+    public Transform[] lowPoints;
+    public Transform[] bossPoints;
+    public Transform playerSpawn;
 
 
 

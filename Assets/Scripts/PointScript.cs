@@ -13,7 +13,7 @@ public class PointScript : MonoBehaviour
     {
         //make the dots go away :)
         rend = GetComponent<SpriteRenderer>();
-        //rend.enabled = false;
+        rend.enabled = false;
     }
 
     // Update is called once per frame
