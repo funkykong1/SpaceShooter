@@ -8,10 +8,8 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public GameObject player;
-    public SpawnManager spawnManager;
-    //public GameObject Boss[];
-
     public bool isGameActive;
+    public Button startButton; 
     public Button restartButton;
     public GameObject titleScreen;
 
@@ -26,7 +24,10 @@ public class GameManager : MonoBehaviour
     {
         Destroy(player);
         //GameManager.GameActive = false;
-        //FindObjectOfType<AudioManager>().Play("EnemyDeath");
+    }
+    public void StartGame()
+    {
+
     }
 }
 
