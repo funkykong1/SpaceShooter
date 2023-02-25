@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7396415018486983551}
   - component: {fileID: 7070893307163289215}
   m_Layer: 0
-  m_Name: Game Points
+  m_Name: Spawn Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -101,6 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefabs:
   - {fileID: 7339741673325006680, guid: ed0663f95247040408b0893b8745b67f, type: 3}
+  player: {fileID: 8095083837175839639, guid: 5edf27bd6ee705946bd012460eda3cf3, type: 3}
 --- !u!1001 &7396415016492362952
 PrefabInstance:
   m_ObjectHideFlags: 0

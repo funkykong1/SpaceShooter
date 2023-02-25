@@ -1017,11 +1017,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42954d7076996fd49a7a50120fd96328, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
   isGameActive: 0
   startButton: {fileID: 1011262360}
   restartButton: {fileID: 0}
   titleScreen: {fileID: 0}
+  spawnManager: {fileID: 0}
 --- !u!4 &1710453761
 Transform:
   m_ObjectHideFlags: 0
@@ -1159,10 +1159,6 @@ PrefabInstance:
     - target: {fileID: 8095083837175839639, guid: 5edf27bd6ee705946bd012460eda3cf3, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 8095083837175839639, guid: 5edf27bd6ee705946bd012460eda3cf3, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8095083837175839657, guid: 5edf27bd6ee705946bd012460eda3cf3, type: 3}
       propertyPath: m_RootOrder
@@ -1320,7 +1316,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7396415018486983549, guid: 4b920e19681e5264c94bbf12a0fb75cd, type: 3}
       propertyPath: m_Name
-      value: Game Points
+      value: Spawn Manager
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b920e19681e5264c94bbf12a0fb75cd, type: 3}

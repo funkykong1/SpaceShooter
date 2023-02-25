@@ -7,11 +7,11 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject player;
     public bool isGameActive;
     public Button startButton; 
     public Button restartButton;
     public GameObject titleScreen;
+    public SpawnManager spawnManager;
 
 
     // Update is called once per frame
@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
-        Destroy(player);
+        Destroy(spawnManager.player);
         //GameManager.GameActive = false;
     }
     public void StartGame()
