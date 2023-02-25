@@ -14,6 +14,16 @@ public class GameManager : MonoBehaviour
     public SpawnManager spawnManager;
 
 
+    void Awake()
+    {
+        
+    }
+    void Start()
+    {
+        startButton.gameObject.SetActive(false);
+        restartButton.gameObject.SetActive(false);
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -24,10 +34,12 @@ public class GameManager : MonoBehaviour
     {
         Destroy(spawnManager.player);
         //GameManager.GameActive = false;
+
+        restartButton.gameObject.SetActive(true);
     }
     public void StartGame()
     {
-
+        startButton.gameObject.SetActive(false);
     }
 }
 
