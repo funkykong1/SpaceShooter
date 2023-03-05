@@ -7,18 +7,27 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    private static GameManager instance;
     public GameObject player;
     public bool isGameActive;
     public Button startButton; 
     public Button restartButton;
     public GameObject titleScreen;
+    public int currentWave;
 
 
-    // Update is called once per frame
-    void Update()
+    void Awake()
     {
-        
+        if (instance == null)
+        {
+            instance = this;
+        } else 
+        {
+            Destroy(gameObject);
+        }
+        currentWave = 1;
     }
+
 
     public void GameOver()
     {
@@ -27,7 +36,12 @@ public class GameManager : MonoBehaviour
     }
     public void StartGame()
     {
-
+        instance.StartCoroutine(instance.SpawnWave(currentWave));
+    }
+    private IEnumerator SpawnWave(int waveNumber)
+    {
+        currentWave++;
+        yield return new WaitForSeconds(3);
     }
 }
 
