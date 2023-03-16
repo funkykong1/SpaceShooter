@@ -4,21 +4,28 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System;
 
 public class GameManager : MonoBehaviour
 {
     private static GameManager instance;
-    public GameObject player;
+    private PointManager points;
+
     public bool isGameActive;
     public Button startButton; 
     public Button restartButton;
     public GameObject titleScreen;
+
     public int currentWave;
+    public int enemiesLeft;
+    public List<GameObject> enemies;
+    public GameObject player;
 
 
 
     void Awake()
     {
+        StartGame();
         //wtf does this do?
         if (instance == null)
         {
@@ -27,6 +34,7 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        points = GameObject.Find("Game Points").GetComponent<PointManager>();
 
         //wave 0 be nothing
         currentWave = 0;
@@ -35,6 +43,13 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         
+    }
+    void Update()
+    {
+        if(enemiesLeft <= 0)
+        {
+            instance.StartCoroutine(instance.SpawnWave());
+        }
     }
 
     public void GameOver()
@@ -45,13 +60,16 @@ public class GameManager : MonoBehaviour
     public void StartGame()
     {
         titleScreen.gameObject.SetActive(false);
-        instance.StartCoroutine(instance.SpawnWave());
+        StartCoroutine(SpawnWave());
     }
     private IEnumerator SpawnWave()
     {
         currentWave++;
-        
+        Instantiate(enemies[0], points.highPoints[3]);
+        enemiesLeft++;
         yield return new WaitForSeconds(3);
     }
+
+
 }
 

@@ -19,7 +19,7 @@ public class BeamTurret : MonoBehaviour
 
     //references to beam GameObject and its script
     public GameObject beam;
-    private BeamScript beamScript;
+    private PlayerBeamScript beamScript;
 
     //animator bool
     public bool firing;
@@ -28,7 +28,7 @@ public class BeamTurret : MonoBehaviour
     {
         //tell script what is what
         anim = GetComponent<Animator>();
-        beamScript = GameObject.Find("Beam").GetComponent<BeamScript>();
+        beamScript = GameObject.Find("Beam").GetComponent<PlayerBeamScript>();
         firing = false;
     }
     void Start()

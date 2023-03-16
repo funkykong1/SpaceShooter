@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Explosion : MonoBehaviour
 {
-    private BeamScript beam;
+    private PlayerBeamScript beam;
     void Awake()
     {
-        beam = GameObject.Find("Beam").GetComponent<BeamScript>();
+        beam = GameObject.Find("Beam").GetComponent<PlayerBeamScript>();
     }
     void Start()
     {

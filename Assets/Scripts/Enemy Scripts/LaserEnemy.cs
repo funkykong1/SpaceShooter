@@ -3,11 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyLaser : MonoBehaviour
+public class LaserEnemy : MonoBehaviour
 {
     
     public GameObject bulletBad;
     private Animator anim;
+    private GameManager gameManager;
 
 
     //bullets will phase through inactive enemies
@@ -28,6 +29,7 @@ public class EnemyLaser : MonoBehaviour
     {
         //tell script which is what
         anim = GetComponent<Animator>();
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     void Start()
@@ -87,6 +89,7 @@ public class EnemyLaser : MonoBehaviour
     public void Die()
     {
         Destroy(gameObject);
+        gameManager.enemiesLeft--;
         //FindObjectOfType<AudioManager>().Play("EnemyDeath");
     }
     
