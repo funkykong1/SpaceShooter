@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BeamScript : MonoBehaviour
+public class PlayerBeamScript : MonoBehaviour
 {
 
     //Add damage scripts here!
