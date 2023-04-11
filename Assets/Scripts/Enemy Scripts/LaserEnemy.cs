@@ -89,7 +89,7 @@ public class LaserEnemy : MonoBehaviour
     public void Die()
     {
         Destroy(gameObject);
-        gameManager.enemiesLeft--;
+       
         //FindObjectOfType<AudioManager>().Play("EnemyDeath");
     }
     
