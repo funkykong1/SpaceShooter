@@ -35,7 +35,11 @@ public class EnemyBulletScript : MonoBehaviour
             Debug.Log("Taken a hit" + " for " + enemyBulletDamage * 2 + " damage!!!");
             other.gameObject.GetComponent<PlayerHealth>().health -= enemyBulletDamage;
             Destroy(gameObject);
-        }
+        } 
+        else 
+            Destroy(gameObject);
+
+        
 
     }
 }
