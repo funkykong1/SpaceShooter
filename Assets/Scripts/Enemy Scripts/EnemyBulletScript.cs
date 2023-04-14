@@ -25,7 +25,7 @@ public class EnemyBulletScript : MonoBehaviour
         Destroy(gameObject); 
     }
 
-        transform.Translate(Vector3.down * Time.deltaTime * speed);
+        transform.Translate(Vector3.up * Time.deltaTime * speed);
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -36,11 +36,6 @@ public class EnemyBulletScript : MonoBehaviour
             other.gameObject.GetComponent<PlayerHealth>().health -= enemyBulletDamage;
             Destroy(gameObject);
         } 
-        else 
-            Destroy(gameObject);
-
-        
-
     }
 }
 

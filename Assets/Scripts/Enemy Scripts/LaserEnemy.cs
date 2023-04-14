@@ -8,15 +8,13 @@ public class LaserEnemy : MonoBehaviour
     
     public GameObject bulletBad;
     private Animator anim;
-    private GameManager gameManager;
 
 
     //bullets will phase through inactive enemies
-    public bool enemyVisible;
+    private bool enemyVisible;
 
 
     //enemy will move to assigned patrol point until true
-    public bool enemyStopped = false;
     public float enemySpeed = 5f;
     private float hp;
 
@@ -29,13 +27,12 @@ public class LaserEnemy : MonoBehaviour
     {
         //tell script which is what
         anim = GetComponent<Animator>();
-        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     void Start()
     {
         //start of round enemy not visible
-        enemyVisible = false;
+        //enemyVisible = false;
     }
     void Update() {
         //fucking KILL yourself
@@ -51,26 +48,18 @@ public class LaserEnemy : MonoBehaviour
         }
 
 
-        if (enemyStopped == false)
-        {
-        //go down when enemyStopped false
-        //MoveToPoint();
-        }
-
-
         //normalized time means value of 0.00-1.00 dictates anim length
         if (enemyVisible == true) {
 
-            if(anim.GetCurrentAnimatorStateInfo(0).IsName("LaserFiring") &&
+            if(anim.GetCurrentAnimatorStateInfo(0).IsName("EnemyLaserFire") &&
             anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1)
             {
                 firing = false;
             } 
-            else if (anim.GetCurrentAnimatorStateInfo(0).IsName("LaserCharging") &&
+            else if (anim.GetCurrentAnimatorStateInfo(0).IsName("EnemyLaserCharge") &&
                     anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1)
                     {
                         firing = true;
-                        Invoke("ShootLaser", 0.15f);
                     }
         }
     }
@@ -78,12 +67,6 @@ public class LaserEnemy : MonoBehaviour
     void ShootLaser()
     {
         Instantiate(bulletBad, enemyBarrel.transform.position, bulletBad.transform.rotation);
-    }
-
-    public void MoveToPoint()
-    {
-        //idk add the patrol shit later lol
-        transform.Translate(Vector3.down * Time.deltaTime * enemySpeed);
     }
     
     public void Die()

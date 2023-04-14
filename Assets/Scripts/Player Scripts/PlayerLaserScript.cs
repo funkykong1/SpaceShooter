@@ -42,14 +42,14 @@ public class PlayerLaserScript : MonoBehaviour
     {
         if (other.CompareTag("Enemy"))
         {
-            Destroy(gameObject);
-            //player.healthSystem.Damage(enemyBulletDamage);
             Debug.Log("Hit the bad guy for " + bulletDamage + " damage!");
-
-            //if (player.healthSystem.GetHealth() <= 0)
-            {
-              //  Destroy(player);
-            }
+            Destroy(gameObject);
+        }
+        else if (other.CompareTag("LaserEnemy"))
+        {
+            Debug.Log("Crack shot bud. Enemy bullet gone");
+            Destroy(other.gameObject);
+            Destroy(gameObject);
         }
     }
 }
