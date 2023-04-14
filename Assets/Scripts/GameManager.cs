@@ -20,8 +20,7 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
-        startButton.gameObject.SetActive(false);
-        restartButton.gameObject.SetActive(false);
+
     }
 
     // Update is called once per frame

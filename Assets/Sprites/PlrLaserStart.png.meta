@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 06e116e07fa5e7b429d4511427dd9f07
+guid: 29e951743b886014da5d81ee36ce01ff
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -129,442 +129,526 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PlrBeamCharge_0
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 105
-        width: 11
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 45efe3781cca95a45a94f5615d3cf77e
-      internalID: -543870143
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlrBeamCharge_1
+      name: PlrLaserCharge_1
       rect:
         serializedVersion: 2
         x: 15
-        y: 105
-        width: 11
-        height: 23
+        y: 121
+        width: 12
+        height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5deb248c32f3444a824e1bbb610dda3
-      internalID: 734047609
+      spriteID: abd1eaf456ffe2344a86a141c2e10d2a
+      internalID: 702210671
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlrBeamCharge_2
+      name: PlrLaserCharge_2
       rect:
         serializedVersion: 2
         x: 29
-        y: 105
-        width: 11
-        height: 23
+        y: 121
+        width: 12
+        height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4da23a1b34bf0540bff76d0a20cc950
-      internalID: -1721492744
+      spriteID: c0e568a7fef4a7b4aa0a277668dca72f
+      internalID: 861056223
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlrBeamCharge_3
+      name: PlrLaserCharge_3
       rect:
         serializedVersion: 2
         x: 43
-        y: 105
-        width: 11
-        height: 23
+        y: 121
+        width: 12
+        height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8af13dc3455e5de4e87679e314923e88
-      internalID: -1087587717
+      spriteID: 1a19e2719b58e684298124fc3c6263ea
+      internalID: 1844279389
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlrBeamCharge_4
+      name: PlrLaserCharge_4
       rect:
         serializedVersion: 2
         x: 57
-        y: 105
-        width: 11
-        height: 23
+        y: 121
+        width: 12
+        height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29996cb8c3884a141bf980e6f19c83aa
-      internalID: -1908132676
+      spriteID: e8d2153d1b54f7a499ce930522009ef8
+      internalID: -1434589704
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlrBeamCharge_5
+      name: PlrLaserCharge_5
       rect:
         serializedVersion: 2
         x: 1
-        y: 79
-        width: 11
-        height: 23
+        y: 97
+        width: 12
+        height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 189b47e0ce46aa44e882c8222e218508
-      internalID: -714412955
+      spriteID: 54f9336bea453a642809e4355f818a48
+      internalID: 70029592
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlrBeamCharge_6
+      name: PlrLaserCharge_6
       rect:
         serializedVersion: 2
         x: 15
-        y: 79
-        width: 11
-        height: 23
+        y: 97
+        width: 12
+        height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 583123eae993a2c4f82031f02758bf5e
-      internalID: 256904414
+      spriteID: 2d27718dcb81032419d70d7037d7f92d
+      internalID: 490909872
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlrBeamCharge_7
+      name: PlrLaserCharge_7
       rect:
         serializedVersion: 2
         x: 29
-        y: 79
-        width: 11
-        height: 23
+        y: 97
+        width: 12
+        height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61770dc1a51df0c409606614b538835b
-      internalID: 2132245455
+      spriteID: 46c85e37cdcaec143b209bbfc395504b
+      internalID: 791134819
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlrBeamCharge_8
+      name: PlrLaserCharge_8
       rect:
         serializedVersion: 2
         x: 43
-        y: 79
-        width: 11
-        height: 23
+        y: 97
+        width: 12
+        height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 751a861d29c254d4fbeeca1182c1d510
-      internalID: 1987171450
+      spriteID: 7b014d9435df1954ea7ea456f5c6bd73
+      internalID: 368661569
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlrBeamCharge_9
+      name: PlrLaserCharge_9
       rect:
         serializedVersion: 2
         x: 57
-        y: 79
-        width: 11
-        height: 23
+        y: 97
+        width: 12
+        height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b76c2e002f9ebf4f9bdc36c0ceb6d84
-      internalID: 1907007386
+      spriteID: dca5a8c9c5cfd434abd857d80cc35962
+      internalID: 1296070607
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlrBeamCharge_10
+      name: PlrLaserCharge_10
       rect:
         serializedVersion: 2
         x: 1
-        y: 53
-        width: 11
-        height: 23
+        y: 73
+        width: 12
+        height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2431ce624ce465c48a6e83af1c0c48a2
-      internalID: 988237591
+      spriteID: 8221322ff198d9a469069ada96e1fcdc
+      internalID: -390049552
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlrBeamCharge_11
+      name: PlrLaserCharge_11
       rect:
         serializedVersion: 2
         x: 15
-        y: 53
-        width: 11
-        height: 23
+        y: 73
+        width: 12
+        height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 560676aab1316444d8a4bbe24016724f
-      internalID: -2020023945
+      spriteID: 29e5b2e6ed9c5e04c9f39f92e94c517e
+      internalID: -1743202106
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlrBeamCharge_12
+      name: PlrLaserCharge_12
       rect:
         serializedVersion: 2
         x: 29
-        y: 53
-        width: 11
-        height: 23
+        y: 73
+        width: 12
+        height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3fe01e5fe5971c04f99be72e0d223be6
-      internalID: 1471912498
+      spriteID: 01a49a4254f492a45bf3efc6043f4322
+      internalID: -785880556
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlrBeamCharge_13
+      name: PlrLaserCharge_13
       rect:
         serializedVersion: 2
         x: 43
-        y: 53
-        width: 11
-        height: 23
+        y: 73
+        width: 12
+        height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3325cbe3d6289c347adc14fd0ec35b33
-      internalID: -915941135
+      spriteID: 1cc356e0df28d5546ae64a83ef072940
+      internalID: 394827936
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlrBeamCharge_14
+      name: PlrLaserCharge_14
       rect:
         serializedVersion: 2
         x: 57
-        y: 53
-        width: 11
-        height: 23
+        y: 73
+        width: 12
+        height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd5269407c3fb684bae20239253158d4
-      internalID: -1102884303
+      spriteID: f6733d8df3340734fbd46c69df602a6c
+      internalID: -54040630
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlrBeamCharge_15
+      name: PlrLaserCharge_15
       rect:
         serializedVersion: 2
         x: 1
-        y: 27
-        width: 11
-        height: 23
+        y: 49
+        width: 12
+        height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c5e7bb20468efc4f9596a68f9e9aaa4
-      internalID: 999219702
+      spriteID: b445754900fef914582634b401421dc6
+      internalID: -1062879138
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlrBeamCharge_16
+      name: PlrLaserCharge_16
       rect:
         serializedVersion: 2
         x: 15
-        y: 27
-        width: 11
-        height: 23
+        y: 49
+        width: 12
+        height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66fb9e2233e44e845aa668c7ef7561b2
-      internalID: 1869973586
+      spriteID: a219277eb3e1dd74dba3d756fb9fe77e
+      internalID: -1406279769
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlrBeamCharge_17
+      name: PlrLaserCharge_17
       rect:
         serializedVersion: 2
         x: 29
-        y: 27
-        width: 11
-        height: 23
+        y: 49
+        width: 12
+        height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74034129d0033234db5392db77842881
-      internalID: 89025968
+      spriteID: 430dc1b14347e1f43841d779262bd898
+      internalID: 2053464149
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlrBeamCharge_18
+      name: PlrLaserCharge_18
       rect:
         serializedVersion: 2
         x: 43
-        y: 27
-        width: 11
-        height: 23
+        y: 49
+        width: 12
+        height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dbe42fa002cab3947b0804428a81ac9b
-      internalID: 63640578
+      spriteID: f2b9a73016c27c14f80685c829a731ab
+      internalID: 1125155331
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlrBeamCharge_19
+      name: PlrLaserCharge_19
       rect:
         serializedVersion: 2
         x: 57
-        y: 27
-        width: 11
-        height: 23
+        y: 49
+        width: 12
+        height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4cbff69b80dd8dc489e2a9c25c2dfe4d
-      internalID: -2060825727
+      spriteID: 4395181e25b87d743a28b22a5936d2d0
+      internalID: -1117962196
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlrBeamCharge_20
+      name: PlrLaserCharge_20
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 25
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd40dc415ff4e2c4f9e8e1c9ea102bfe
+      internalID: -969048503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlrLaserCharge_21
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 25
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f97bb88e1f970cb4597981e728de2376
+      internalID: 9185697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlrLaserCharge_22
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 25
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c108e9738cda0f245b5a7c70115e5e75
+      internalID: -1570614020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlrLaserCharge_23
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 25
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a77ae1f0b74f4748be9e9fd48c72857
+      internalID: 865501587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlrLaserCharge_24
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 25
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bf6c5b2767186d4abd1e0741df86732
+      internalID: 700310213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlrLaserCharge_25
       rect:
         serializedVersion: 2
         x: 1
         y: 1
-        width: 11
-        height: 23
+        width: 12
+        height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1df9513525a6a8048a087dccf1320c22
-      internalID: 891656880
+      spriteID: f37c4c40f4bd87844aca6104df6c30ff
+      internalID: -1249432395
       vertices: []
       indices: 
       edges: []
@@ -580,27 +664,32 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      PlrBeamCharge_4: -1908132676
-      PlrBeamCharge_18: 63640578
-      PlrBeamCharge_14: -1102884303
-      PlrBeamCharge_9: 1907007386
-      PlrBeamCharge_19: -2060825727
-      PlrBeamCharge_11: -2020023945
-      PlrBeamCharge_5: -714412955
-      PlrBeamCharge_16: 1869973586
-      PlrBeamCharge_20: 891656880
-      PlrBeamCharge_12: 1471912498
-      PlrBeamCharge_10: 988237591
-      PlrBeamCharge_3: -1087587717
-      PlrBeamCharge_0: -543870143
-      PlrBeamCharge_8: 1987171450
-      PlrBeamCharge_6: 256904414
-      PlrBeamCharge_17: 89025968
-      PlrBeamCharge_13: -915941135
-      PlrBeamCharge_15: 999219702
-      PlrBeamCharge_2: -1721492744
-      PlrBeamCharge_7: 2132245455
-      PlrBeamCharge_1: 734047609
+      PlrLaserCharge_2: 861056223
+      PlrLaserCharge_21: 9185697
+      PlrLaserCharge_18: 1125155331
+      PlrLaserCharge_8: 368661569
+      PlrLaserCharge_12: -785880556
+      PlrLaserCharge_15: -1062879138
+      PlrLaserCharge_7: 791134819
+      PlrLaserCharge_19: -1117962196
+      PlrLaserCharge_20: -969048503
+      PlrLaserCharge_16: -1406279769
+      PlrLaserCharge_24: 700310213
+      PlrLaserCharge_17: 2053464149
+      PlrLaserCharge_0: 2018346197
+      PlrLaserCharge_13: 394827936
+      PlrLaserCharge_9: 1296070607
+      PlrLaserCharge_11: -1743202106
+      PlrLaserCharge_1: 702210671
+      PlrLaserCharge_4: -1434589704
+      PlrLaserCharge_6: 490909872
+      PlrLaserCharge_10: -390049552
+      PlrLaserCharge_5: 70029592
+      PlrLaserCharge_22: -1570614020
+      PlrLaserCharge_3: 1844279389
+      PlrLaserCharge_14: -54040630
+      PlrLaserCharge_23: 865501587
+      PlrLaserCharge_25: -1249432395
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

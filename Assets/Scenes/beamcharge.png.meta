@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1fc36ce7321fc404fb1c48c3d040bd77
+guid: 91955dd52289c054e8a7d4b5b445bd8f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -129,13 +129,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: laserfire_0
+      name: beamcharge_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 69
-        width: 64
-        height: 66
+        x: 2
+        y: 144
+        width: 60
+        height: 69
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,20 +143,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d5846d892cc14e4e9b191c7a0242f64
-      internalID: -567315787
+      spriteID: f70e99ce4e9951a429ae9b87f26f8f2a
+      internalID: 394575946
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: laserfire_1
+      name: beamcharge_1
       rect:
         serializedVersion: 2
-        x: 67
-        y: 69
-        width: 64
-        height: 66
+        x: 69
+        y: 144
+        width: 60
+        height: 69
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,20 +164,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc314b676d4fa0045bb6452ee9f501ec
-      internalID: -170420982
+      spriteID: 0515a41dc92d3754293e51c5145956a5
+      internalID: -1644839305
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: laserfire_2
+      name: beamcharge_2
       rect:
         serializedVersion: 2
-        x: 134
-        y: 69
-        width: 64
-        height: 66
+        x: 136
+        y: 144
+        width: 60
+        height: 69
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,20 +185,125 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd888396f31ae8347832b03e19b9f02f
-      internalID: -265155167
+      spriteID: df59873833aec3244be35ba95d758a6f
+      internalID: -1142318325
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: laserfire_3
+      name: beamcharge_3
       rect:
         serializedVersion: 2
-        x: 0
+        x: 203
+        y: 144
+        width: 60
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 800bb40e700dfe24e9a209b463c7f220
+      internalID: -2001829073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beamcharge_4
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 72
+        width: 60
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b4284ff6667a4943a2f72bfd55a3a4f
+      internalID: -1399727164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beamcharge_5
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 72
+        width: 60
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46af8ddc70e94304a95233ded1fc778a
+      internalID: 1168860052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beamcharge_6
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 72
+        width: 60
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c95494bdc338a44e80638e1bf731055
+      internalID: 1535756907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beamcharge_7
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 72
+        width: 60
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2c8d709f896abb45a1abed4097597f3
+      internalID: 339516780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beamcharge_8
+      rect:
+        serializedVersion: 2
+        x: 2
         y: 0
-        width: 64
-        height: 66
+        width: 60
+        height: 69
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,20 +311,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 539f1d2b4fe68e3438792eea631188ee
-      internalID: -1070702292
+      spriteID: c799bcac3a490cf46a79386e7614032f
+      internalID: 135708326
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: laserfire_4
+      name: beamcharge_9
       rect:
         serializedVersion: 2
-        x: 67
+        x: 69
         y: 0
-        width: 64
-        height: 66
+        width: 60
+        height: 69
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e3b5ed3000822e449a656f16a95239a
-      internalID: -270731222
+      spriteID: 2f1dcb1fa42cd3e42bc0aac2730c168c
+      internalID: 1414463037
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: laserfire_5
+      name: beamcharge_10
       rect:
         serializedVersion: 2
-        x: 134
+        x: 136
         y: 0
-        width: 64
-        height: 66
+        width: 60
+        height: 69
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -248,8 +353,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8b6ae2d2258ba4449117e1aba3d388f
-      internalID: -33439493
+      spriteID: a5ae6dbf33a26e142abeee72566422da
+      internalID: -1665807322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beamcharge_11
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 0
+        width: 60
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca026484c6df5b842a103cf4e67347a7
+      internalID: -901595420
       vertices: []
       indices: 
       edges: []
@@ -265,12 +391,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      laserfire_5: -33439493
-      laserfire_0: -567315787
-      laserfire_1: -170420982
-      laserfire_3: -1070702292
-      laserfire_2: -265155167
-      laserfire_4: -270731222
+      beamcharge_5: 1168860052
+      beamcharge_11: -901595420
+      beamcharge_4: -1399727164
+      beamcharge_7: 339516780
+      beamcharge_10: -1665807322
+      beamcharge_1: -1644839305
+      beamcharge_2: -1142318325
+      beamcharge_3: -2001829073
+      beamcharge_9: 1414463037
+      beamcharge_8: 135708326
+      beamcharge_6: 1535756907
+      beamcharge_0: 394575946
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

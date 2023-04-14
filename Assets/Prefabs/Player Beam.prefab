@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1552300267700184194}
   - component: {fileID: 6312309086032137740}
   - component: {fileID: 4478160854991062386}
+  - component: {fileID: 1368315537}
   m_Layer: 0
   m_Name: Player Beam
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 2739736258533216536}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9090909, y: 4.5454545, z: 0.9090909}
+  m_LocalScale: {x: 1, y: 4, z: 0.9090909}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -74,12 +75,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ee609c5afdde53142956704705358e53, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d4eefe5832a8a12489a094f1b1e0e557, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.54, y: 7.68}
+  m_Size: {x: 0.140625, y: 4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -95,19 +96,36 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.000631392, y: -0.0018287897}
+  m_Offset: {x: 0.0011416078, y: 0.0022133589}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.54, y: 7.68}
-    newSize: {x: 0.54, y: 7.68}
+    oldSize: {x: 0.140625, y: 4}
+    newSize: {x: 0.140625, y: 4}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.2965201, y: 7.674988}
+  m_Size: {x: 0.087305546, y: 4.0127764}
   m_EdgeRadius: 0
+--- !u!114 &1368315537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2739736258533216536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50a4c4b610bbe304082f1426ce1d13e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion: {fileID: 6367605799563120569, guid: f62b72242e8d7314190bbf2ce0cab476, type: 3}
+  explosionDamage: 15
+  beamDamage: 1
+  hitDone: 0
+  barrel: {fileID: 0}

@@ -1,8 +1,6 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-
-
-
-
 
     //--CTRL C + CTRL K to apply comments to lines
     //This is the player's fast charging assault weapon
@@ -42,6 +40,7 @@ public class LaserTurret : MonoBehaviour
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerLaserCharge"))
         {
             burstCount = 0;
+            anim.SetInteger("burstCount", burstCount);
         }
 
         //prints animator state -> 1 = 100%
@@ -62,7 +61,7 @@ public class LaserTurret : MonoBehaviour
     //single bool function to house the horrible if statement
     bool firingReady()
     {
-        if((anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1) && anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerLaserCharge") || (anim.GetCurrentAnimatorStateInfo(0).IsName("StartCharge")
+        if((anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1) && anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerLaserCharge") || (anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerLaserStart")
          && anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1))
         {
             return true;

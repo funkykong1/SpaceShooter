@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 91955dd52289c054e8a7d4b5b445bd8f
+guid: f9393ee4347a97a4a81b361c2c2e3cce
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -127,7 +127,259 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: beamcharge_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 144
+        width: 60
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89aed1e6f86530a41a98b50484f83f78
+      internalID: -1788638038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beamcharge_1
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 144
+        width: 60
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f815e50674977994fbcca8a7c340f540
+      internalID: -1556529101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beamcharge_2
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 144
+        width: 60
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62f15f0ab70d1494d8cab497831cc493
+      internalID: -1281585964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beamcharge_3
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 144
+        width: 60
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03c1e96d2ee62354783d4c722f59611a
+      internalID: -1601179269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beamcharge_4
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 72
+        width: 60
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15c23a089de80f14886956028f6b052e
+      internalID: 279180852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beamcharge_5
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 72
+        width: 60
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18fc8fdac853efb4cbf6248e8a8e8959
+      internalID: -1545619499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beamcharge_6
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 72
+        width: 60
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daf1b8f60852db944bca5216489d3a5e
+      internalID: 378051337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beamcharge_7
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 72
+        width: 60
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a29f7637d4d4d54d8f5fe64c91fb1e8
+      internalID: 55253978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beamcharge_8
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 60
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f41646e9f7df9234ba536c26abafab8d
+      internalID: -1112223231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beamcharge_9
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 0
+        width: 60
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93f04ba9d18c4814c9a9eb979b26e17b
+      internalID: 1928419597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beamcharge_10
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 0
+        width: 60
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d856e2c2ad8093458db1e9025903193
+      internalID: 1278234599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beamcharge_11
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 0
+        width: 60
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dff81f79b2efa543bb4861ee4609190
+      internalID: 82463883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -138,7 +390,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      beamcharge_5: -1545619499
+      beamcharge_11: 82463883
+      beamcharge_4: 279180852
+      beamcharge_7: 55253978
+      beamcharge_10: 1278234599
+      beamcharge_1: -1556529101
+      beamcharge_2: -1281585964
+      beamcharge_3: -1601179269
+      beamcharge_9: 1928419597
+      beamcharge_8: -1112223231
+      beamcharge_6: 378051337
+      beamcharge_0: -1788638038
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

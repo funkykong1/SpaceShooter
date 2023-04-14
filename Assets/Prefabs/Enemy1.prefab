@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 605279779}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.7, z: 0}
+  m_LocalPosition: {x: 0, y: 0.18, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -42,7 +42,6 @@ GameObject:
   - component: {fileID: 8549378977495851963}
   - component: {fileID: 5890778636982782848}
   - component: {fileID: 7888656577379554730}
-  - component: {fileID: 169450240517525190}
   - component: {fileID: 3354526121319833853}
   m_Layer: 6
   m_Name: Enemy1
@@ -60,7 +59,7 @@ Transform:
   m_GameObject: {fileID: 7339741673325006680}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.1, y: 1.1, z: 1.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 605279780}
@@ -105,69 +104,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!68 &169450240517525190
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7339741673325006680}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -1.8247203, y: -0.04173249}
-  - {x: -1.6904927, y: -0.107216865}
-  - {x: -1.5687128, y: -0.16807753}
-  - {x: -1.4255333, y: -0.23832582}
-  - {x: -1.2650343, y: -0.31331214}
-  - {x: -1.1428268, y: -0.37481222}
-  - {x: -1.0263481, y: -0.4390409}
-  - {x: -0.9214944, y: -0.49618155}
-  - {x: -0.80088556, y: -0.56165653}
-  - {x: -0.69904, y: -0.62399125}
-  - {x: -0.60608995, y: -0.69796896}
-  - {x: -0.51500887, y: -0.76868016}
-  - {x: -0.45686996, y: -0.8393617}
-  - {x: -0.3935834, y: -0.9278973}
-  - {x: -0.3832003, y: -1.0475714}
-  - {x: -0.32351273, y: -1.1301663}
-  - {x: -0.32535022, y: -1.4586097}
-  - {x: -0.13272783, y: -1.7930663}
-  - {x: -0.0056878515, y: -1.7985415}
-  - {x: 0.066291034, y: -1.7981665}
-  - {x: 0.11840865, y: -1.7966315}
-  - {x: 0.33072034, y: -1.4361162}
-  - {x: 0.33307698, y: -1.2415571}
-  - {x: 0.32815948, y: -1.114229}
-  - {x: 0.39726737, y: -1.0592371}
-  - {x: 0.39966044, y: -0.93228006}
-  - {x: 0.4734319, y: -0.8455898}
-  - {x: 0.5482123, y: -0.77719074}
-  - {x: 0.6230135, y: -0.71603703}
-  - {x: 0.6755095, y: -0.67259914}
-  - {x: 0.75364363, y: -0.6213936}
-  - {x: 0.8374574, y: -0.57788885}
-  - {x: 0.9145308, y: -0.5366919}
-  - {x: 0.9866699, y: -0.49245596}
-  - {x: 1.0658343, y: -0.4610155}
-  - {x: 1.1381271, y: -0.417643}
-  - {x: 1.2111372, y: -0.37731215}
-  - {x: 1.3005176, y: -0.3237033}
-  - {x: 1.4111578, y: -0.27406693}
-  - {x: 1.5281051, y: -0.21435435}
-  - {x: 1.6472261, y: -0.15691456}
-  - {x: 1.7331122, y: -0.10472821}
-  - {x: 1.8283792, y: -0.058732685}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!212 &3354526121319833853
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -209,12 +145,12 @@ SpriteRenderer:
   m_SortingLayerID: 829450321
   m_SortingLayer: 2
   m_SortingOrder: 1
-  m_Sprite: {fileID: -35796417, guid: 06cc7b4ff7d48824299e6f0fa943a536, type: 3}
+  m_Sprite: {fileID: -567315787, guid: 1fc36ce7321fc404fb1c48c3d040bd77, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3.84, y: 3.96}
+  m_Size: {x: 1, y: 1.03125}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
