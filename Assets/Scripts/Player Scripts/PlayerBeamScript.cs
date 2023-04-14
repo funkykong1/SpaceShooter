@@ -49,6 +49,13 @@ public class PlayerBeamScript : MonoBehaviour
         {
             Debug.Log("Hit the bad guy for " + beamDamage + " tick damage!");
         }
+        else if (other.CompareTag("LaserEnemy"))
+        {
+            //fuck off enemy laser if it dares touch the beam
+            //make a really cool explosion spawn where the intercept happened
+            Instantiate(explosion, other.transform.position, transform.rotation);
+            Destroy(other.gameObject);
+        }
     }
 
 
@@ -57,6 +64,7 @@ public class PlayerBeamScript : MonoBehaviour
     {
         //RaycastAll enables piercing
         RaycastHit2D[] hits;
+        //LaserEnemy tag will also explode le- nvm
         hits = Physics2D.RaycastAll(barrel.transform.position, transform.up, Mathf.Infinity, LayerMask.GetMask("Enemy"));
 
         //spawn beam explosions if its the first tick
