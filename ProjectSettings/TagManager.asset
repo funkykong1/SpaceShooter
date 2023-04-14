@@ -5,8 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
-  - PlayerWeapons
-  - EnemyWeapons
+  - LaserEnemy
+  - BeamPlayer
+  - BeamEnemy
   layers:
   - Default
   - TransparentFX
