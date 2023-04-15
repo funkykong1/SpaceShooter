@@ -1,13 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-
-
 // plr positio 0, 0, 0 xyz
 // jolloin beam positio tulee olla -0.388, 12.258, -12.52142
 // tällöin säde tulee suoraan spriten aseesta, luultavasti tosin muuttuu, kun korvataan plr placeholder sprite`
-// unity gameobject child?
+// ..unity gameobject child?
 
 
 //This is the player's heavier beam weapon
@@ -31,11 +28,7 @@ public class BeamTurret : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //historic vv
-        //transform.position = new Vector3 (playerLocation);
-
-
-        //press Q to vaporize them!
+        //press Q to vaporize the bad guys
         //No bugs either :)
         if (Input.GetKeyDown(KeyCode.Q) && firingReady())
         {
@@ -43,7 +36,6 @@ public class BeamTurret : MonoBehaviour
         }
     }
 
-    //super easily made lol
     //handles whether beam active or no
     public void ShootBeam()
     {
@@ -52,7 +44,7 @@ public class BeamTurret : MonoBehaviour
     }
     public void DeactivateBeam()
     {
-        beamScript.hitFalse();
+        beamScript.HitFalse();
         beam.SetActive(false);
         anim.SetTrigger("reload");
     }

@@ -13,11 +13,6 @@ public class LaserEnemy : MonoBehaviour
     //bullets will phase through inactive enemies
     private bool isVisible;
 
-
-    //enemy will move to assigned patrol point until true
-    public float enemySpeed = 5f;
-    private float health;
-
     //references 2 animator
     public bool firing;
 
@@ -28,18 +23,14 @@ public class LaserEnemy : MonoBehaviour
         //tell script which is what
         anim = GetComponent<Animator>();
     }
-
-    void Start()
-    {
-        //start of round enemy not visible
-        //isVisible = false;
-    }
+    
     void Update() {
+        
         //fucking KILL yourself
-        if(firing)
-        anim.SetBool("firing", true);
-        else 
-        anim.SetBool("firing", false);
+        // if(firing)
+        // anim.SetBool("firing", true);
+        // else 
+        // anim.SetBool("firing", false);
         
         if (transform.position.y < 17)
         {
@@ -54,12 +45,12 @@ public class LaserEnemy : MonoBehaviour
             if(anim.GetCurrentAnimatorStateInfo(0).IsName("EnemyLaserFire") &&
             anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1)
             {
-                firing = false;
+                anim.SetBool("firing", false);
             } 
             else if (anim.GetCurrentAnimatorStateInfo(0).IsName("EnemyLaserCharge") &&
                     anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1)
                     {
-                        firing = true;
+                        anim.SetBool("firing", true);
                     }
         }
     }

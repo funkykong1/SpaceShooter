@@ -15,4 +15,8 @@ public class EnemyBeamScript : MonoBehaviour
     {
         
     }
+    public void HitFalse()
+    {
+        
+    }
 }

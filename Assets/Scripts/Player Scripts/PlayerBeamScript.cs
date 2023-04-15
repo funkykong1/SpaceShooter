@@ -24,12 +24,6 @@ public class PlayerBeamScript : MonoBehaviour
         beamDamage = 0.5f;
         hitDone = false;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     
     //initial bit of damage, explosion here
     void OnTriggerEnter2D(Collider2D other)
@@ -79,11 +73,6 @@ public class PlayerBeamScript : MonoBehaviour
                 hitDone = true;
             }
         }
-    }
-    public void hitFalse()
-    {
-        hitDone = false;
-        Debug.Log("reset explosion tag!");
     }
 
     //OLD LINES HERE
