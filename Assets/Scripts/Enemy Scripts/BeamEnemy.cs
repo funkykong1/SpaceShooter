@@ -6,10 +6,15 @@ public class BeamEnemy : MonoBehaviour
 {
     public GameObject EnemyBeam;
     private Animator anim;
+
+    private bool isVisible;
+    private float health;
+
+    public bool firing;
+    public GameObject enemyBeam;
     
-    private bool enemyVisible;
-    // Start is called before the first frame update
-    void Start()
+    
+    void Awake()
     {
         
     }

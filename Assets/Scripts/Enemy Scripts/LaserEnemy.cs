@@ -11,12 +11,12 @@ public class LaserEnemy : MonoBehaviour
 
 
     //bullets will phase through inactive enemies
-    private bool enemyVisible;
+    private bool isVisible;
 
 
     //enemy will move to assigned patrol point until true
     public float enemySpeed = 5f;
-    private float hp;
+    private float health;
 
     //references 2 animator
     public bool firing;
@@ -32,7 +32,7 @@ public class LaserEnemy : MonoBehaviour
     void Start()
     {
         //start of round enemy not visible
-        //enemyVisible = false;
+        //isVisible = false;
     }
     void Update() {
         //fucking KILL yourself
@@ -44,12 +44,12 @@ public class LaserEnemy : MonoBehaviour
         if (transform.position.y < 17)
         {
             //start firing and become hittable
-            enemyVisible = true;
+            isVisible = true;
         }
 
 
         //normalized time means value of 0.00-1.00 dictates anim length
-        if (enemyVisible == true) {
+        if (isVisible == true) {
 
             if(anim.GetCurrentAnimatorStateInfo(0).IsName("EnemyLaserFire") &&
             anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1)

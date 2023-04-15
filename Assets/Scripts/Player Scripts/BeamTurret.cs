@@ -21,19 +21,11 @@ public class BeamTurret : MonoBehaviour
     public GameObject beam;
     private PlayerBeamScript beamScript;
 
-    //animator bool
-    public bool firing;
-
     void Awake()
     {
         //tell script what is what
         anim = GetComponent<Animator>();
         beamScript = GameObject.Find("Beam").GetComponent<PlayerBeamScript>();
-        firing = false;
-    }
-    void Start()
-    {
-        
     }
 
     // Update is called once per frame
