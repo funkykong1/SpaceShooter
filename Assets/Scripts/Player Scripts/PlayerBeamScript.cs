@@ -34,8 +34,6 @@ public class PlayerBeamScript : MonoBehaviour
         }
     }
 
-
-
     //secondary bit of damage, welding effect? here
     void OnTriggerStay2D(Collider2D other)
     {

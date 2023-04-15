@@ -44,7 +44,7 @@ public class BeamTurret : MonoBehaviour
     }
     public void DeactivateBeam()
     {
-        beamScript.HitFalse();
+        beamScript.hitDone = false;
         beam.SetActive(false);
         anim.SetTrigger("reload");
     }
