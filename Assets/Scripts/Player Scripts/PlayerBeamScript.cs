@@ -8,6 +8,7 @@ public class PlayerBeamScript : MonoBehaviour
     //Add damage scripts here!
 
     public GameObject explosion;
+    public GameObject shipExplosion;
     public float explosionDamage;
     public float beamDamage;
     public bool hitDone;
@@ -64,13 +65,12 @@ public class PlayerBeamScript : MonoBehaviour
         //spawn beam explosions if its the first tick
         if (!hitDone)
         {
+            hitDone = true;
             for (int i = 0; i < hits.Length; i++)
             {
                 RaycastHit2D hit = hits[i];
                 Instantiate(explosion, hit.point, transform.rotation);
                 Debug.Log("initial pierce hit " + (i+1) + " times!");
-
-                hitDone = true;
             }
         }
     }
