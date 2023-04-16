@@ -7,6 +7,7 @@ using System;
 public class PlayerController : MonoBehaviour
 {
 
+    public ShipStats shipStats;
 
     //used for movement
     public float horizontalInput;

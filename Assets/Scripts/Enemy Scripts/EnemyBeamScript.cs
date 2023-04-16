@@ -13,14 +13,11 @@ public class EnemyBeamScript : MonoBehaviour
     public bool hitDone;
     public float enemyBeamDamage;
 
-
-
-    // Start is called before the first frame update
     void Start()
     {
+        gameObject.SetActive(false);
         enemyBeamDamage = 0.5f;
         hitDone = false;
-        gameObject.SetActive(false);
     }
 
     void OnTriggerEnter2D(Collider2D other)
