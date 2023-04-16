@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1fc36ce7321fc404fb1c48c3d040bd77
+guid: 35e2711fbe8af3c419175bc782f74ac8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -129,127 +129,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: laserfire_0
+      name: BeamThrusters_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 8
-        width: 64
-        height: 58
+        y: 0
+        width: 36
+        height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64b5bf35f2d190848b46eb634403de08
-      internalID: 1792133077
+      spriteID: a25d85c5a8d11174191c7e33649e2c0f
+      internalID: 1418829187
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: laserfire_1
+      name: BeamThrusters_1
       rect:
         serializedVersion: 2
-        x: 66
-        y: 8
-        width: 64
-        height: 58
+        x: 38
+        y: 0
+        width: 36
+        height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2287118886e2344790be3418a0ad8b0
-      internalID: -1228394576
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: laserfire_2
-      rect:
-        serializedVersion: 2
-        x: 132
-        y: 8
-        width: 64
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f7307176c8a95b44988fa77530b66342
-      internalID: -1340929743
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: laserfire_3
-      rect:
-        serializedVersion: 2
-        x: 198
-        y: 8
-        width: 64
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1806754ba57736d478236158014f5a12
-      internalID: -1701551508
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: laserfire_4
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 8
-        width: 64
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 523a17f10e413c549a702d99bb474887
-      internalID: -430065169
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: laserfire_5
-      rect:
-        serializedVersion: 2
-        x: 330
-        y: 8
-        width: 64
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1129bd82cc9d8f34f82db2cb2919808d
-      internalID: 1564270520
+      spriteID: 16f4863d189d1b241a4c565746901d7e
+      internalID: -1184306083
       vertices: []
       indices: 
       edges: []
@@ -265,12 +181,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      laserfire_5: 1564270520
-      laserfire_0: 1792133077
-      laserfire_1: -1228394576
-      laserfire_3: -1701551508
-      laserfire_2: -1340929743
-      laserfire_4: -430065169
+      BeamThrusters_0: 1418829187
+      BeamThrusters_1: -1184306083
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

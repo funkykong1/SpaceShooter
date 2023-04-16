@@ -58,7 +58,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: EnemyBeamFire
-  m_Speed: 1
+  m_Speed: 1.1
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 8393739229005603913}
@@ -71,7 +71,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 6f409180c65ffc740a7b6cde183a614f, type: 2}
+  m_Motion: {fileID: 7400000, guid: 1e0e5402802ad6348ac45f1fe56a5db2, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -119,7 +119,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: EnemyBeamCharge
-  m_Speed: 0.8
+  m_Speed: 0.6
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -4945770376705578226}
@@ -132,7 +132,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: db6184e596cb9d741a2e15864a9a3026, type: 2}
+  m_Motion: {fileID: 7400000, guid: 4f05194a741d2ed4b81a7f91f18a1cce, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

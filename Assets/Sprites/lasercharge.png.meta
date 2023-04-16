@@ -44,12 +44,12 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 0
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -133,9 +133,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 207
+        y: 8
         width: 64
-        height: 66
+        height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,8 +143,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88f0107d6baae4749985d2f4430367f3
-      internalID: -418230425
+      spriteID: e63185cfeceb06047a26b52ad717cd65
+      internalID: -1093759058
       vertices: []
       indices: 
       edges: []
@@ -153,10 +153,10 @@ TextureImporter:
       name: lasercharge_1
       rect:
         serializedVersion: 2
-        x: 67
-        y: 207
+        x: 66
+        y: 8
         width: 64
-        height: 66
+        height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,8 +164,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0167fdba28342154da0a7bac247e720e
-      internalID: -1826363879
+      spriteID: 1f656190382165c42b256912b880f175
+      internalID: -930328561
       vertices: []
       indices: 
       edges: []
@@ -174,10 +174,10 @@ TextureImporter:
       name: lasercharge_2
       rect:
         serializedVersion: 2
-        x: 134
-        y: 207
+        x: 132
+        y: 8
         width: 64
-        height: 66
+        height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,8 +185,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03ddcbe6fa1d4b748a0fc0a45b4c8a0d
-      internalID: 1077367050
+      spriteID: be33369f2b2935f4b88890e35f30761e
+      internalID: 521064319
       vertices: []
       indices: 
       edges: []
@@ -195,10 +195,10 @@ TextureImporter:
       name: lasercharge_3
       rect:
         serializedVersion: 2
-        x: 201
-        y: 207
+        x: 198
+        y: 8
         width: 64
-        height: 66
+        height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,8 +206,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc1ba8defc8766b459065789f50b70bd
-      internalID: -210365728
+      spriteID: e811fc7b6ee6ea141ae1d1dae92078e6
+      internalID: 1769431139
       vertices: []
       indices: 
       edges: []
@@ -216,10 +216,10 @@ TextureImporter:
       name: lasercharge_4
       rect:
         serializedVersion: 2
-        x: 268
-        y: 207
+        x: 264
+        y: 8
         width: 64
-        height: 66
+        height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,8 +227,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d90b9f0acd2e2b47a603f48154798dc
-      internalID: -1251941193
+      spriteID: f115685c99a1b8f49a1b5d9a1d405ac5
+      internalID: -776913410
       vertices: []
       indices: 
       edges: []
@@ -237,10 +237,10 @@ TextureImporter:
       name: lasercharge_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 138
+        x: 330
+        y: 8
         width: 64
-        height: 66
+        height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -248,8 +248,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d7166bef2be4744bad01cea042c546b
-      internalID: 722955102
+      spriteID: 7835e66c07195824d9b971474716bc49
+      internalID: 889936126
       vertices: []
       indices: 
       edges: []
@@ -258,10 +258,10 @@ TextureImporter:
       name: lasercharge_6
       rect:
         serializedVersion: 2
-        x: 67
-        y: 138
+        x: 396
+        y: 8
         width: 64
-        height: 66
+        height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -269,8 +269,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ad34b5992b59ec428c0ea033cc5eba4
-      internalID: -2125001952
+      spriteID: 35d4e50cc17e6c245b6cab9d5479955f
+      internalID: 2047214743
       vertices: []
       indices: 
       edges: []
@@ -279,10 +279,10 @@ TextureImporter:
       name: lasercharge_7
       rect:
         serializedVersion: 2
-        x: 134
-        y: 138
+        x: 462
+        y: 8
         width: 64
-        height: 66
+        height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,8 +290,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5beb0844cae92734da7f62ef86797a60
-      internalID: -333998548
+      spriteID: 545db62a4f78851418b202378a836a2f
+      internalID: 423621144
       vertices: []
       indices: 
       edges: []
@@ -300,10 +300,10 @@ TextureImporter:
       name: lasercharge_8
       rect:
         serializedVersion: 2
-        x: 201
-        y: 138
+        x: 528
+        y: 8
         width: 64
-        height: 66
+        height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -311,8 +311,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff49eea80a605eb449c518483d519035
-      internalID: -1951741676
+      spriteID: 25b6d1ed3ab68a44dbb2f28135f6c472
+      internalID: 1044362107
       vertices: []
       indices: 
       edges: []
@@ -321,10 +321,10 @@ TextureImporter:
       name: lasercharge_9
       rect:
         serializedVersion: 2
-        x: 268
-        y: 138
+        x: 594
+        y: 8
         width: 64
-        height: 66
+        height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,8 +332,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5ad6af89cce9894f88d92d26bfac527
-      internalID: -1731278624
+      spriteID: 166ef169423e6bb43a1831c3cb685d1b
+      internalID: 2080896802
       vertices: []
       indices: 
       edges: []
@@ -342,10 +342,10 @@ TextureImporter:
       name: lasercharge_10
       rect:
         serializedVersion: 2
-        x: 0
-        y: 69
+        x: 660
+        y: 8
         width: 64
-        height: 66
+        height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -353,8 +353,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f79f5103956374f4f86909703a35acac
-      internalID: 1608938090
+      spriteID: 442a61041a3052449a388039297f8b64
+      internalID: -1859444214
       vertices: []
       indices: 
       edges: []
@@ -363,10 +363,10 @@ TextureImporter:
       name: lasercharge_11
       rect:
         serializedVersion: 2
-        x: 67
-        y: 69
+        x: 726
+        y: 8
         width: 64
-        height: 66
+        height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -374,8 +374,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 234d50a85e061374bbedb47af87338de
-      internalID: -1032584905
+      spriteID: 26616ff622e68bd4ba3e8a2a53f6e9bb
+      internalID: -613131902
       vertices: []
       indices: 
       edges: []
@@ -384,10 +384,10 @@ TextureImporter:
       name: lasercharge_12
       rect:
         serializedVersion: 2
-        x: 134
-        y: 69
+        x: 792
+        y: 8
         width: 64
-        height: 66
+        height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -395,8 +395,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8f997e8429ced542a12b7db3c9d63cd
-      internalID: 712573681
+      spriteID: fe9df3b65fa5f6243852a1c73be33d6f
+      internalID: 378141450
       vertices: []
       indices: 
       edges: []
@@ -405,10 +405,10 @@ TextureImporter:
       name: lasercharge_13
       rect:
         serializedVersion: 2
-        x: 201
-        y: 69
+        x: 858
+        y: 8
         width: 64
-        height: 66
+        height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -416,8 +416,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83e15bea17db71443b41007c4c6a9c85
-      internalID: 1662655146
+      spriteID: f528314ddce253443979b53c35e65cf1
+      internalID: -1847683006
       vertices: []
       indices: 
       edges: []
@@ -426,10 +426,10 @@ TextureImporter:
       name: lasercharge_14
       rect:
         serializedVersion: 2
-        x: 268
-        y: 69
+        x: 924
+        y: 8
         width: 64
-        height: 66
+        height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -437,8 +437,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fdd03c2eb95718439a5b34004f572bd
-      internalID: -1353923952
+      spriteID: 96729cafd085d54458d6e9aab39febff
+      internalID: 946635490
       vertices: []
       indices: 
       edges: []
@@ -447,10 +447,10 @@ TextureImporter:
       name: lasercharge_15
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 990
+        y: 8
         width: 64
-        height: 66
+        height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -458,8 +458,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36b6b9de562fabb44a8f09eeb69b8ffe
-      internalID: -1980294867
+      spriteID: 6a0fabdb491a2214f9a11b7954326b52
+      internalID: 1416747404
       vertices: []
       indices: 
       edges: []
@@ -468,10 +468,10 @@ TextureImporter:
       name: lasercharge_16
       rect:
         serializedVersion: 2
-        x: 67
-        y: 0
+        x: 1056
+        y: 8
         width: 64
-        height: 66
+        height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -479,8 +479,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9f242c5ff347084b96ea28bfd49c48d
-      internalID: -1899215602
+      spriteID: 65e6c79903c68904e9b96fd048926c8d
+      internalID: -1159083028
       vertices: []
       indices: 
       edges: []
@@ -489,10 +489,10 @@ TextureImporter:
       name: lasercharge_17
       rect:
         serializedVersion: 2
-        x: 134
-        y: 0
+        x: 1122
+        y: 8
         width: 64
-        height: 66
+        height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -500,8 +500,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5f2916bb46641740b51c25f762e5532
-      internalID: 835428770
+      spriteID: ad1d06a8d7ab47a4d862fa6fa52f7d5a
+      internalID: 321609356
       vertices: []
       indices: 
       edges: []
@@ -510,10 +510,10 @@ TextureImporter:
       name: lasercharge_18
       rect:
         serializedVersion: 2
-        x: 201
-        y: 0
+        x: 1188
+        y: 8
         width: 64
-        height: 66
+        height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -521,8 +521,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 606b88c5e3618a04eb97b0ba4c8533fe
-      internalID: 650998898
+      spriteID: a20a02b68c688a84581b5d09cd2a8ae7
+      internalID: -1919876761
       vertices: []
       indices: 
       edges: []
@@ -531,10 +531,10 @@ TextureImporter:
       name: lasercharge_19
       rect:
         serializedVersion: 2
-        x: 268
-        y: 0
+        x: 1254
+        y: 8
         width: 64
-        height: 66
+        height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -542,8 +542,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0fb066614cc71e34a890c334e602c8e7
-      internalID: -1398266504
+      spriteID: 3cf6c6a347e7df543b52282e7d321874
+      internalID: -2072202461
       vertices: []
       indices: 
       edges: []
@@ -559,26 +559,26 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      lasercharge_4: -1251941193
-      lasercharge_6: -2125001952
-      lasercharge_9: -1731278624
-      lasercharge_15: -1980294867
-      lasercharge_12: 712573681
-      lasercharge_3: -210365728
-      lasercharge_13: 1662655146
-      lasercharge_16: -1899215602
-      lasercharge_18: 650998898
-      lasercharge_5: 722955102
-      lasercharge_0: -418230425
-      lasercharge_2: 1077367050
-      lasercharge_10: 1608938090
-      lasercharge_8: -1951741676
-      lasercharge_14: -1353923952
-      lasercharge_17: 835428770
-      lasercharge_11: -1032584905
-      lasercharge_19: -1398266504
-      lasercharge_1: -1826363879
-      lasercharge_7: -333998548
+      lasercharge_4: -776913410
+      lasercharge_6: 2047214743
+      lasercharge_9: 2080896802
+      lasercharge_15: 1416747404
+      lasercharge_12: 378141450
+      lasercharge_3: 1769431139
+      lasercharge_13: -1847683006
+      lasercharge_16: -1159083028
+      lasercharge_18: -1919876761
+      lasercharge_5: 889936126
+      lasercharge_0: -1093759058
+      lasercharge_2: 521064319
+      lasercharge_10: -1859444214
+      lasercharge_8: 1044362107
+      lasercharge_14: 946635490
+      lasercharge_17: 321609356
+      lasercharge_11: -613131902
+      lasercharge_19: -2072202461
+      lasercharge_1: -930328561
+      lasercharge_7: 423621144
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

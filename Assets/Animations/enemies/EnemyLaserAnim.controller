@@ -21,7 +21,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 2ed322c3d079a2f4eb61fd0d6e1d3bdf, type: 2}
+  m_Motion: {fileID: 7400000, guid: b7fb5ad9f42cf5648b6b5176edfcc232, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -138,7 +138,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: EnemyLaserFire
-  m_Speed: 1.25
+  m_Speed: 1.4
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -752719350411105959}
@@ -151,7 +151,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 19fe2be7f9d4db049bbad17481b2d1b3, type: 2}
+  m_Motion: {fileID: 7400000, guid: 134f890eab099be4fbd9c5fe4f1b5a93, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

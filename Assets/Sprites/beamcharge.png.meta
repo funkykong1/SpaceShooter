@@ -133,9 +133,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2
-        y: 144
+        y: 0
         width: 60
-        height: 69
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,8 +143,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89aed1e6f86530a41a98b50484f83f78
-      internalID: -1788638038
+      spriteID: 95a3561156776cd42ac3648cbc08fe0e
+      internalID: -803374703
       vertices: []
       indices: 
       edges: []
@@ -153,10 +153,10 @@ TextureImporter:
       name: beamcharge_1
       rect:
         serializedVersion: 2
-        x: 69
-        y: 144
+        x: 68
+        y: 0
         width: 60
-        height: 69
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,8 +164,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f815e50674977994fbcca8a7c340f540
-      internalID: -1556529101
+      spriteID: 885e465ffe0ab724c9c0365120529009
+      internalID: -46632423
       vertices: []
       indices: 
       edges: []
@@ -174,10 +174,10 @@ TextureImporter:
       name: beamcharge_2
       rect:
         serializedVersion: 2
-        x: 136
-        y: 144
+        x: 134
+        y: 0
         width: 60
-        height: 69
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,8 +185,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62f15f0ab70d1494d8cab497831cc493
-      internalID: -1281585964
+      spriteID: 223b6cab95148bc4a8a96235a32a1305
+      internalID: -899624813
       vertices: []
       indices: 
       edges: []
@@ -195,10 +195,10 @@ TextureImporter:
       name: beamcharge_3
       rect:
         serializedVersion: 2
-        x: 203
-        y: 144
+        x: 200
+        y: 0
         width: 60
-        height: 69
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,8 +206,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03c1e96d2ee62354783d4c722f59611a
-      internalID: -1601179269
+      spriteID: 50bb023a94c2c95438258fc3ac9cbb27
+      internalID: 885971493
       vertices: []
       indices: 
       edges: []
@@ -216,10 +216,10 @@ TextureImporter:
       name: beamcharge_4
       rect:
         serializedVersion: 2
-        x: 2
-        y: 72
+        x: 266
+        y: 0
         width: 60
-        height: 69
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,8 +227,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15c23a089de80f14886956028f6b052e
-      internalID: 279180852
+      spriteID: 3271d8637fae5a640a287559f50f1bf3
+      internalID: -716044977
       vertices: []
       indices: 
       edges: []
@@ -237,10 +237,10 @@ TextureImporter:
       name: beamcharge_5
       rect:
         serializedVersion: 2
-        x: 69
-        y: 72
+        x: 332
+        y: 0
         width: 60
-        height: 69
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -248,8 +248,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18fc8fdac853efb4cbf6248e8a8e8959
-      internalID: -1545619499
+      spriteID: 03afef82a091d8941a774cc61766f1fc
+      internalID: 1191353990
       vertices: []
       indices: 
       edges: []
@@ -258,10 +258,10 @@ TextureImporter:
       name: beamcharge_6
       rect:
         serializedVersion: 2
-        x: 136
-        y: 72
+        x: 398
+        y: 0
         width: 60
-        height: 69
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -269,8 +269,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: daf1b8f60852db944bca5216489d3a5e
-      internalID: 378051337
+      spriteID: 0aaaae728db36254cb07507c96203977
+      internalID: -1859554627
       vertices: []
       indices: 
       edges: []
@@ -279,10 +279,10 @@ TextureImporter:
       name: beamcharge_7
       rect:
         serializedVersion: 2
-        x: 203
-        y: 72
+        x: 464
+        y: 0
         width: 60
-        height: 69
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,8 +290,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a29f7637d4d4d54d8f5fe64c91fb1e8
-      internalID: 55253978
+      spriteID: b6f6b692eb43bec408da8fd2e5b5bf45
+      internalID: -1180722265
       vertices: []
       indices: 
       edges: []
@@ -300,10 +300,10 @@ TextureImporter:
       name: beamcharge_8
       rect:
         serializedVersion: 2
-        x: 2
+        x: 530
         y: 0
         width: 60
-        height: 69
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -311,8 +311,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f41646e9f7df9234ba536c26abafab8d
-      internalID: -1112223231
+      spriteID: e85cb24aaa6cff44daf9d0eb9be629c8
+      internalID: 987826548
       vertices: []
       indices: 
       edges: []
@@ -321,10 +321,10 @@ TextureImporter:
       name: beamcharge_9
       rect:
         serializedVersion: 2
-        x: 69
+        x: 596
         y: 0
         width: 60
-        height: 69
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,8 +332,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93f04ba9d18c4814c9a9eb979b26e17b
-      internalID: 1928419597
+      spriteID: 99bbfef30835c8c48906c1c04e01f1f0
+      internalID: 1367296545
       vertices: []
       indices: 
       edges: []
@@ -342,10 +342,10 @@ TextureImporter:
       name: beamcharge_10
       rect:
         serializedVersion: 2
-        x: 136
+        x: 662
         y: 0
         width: 60
-        height: 69
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -353,8 +353,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d856e2c2ad8093458db1e9025903193
-      internalID: 1278234599
+      spriteID: f6b23e6cbff736d42bb85826b39e503c
+      internalID: -900698375
       vertices: []
       indices: 
       edges: []
@@ -363,10 +363,10 @@ TextureImporter:
       name: beamcharge_11
       rect:
         serializedVersion: 2
-        x: 203
+        x: 728
         y: 0
         width: 60
-        height: 69
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -374,8 +374,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7dff81f79b2efa543bb4861ee4609190
-      internalID: 82463883
+      spriteID: 978bca162a47423408bfeb313708b47f
+      internalID: 1519661932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beamcharge_12
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 0
+        width: 60
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f29345bb48fca39488f9b4abec958315
+      internalID: -1773484839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beamcharge_13
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 0
+        width: 60
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ec58df5adbc4614ab2b568757ed3036
+      internalID: -1655441563
       vertices: []
       indices: 
       edges: []
@@ -391,18 +433,20 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      beamcharge_5: -1545619499
-      beamcharge_11: 82463883
-      beamcharge_4: 279180852
-      beamcharge_7: 55253978
-      beamcharge_10: 1278234599
-      beamcharge_1: -1556529101
-      beamcharge_2: -1281585964
-      beamcharge_3: -1601179269
-      beamcharge_9: 1928419597
-      beamcharge_8: -1112223231
-      beamcharge_6: 378051337
-      beamcharge_0: -1788638038
+      beamcharge_5: 1191353990
+      beamcharge_11: 1519661932
+      beamcharge_4: -716044977
+      beamcharge_7: -1180722265
+      beamcharge_10: -900698375
+      beamcharge_1: -46632423
+      beamcharge_2: -899624813
+      beamcharge_3: 885971493
+      beamcharge_9: 1367296545
+      beamcharge_13: -1655441563
+      beamcharge_8: 987826548
+      beamcharge_12: -1773484839
+      beamcharge_6: -1859554627
+      beamcharge_0: -803374703
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
