@@ -7,22 +7,24 @@ public class PlayerBeamScript : MonoBehaviour
 
     //Add damage scripts here!
 
-    private BeamTurret turret;
     public GameObject explosion;
     public float explosionDamage;
     public float beamDamage;
     public bool hitDone;
-    public Transform barrel;
+    
+    private Transform barrel;
+    private BeamTurret turret;
     
     void Awake()
     {
         turret = GameObject.Find("Player Beam").GetComponent<BeamTurret>();
+        barrel = GameObject.Find("Barrel").GetComponent<Transform>();
     }
     void Start()
     {
-        gameObject.SetActive(false);
         beamDamage = 0.5f;
         hitDone = false;
+        gameObject.SetActive(false);
     }
     
     //initial bit of damage, explosion here

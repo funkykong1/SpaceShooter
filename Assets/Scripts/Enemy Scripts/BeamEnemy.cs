@@ -4,26 +4,25 @@ using UnityEngine;
 
 public class BeamEnemy : MonoBehaviour
 {
-    public GameObject EnemyBeam;
     private Animator anim;
 
     private bool isVisible;
     private float health;
-
-    public bool firing;
     public GameObject enemyBeam;
     private EnemyBeamScript enemyBeamScript;
     
     
     void Awake()
     {
+        anim = GetComponent<Animator>();
         enemyBeamScript = enemyBeam.GetComponent<EnemyBeamScript>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (firingReady())
+            ShootEnemyBeam();
     }
 
     public void ShootEnemyBeam()
@@ -33,8 +32,17 @@ public class BeamEnemy : MonoBehaviour
     }
     public void DeactivateEnemyBeam()
     {
-        enemyBeamScript.HitFalse();
+        enemyBeamScript.hitDone = false;
         enemyBeam.SetActive(false);
         anim.SetTrigger("reload");
+    }
+    bool firingReady()
+    {
+        if((anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1) && anim.GetCurrentAnimatorStateInfo(0).IsName("EnemyBeamCharge"))
+        {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
