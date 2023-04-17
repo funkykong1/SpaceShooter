@@ -422,6 +422,10 @@ PrefabInstance:
       value: Beam
       objectReference: {fileID: 0}
     - target: {fileID: 2172830438642355792, guid: 5edf27bd6ee705946bd012460eda3cf3, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2172830438642355792, guid: 5edf27bd6ee705946bd012460eda3cf3, type: 3}
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
@@ -877,21 +881,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 605279779, guid: ed0663f95247040408b0893b8745b67f, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 2329798686478662773, guid: ed0663f95247040408b0893b8745b67f, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 7339741673325006680, guid: ed0663f95247040408b0893b8745b67f, type: 3}
       propertyPath: m_Name
       value: Enemy1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7339741673325006680, guid: ed0663f95247040408b0893b8745b67f, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8549378977495851963, guid: ed0663f95247040408b0893b8745b67f, type: 3}
       propertyPath: m_RootOrder

@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(playerHealth.health <= 0)
+        if(playerHealth.currHealth <= 0)
         {
             // nuh gameManager.GameOver();
         }

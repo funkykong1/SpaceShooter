@@ -6,7 +6,7 @@ using System;
 public class EnemyBulletScript : MonoBehaviour
 {
     public float speed = 10f;
-    public float enemyBulletDamage = 25;
+    public int enemyBulletDamage = 25;
 
 
     // Start is called before the first frame update
@@ -21,9 +21,8 @@ public class EnemyBulletScript : MonoBehaviour
     {
 
     if (transform.position.y < -25)
-    {
         Destroy(gameObject); 
-    }
+    
 
         transform.Translate(Vector3.up * Time.deltaTime * speed);
     }
@@ -33,7 +32,7 @@ public class EnemyBulletScript : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Debug.Log("Taken a hit" + " for " + enemyBulletDamage * 2 + " damage!!!");
-            other.gameObject.GetComponent<PlayerHealth>().health -= enemyBulletDamage;
+            other.gameObject.GetComponent<PlayerHealth>().currHealth -= enemyBulletDamage;
             Destroy(gameObject);
         } 
     }

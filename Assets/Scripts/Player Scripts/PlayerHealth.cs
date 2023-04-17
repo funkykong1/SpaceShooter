@@ -5,10 +5,10 @@ using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
+
+
     //playr hp.
-    public float health;
-    public float maxHealth;
-    private float m_health;
+    private ShipStats shipStats;
 
     //hp bar references
     public Image healthBar;
@@ -25,15 +25,15 @@ public class PlayerHealth : MonoBehaviour
     private bool CR_running;
 
 
+    public int currHealth;
+
     // Start is called before the first frame update
     void Start()
     {
         //set bools
         CR_running = false;
-        maxHealth = health;
-        m_health = health;
         //update hp bar color once
-        healthBar.color = gradient.Evaluate(health / 100);
+        healthBar.color = gradient.Evaluate(currHealth / 100);
         //hp bar fade out timer
         ResetTimer();
 
@@ -42,15 +42,15 @@ public class PlayerHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        healthBar.fillAmount = Mathf.Clamp(health / maxHealth, 0, 1);
+        healthBar.fillAmount = Mathf.Clamp(currHealth / shipStats.maxHealth, 0, 1);
 
         //0 is empty and 1 is completely full, therefore we divide by the amount of health in the plane
         //healthBar.color = gradient.Evaluate(health / 100);
-        if(health != m_health)
+        if(currHealth != shipStats.maxHealth)
         {
-            healthBar.color = gradient.Evaluate(health / 100);
+            healthBar.color = gradient.Evaluate(currHealth / 100);
             StartCoroutine(FadeIn());
-            m_health = health;
+            shipStats.maxHealth = currHealth;
             ResetTimer();
         }
 
