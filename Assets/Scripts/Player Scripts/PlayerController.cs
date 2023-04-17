@@ -13,11 +13,8 @@ public class PlayerController : MonoBehaviour
     public float horizontalInput;
     public float verticalInput;
     
-    //burst laser cd
-    public bool cooldown = false;
 
     //adjust via editor
-    public float speed;
     public float xRange;
     public float yRange;
 
@@ -31,24 +28,11 @@ public class PlayerController : MonoBehaviour
     //note: make the guns separate gameobjects
     //put the firing script there when its time
     //note: ok done
-    public GameObject playerBeam;
-    private BeamTurret beamScript;
-
-    public GameObject playerLaser;
-    private LaserTurret laserScript;
     public Transform playerBarrel;
-
-    private Animator playerAnim;
     private GameManager gameManager;
-
-
     void Awake()
     {
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
-
-        playerAnim = GetComponent<Animator>();
-        laserScript = GameObject.Find("Player Laser").GetComponent<LaserTurret>();
-        beamScript = GameObject.Find("Player Beam").GetComponent<BeamTurret>();
         playerHealth = GetComponent<PlayerHealth>();
     }
     void Start()
@@ -85,10 +69,10 @@ public class PlayerController : MonoBehaviour
 
         //moves the plane
         horizontalInput = Input.GetAxis("Horizontal");
-        transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
+        transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * shipStats.speed);
 
         verticalInput = Input.GetAxis("Vertical");
-        transform.Translate(Vector3.up * verticalInput * Time.deltaTime * speed);
+        transform.Translate(Vector3.up * verticalInput * Time.deltaTime * shipStats.speed);
 
     }
 }

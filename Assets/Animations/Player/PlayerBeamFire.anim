@@ -100,7 +100,7 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.75
+  - time: 0.8333333
     functionName: DeactivateBeam
     data: 
     objectReferenceParameter: {fileID: 11500000, guid: 08eea7f0162191344b3d1f012addd65c, type: 3}

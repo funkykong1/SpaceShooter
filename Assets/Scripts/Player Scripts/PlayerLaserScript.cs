@@ -45,7 +45,7 @@ public class PlayerLaserScript : MonoBehaviour
             Debug.Log("Hit the bad guy for " + bulletDamage + " damage!");
             Destroy(gameObject);
         }
-        else if (other.CompareTag("LaserEnemy"))
+        else if (other.CompareTag("LaserBad"))
         {
             Debug.Log("Crack shot bud. Enemy bullet gone");
             Destroy(other.gameObject);

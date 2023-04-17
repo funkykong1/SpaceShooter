@@ -43,12 +43,13 @@ public class PlayerBeamScript : MonoBehaviour
         {
             Debug.Log("Hit the bad guy for " + beamDamage + " tick damage!");
         }
-        else if (other.CompareTag("LaserEnemy"))
+        if (other.CompareTag("LaserBad"))
         {
             //fuck off enemy laser if it dares touch the beam
             //make a really cool explosion spawn where the intercept happened
             Instantiate(explosion, other.transform.position, transform.rotation);
             Destroy(other.gameObject);
+            Debug.Log("get it up you laser sucker");
         }
     }
 

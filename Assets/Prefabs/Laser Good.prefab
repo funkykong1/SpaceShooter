@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -5584208923029885861}
   m_Layer: 0
   m_Name: Laser Good
-  m_TagString: Untagged
+  m_TagString: LaserGood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
