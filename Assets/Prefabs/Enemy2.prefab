@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 3992059579721070848}
   - component: {fileID: 7260482634418049701}
   m_Layer: 0
-  m_Name: EnemyBeam
-  m_TagString: Untagged
+  m_Name: Enemy Beam
+  m_TagString: BeamBad
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -140,7 +140,7 @@ GameObject:
   - component: {fileID: 5485957739290582045}
   m_Layer: 0
   m_Name: Thruster
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
