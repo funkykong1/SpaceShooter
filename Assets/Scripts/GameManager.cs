@@ -1,44 +1,41 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
-using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    public bool isGameActive;
-    public Button startButton; 
-    public Button restartButton;
-    public GameObject titleScreen;
-    public SpawnManager spawnManager;
+    public GameObject[] allEnemySets;
 
+    private GameObject currentSet;
+    private Vector2 spawnPos = new Vector2(0,10);
 
-    void Awake()
+    private static GameManager instance;
+
+    private void Awake()
     {
-        
-    }
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (instance == null)
+            instance = this;
+        else
+            Destroy(gameObject);
     }
 
-    public void GameOver()
+    private void Start()
     {
-        Destroy(spawnManager.player);
-        //GameManager.GameActive = false;
-
-        restartButton.gameObject.SetActive(true);
+        SpawnNewWave();
     }
-    public void StartGame()
+
+    public static void SpawnNewWave()
     {
-        startButton.gameObject.SetActive(false);
+        instance.StartCoroutine(instance.SpawnWave());
+    }
+
+    private IEnumerator SpawnWave()
+    {
+        if(currentSet != null)
+            Destroy(currentSet);
+
+        yield return new WaitForSeconds(3);
+
+        currentSet = Instantiate(allEnemySets[Random.Range(0, allEnemySets.Length)], spawnPos, Quaternion.identity);
     }
 }
-
