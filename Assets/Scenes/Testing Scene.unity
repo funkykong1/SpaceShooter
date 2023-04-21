@@ -670,6 +670,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy3
       objectReference: {fileID: 0}
+    - target: {fileID: 8280622900536530054, guid: d791da858ce2b9240873bddaada62567, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d791da858ce2b9240873bddaada62567, type: 3}
 --- !u!1001 &9070309007246350443

@@ -147,6 +147,7 @@ GameObject:
   - component: {fileID: 1398443790781607885}
   - component: {fileID: 6185644849906758783}
   - component: {fileID: 6260931543060310351}
+  - component: {fileID: 4035463663780997425}
   m_Layer: 6
   m_Name: Enemy3
   m_TagString: Enemy
@@ -235,6 +236,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a81777089baf3c43b8a4ea92285cc9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!68 &4035463663780997425
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2311405635152409654}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.46481746, y: 0.03607647}
+  - {x: -0.124565504, y: 0.27240077}
+  - {x: -0.0949346, y: 0.4248183}
+  - {x: -0.0055375956, y: 0.48557472}
+  - {x: 0.096232735, y: 0.41797996}
+  - {x: 0.12550277, y: 0.27231586}
+  - {x: 0.4661656, y: 0.03248611}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &5670123163795809485
 GameObject:
   m_ObjectHideFlags: 0
@@ -355,5 +383,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   droneBarrel: {fileID: 6126429204202502460}
-  droneLaser: {fileID: 5928799821694733750, guid: d28256693f6988f4a991ede2cf71af47, type: 3}
+  droneLaser: {fileID: 4982151391274141045, guid: 8eea81142324eb249b36ed0b55292129, type: 3}
   burstCount: 2

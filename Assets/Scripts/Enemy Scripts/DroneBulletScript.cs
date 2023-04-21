@@ -1,21 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System;
 
-public class EnemyBulletScript : MonoBehaviour
+public class DroneBulletScript : MonoBehaviour
 {
-    public float speed = 10f;
-    public int enemyBulletDamage = 25;
+    private float speed = 20f;
+    public int enemyBulletDamage = 15;
 
-
-    // Start is called before the first frame update
-    void Start()
-    {        
-        //fucking divide it into 2 cuz enemy laser wants to shoot 2 of them for no reason
-        //no longer does this? why
-        //enemyBulletDamage = enemyBulletDamage / 2;
-    }
 
     // Update is called once per frame
     void Update()
@@ -24,7 +15,6 @@ public class EnemyBulletScript : MonoBehaviour
     if (transform.position.y < -25)
         Destroy(gameObject); 
     
-
         transform.Translate(Vector3.up * Time.deltaTime * speed);
     }
 
@@ -38,5 +28,3 @@ public class EnemyBulletScript : MonoBehaviour
         } 
     }
 }
-
-
