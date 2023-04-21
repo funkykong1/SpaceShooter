@@ -2,20 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-    //--CTRL C + CTRL K to apply comments to lines
-    //This is the player's fast charging assault weapon
-
-public class LaserTurret : MonoBehaviour
+public class DroneTurret : MonoBehaviour
 {
+    //copypasted from the player one
+
     //where the bullet comes from
-    public Transform playerBarrel;
+    public Transform droneBarrel;
     //laser prefab
-    public GameObject playerLaser;
+    public GameObject droneLaser;
 
     //fuck this one
     private Animator anim;
 
-    //how many lazers playa allowed ta shoot? Powerup here?
+    //2
     public int burstCount;
 
     // Start is called before the first frame update
@@ -29,16 +28,21 @@ public class LaserTurret : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.E) && firingReady())
+        if (firingReady())
         {
             anim.SetTrigger("firing");
         }
 
 
-        if (anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerLaserCharge"))
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("DroneGunCharging"))
         {
             burstCount = 0;
             anim.SetInteger("burstCount", burstCount);
+        }
+
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("DroneGunFiring") && anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 2 && burstCount == 2)
+        {
+            anim.SetTrigger("reload");
         }
 
         //prints animator state -> 1 = 100%
@@ -49,7 +53,7 @@ public class LaserTurret : MonoBehaviour
     //use animation events instead of manual timing!
     void Shoot() 
     {
-        Instantiate(playerLaser, playerBarrel.transform.position, playerLaser.transform.rotation);
+        Instantiate(droneLaser, droneBarrel.transform.position, droneLaser.transform.rotation);
 
         burstCount++;
         anim.SetInteger("burstCount", burstCount);
@@ -59,8 +63,7 @@ public class LaserTurret : MonoBehaviour
     //single bool function to house the horrible if statement
     bool firingReady()
     {
-        if((anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1) && anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerLaserCharge") || (anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerLaserStart")
-         && anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1))
+        if((anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1) && anim.GetCurrentAnimatorStateInfo(0).IsName("DroneGunCharging"))
         {
             return true;
         } else {
