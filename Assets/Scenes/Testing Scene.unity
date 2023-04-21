@@ -269,7 +269,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8095083837175839656, guid: 5edf27bd6ee705946bd012460eda3cf3, type: 3}
       propertyPath: shipStats.speed
-      value: 3
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8095083837175839656, guid: 5edf27bd6ee705946bd012460eda3cf3, type: 3}
       propertyPath: shipStats.maxHealth

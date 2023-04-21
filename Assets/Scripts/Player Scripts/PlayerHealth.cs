@@ -30,6 +30,7 @@ public class PlayerHealth : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        currHealth = shipStats.maxHealth;
         //set bools
         CR_running = false;
         //update hp bar color once
