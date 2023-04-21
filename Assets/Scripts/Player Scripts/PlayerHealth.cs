@@ -8,7 +8,7 @@ public class PlayerHealth : MonoBehaviour
 
 
     //playr hp.
-    private ShipStats shipStats;
+    public ShipStats shipStats;
 
     //hp bar references
     public Image healthBar;
@@ -26,11 +26,13 @@ public class PlayerHealth : MonoBehaviour
 
 
     public int currHealth;
+    private int tempHealth;
 
-    // Start is called before the first frame update
+
     void Start()
     {
-        currHealth = shipStats.maxHealth;
+        shipStats.currentHealth = shipStats.maxHealth;
+        tempHealth = shipStats.maxHealth;
         //set bools
         CR_running = false;
         //update hp bar color once
@@ -47,11 +49,11 @@ public class PlayerHealth : MonoBehaviour
 
         //0 is empty and 1 is completely full, therefore we divide by the amount of health in the plane
         //healthBar.color = gradient.Evaluate(health / 100);
-        if(currHealth != shipStats.maxHealth)
+        if(shipStats.currentHealth != tempHealth)
         {
             healthBar.color = gradient.Evaluate(currHealth / 100);
             StartCoroutine(FadeIn());
-            shipStats.maxHealth = currHealth;
+            shipStats.maxHealth = shipStats.currentHealth;
             ResetTimer();
         }
 
