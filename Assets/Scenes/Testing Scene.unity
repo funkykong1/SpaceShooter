@@ -235,44 +235,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 686540959968463388, guid: 5edf27bd6ee705946bd012460eda3cf3, type: 3}
-      propertyPath: shipExplosion
-      value: 
-      objectReference: {fileID: 6367605799563120569, guid: f62b72242e8d7314190bbf2ce0cab476, type: 3}
-    - target: {fileID: 2172830438642355792, guid: 5edf27bd6ee705946bd012460eda3cf3, type: 3}
-      propertyPath: m_Name
-      value: Beam
-      objectReference: {fileID: 0}
-    - target: {fileID: 2172830438642355792, guid: 5edf27bd6ee705946bd012460eda3cf3, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2172830438642355792, guid: 5edf27bd6ee705946bd012460eda3cf3, type: 3}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
-    - target: {fileID: 7490199102123345734, guid: 5edf27bd6ee705946bd012460eda3cf3, type: 3}
-      propertyPath: m_Enabled
-      value: 1
+    - target: {fileID: 4963278362751990495, guid: 5edf27bd6ee705946bd012460eda3cf3, type: 3}
+      propertyPath: shipStats.currentHealth
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8095083837175839639, guid: 5edf27bd6ee705946bd012460eda3cf3, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 8095083837175839656, guid: 5edf27bd6ee705946bd012460eda3cf3, type: 3}
-      propertyPath: xRange
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 8095083837175839656, guid: 5edf27bd6ee705946bd012460eda3cf3, type: 3}
-      propertyPath: yRange
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8095083837175839656, guid: 5edf27bd6ee705946bd012460eda3cf3, type: 3}
-      propertyPath: shipStats.speed
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8095083837175839656, guid: 5edf27bd6ee705946bd012460eda3cf3, type: 3}
-      propertyPath: shipStats.maxHealth
+      propertyPath: shipStats.currentHealth
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8095083837175839657, guid: 5edf27bd6ee705946bd012460eda3cf3, type: 3}
@@ -396,10 +368,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1086175434823216248, guid: 7e5b276fecf713045baf3afc784f2afa, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 2105913942818134384, guid: 7e5b276fecf713045baf3afc784f2afa, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -444,17 +412,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
       objectReference: {fileID: 0}
-    - target: {fileID: 5756629854392337450, guid: 7e5b276fecf713045baf3afc784f2afa, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 8750742773940160162, guid: 7e5b276fecf713045baf3afc784f2afa, type: 3}
       propertyPath: m_Name
       value: Enemy2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8750742773940160162, guid: 7e5b276fecf713045baf3afc784f2afa, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e5b276fecf713045baf3afc784f2afa, type: 3}
@@ -615,6 +575,50 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scrollSpeed: 0.04
+--- !u!1 &1875326848
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1875326850}
+  - component: {fileID: 1875326849}
+  m_Layer: 0
+  m_Name: Save Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1875326849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1875326848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17f086f42ac56c243baa9eabbb753042, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1875326850
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1875326848}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -34.78667, y: 5.701572, z: 53.448902}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &4063507668727666327
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -622,10 +626,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -6403549864719980318, guid: d791da858ce2b9240873bddaada62567, type: 3}
-      propertyPath: m_GravityScale
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1398443790781607885, guid: d791da858ce2b9240873bddaada62567, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -673,10 +673,6 @@ PrefabInstance:
     - target: {fileID: 2311405635152409654, guid: d791da858ce2b9240873bddaada62567, type: 3}
       propertyPath: m_Name
       value: Enemy3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8280622900536530054, guid: d791da858ce2b9240873bddaada62567, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d791da858ce2b9240873bddaada62567, type: 3}

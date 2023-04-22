@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5872287557618967123}
   - component: {fileID: 3992059579721070848}
   - component: {fileID: 7260482634418049701}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Enemy Beam
   m_TagString: BeamBad
   m_Icon: {fileID: 0}
@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 1215022325533654276}
   - component: {fileID: 5328273033841198825}
   - component: {fileID: 5485957739290582045}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Thruster
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -246,7 +246,7 @@ GameObject:
   - component: {fileID: 5689313122381032595}
   - component: {fileID: 5241759350137213186}
   - component: {fileID: -4408446548517584895}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Enemy2
   m_TagString: Enemy
   m_Icon: {fileID: 0}

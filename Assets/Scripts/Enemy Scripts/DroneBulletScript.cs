@@ -5,7 +5,7 @@ using UnityEngine;
 public class DroneBulletScript : MonoBehaviour
 {
     private float speed = 20f;
-    public int enemyBulletDamage = 15;
+    private int droneBulletDamage = 15;
 
 
     // Update is called once per frame
@@ -21,8 +21,8 @@ public class DroneBulletScript : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("Taken a hit" + " for " + enemyBulletDamage + " damage!!!");
-            other.gameObject.GetComponent<PlayerHealth>().currHealth -= enemyBulletDamage;
+            Debug.Log("Taken a hit" + " for " + droneBulletDamage + " damage!!!");
+            other.gameObject.GetComponent<PlayerHealth>().currHealth -= droneBulletDamage;
             Destroy(gameObject);
         } 
     }

@@ -52,14 +52,14 @@ public class UIManager : MonoBehaviour
         instance.score += s;
         instance.scoreText.text = instance.score.ToString("000,000");
     }
-    public static void UpdateHighscore(int hs)
-    {
-        if(instance.highscore < hs)
-        {
-        instance.highscore = hs;
-        instance.highscoreText.text = instance.highscore.ToString("000,000");
-        }
-    }
+    // public static void UpdateHighscore(int hs)
+    // {
+    //     if(instance.highscore < hs)
+    //     {
+    //     instance.highscore = hs;
+    //     instance.highscoreText.text = instance.highscore.ToString("000,000");
+    //     }
+    // }
     public static int GetHighScore()
     {
         return instance.highscore;

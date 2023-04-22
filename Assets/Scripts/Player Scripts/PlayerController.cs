@@ -7,8 +7,6 @@ using System;
 public class PlayerController : MonoBehaviour
 {
 
-    public ShipStats shipStats;
-
     //used for movement
     public float horizontalInput;
     public float verticalInput;
@@ -18,11 +16,12 @@ public class PlayerController : MonoBehaviour
     public float xRange;
     public float yRange;
 
+    public float shipSpeed;
+
     //idk
     public static PlayerController Instance;
-    private PlayerHealth playerHealth;
     
-    //fix this --done
+    private PlayerHealth playerHealth;
 
 
     //note: make the guns separate gameobjects
@@ -33,11 +32,6 @@ public class PlayerController : MonoBehaviour
     void Awake()
     {
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
-        playerHealth = GetComponent<PlayerHealth>();
-    }
-    void Start()
-    {
-        
     }
 
     // Update is called once per frame
@@ -69,10 +63,10 @@ public class PlayerController : MonoBehaviour
 
         //moves the plane
         horizontalInput = Input.GetAxis("Horizontal");
-        transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * shipStats.speed);
+        transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * shipSpeed);
 
         verticalInput = Input.GetAxis("Vertical");
-        transform.Translate(Vector3.up * verticalInput * Time.deltaTime * shipStats.speed);
+        transform.Translate(Vector3.up * verticalInput * Time.deltaTime * shipSpeed);
 
     }
 }
