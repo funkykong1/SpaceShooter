@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        SpawnNewWave();
+        //SpawnNewWave();
     }
 
     public static void SpawnNewWave()
