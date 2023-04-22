@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
     public float xRange;
     public float yRange;
 
-    public float shipSpeed;
+    public float shipSpeed = 10;
 
     //idk
     public static PlayerController Instance;
@@ -32,6 +32,7 @@ public class PlayerController : MonoBehaviour
     void Awake()
     {
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
+        playerHealth = this.GetComponent<PlayerHealth>();
     }
 
     // Update is called once per frame

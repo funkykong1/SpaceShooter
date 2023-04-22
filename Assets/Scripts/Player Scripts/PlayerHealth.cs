@@ -23,9 +23,9 @@ public class PlayerHealth : MonoBehaviour
     //is FadeOut running?
     private bool CR_running;
 
-    public int currHealth;
-    public int maxHealth;
-    private int tempHealth;
+    public float currHealth;
+    public float maxHealth;
+    private float tempHealth;
 
 
 
@@ -50,8 +50,9 @@ public class PlayerHealth : MonoBehaviour
         if(currHealth != tempHealth)
         {
             //make changes to hp bar
+            print(currHealth/maxHealth);
             healthBar.fillAmount = Mathf.Clamp(currHealth / maxHealth, 0, 1);
-            healthBar.color = gradient.Evaluate(currHealth / 100);
+            healthBar.color = gradient.Evaluate(currHealth / maxHealth);
 
             StartCoroutine(FadeIn());
             tempHealth = currHealth;

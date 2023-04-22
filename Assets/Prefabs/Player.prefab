@@ -62,7 +62,7 @@ MonoBehaviour:
   m_Color: {r: 0.35294116, g: 1, b: 0.80022174, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -740,17 +740,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b96f609652620e4da7f09e3fb940ba6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shipStats:
-    maxHealth: 100
-    currentHealth: 0
-    laserDamage: 30
-    beamDamage: 1
-    explosionDamage: 35
-    speed: 10
   horizontalInput: 0
   verticalInput: 0
   xRange: 14
   yRange: 10
+  shipSpeed: 10
   playerBarrel: {fileID: 1138077063155436120}
 --- !u!114 &4963278362751990495
 MonoBehaviour:
@@ -799,6 +793,8 @@ MonoBehaviour:
   - {fileID: 14318216}
   fadeSpeed: 2
   fadeTimer: 0
+  currHealth: 100
+  maxHealth: 100
 --- !u!95 &1012429633678996286
 Animator:
   serializedVersion: 4
