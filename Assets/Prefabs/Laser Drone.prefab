@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7339998068942389890}
   m_Layer: 0
   m_Name: Laser Drone
-  m_TagString: LaserEnemy
+  m_TagString: Undefined
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

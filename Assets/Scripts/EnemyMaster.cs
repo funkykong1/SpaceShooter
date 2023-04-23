@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AlienMaster : MonoBehaviour
+public class EnemyMaster : MonoBehaviour
 {
 
 
-    private const float START_Y = 1.5f;
+    private const float START_Y = 0f;
+
+    public float enterSpeed;
 
 
     private bool entering = true;
@@ -15,7 +17,10 @@ public class AlienMaster : MonoBehaviour
 
 
 
-    // Start is called before the first frame update
+    void Awake()
+    {
+        enterSpeed = 7;
+    }
     void Start()
     {
         foreach(GameObject go in GameObject.FindGameObjectsWithTag("Enemy"))
@@ -27,7 +32,7 @@ public class AlienMaster : MonoBehaviour
     {
         if(entering)
         {
-            transform.Translate(Vector2.down * Time.deltaTime * 10);
+            transform.Translate(Vector2.down * Time.deltaTime * enterSpeed);
 
         if(transform.position.y <= START_Y)
             entering = false;

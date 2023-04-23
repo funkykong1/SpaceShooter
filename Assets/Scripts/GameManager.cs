@@ -7,9 +7,11 @@ public class GameManager : MonoBehaviour
     public GameObject[] allEnemySets;
 
     private GameObject currentSet;
-    private Vector2 spawnPos = new Vector2(0,10);
+    private Vector2 spawnPos = new Vector2(0,25);
 
     private static GameManager instance;
+
+    private int currentWave;
 
     private void Awake()
     {
@@ -17,11 +19,13 @@ public class GameManager : MonoBehaviour
             instance = this;
         else
             Destroy(gameObject);
+
+        currentWave = 0;
     }
 
     private void Start()
     {
-        //SpawnNewWave();
+        SpawnNewWave();
     }
 
     public static void SpawnNewWave()
@@ -34,8 +38,11 @@ public class GameManager : MonoBehaviour
         if(currentSet != null)
             Destroy(currentSet);
 
+
         yield return new WaitForSeconds(3);
 
-        currentSet = Instantiate(allEnemySets[Random.Range(0, allEnemySets.Length)], spawnPos, Quaternion.identity);
+        currentSet = Instantiate(allEnemySets[currentWave], spawnPos, Quaternion.identity);
+
+        currentWave++;
     }
 }

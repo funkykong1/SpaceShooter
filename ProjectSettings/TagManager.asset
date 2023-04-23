@@ -5,10 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
-  - LaserBad
   - LaserGood
   - BeamBad
   - BeamGood
+  - LaserBad
+  - Undefined
+  - LaserBadSmall
   layers:
   - Default
   - TransparentFX
