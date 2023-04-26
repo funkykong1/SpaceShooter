@@ -149,6 +149,7 @@ GameObject:
   - component: {fileID: 6260931543060310351}
   - component: {fileID: 4035463663780997425}
   - component: {fileID: -6403549864719980318}
+  - component: {fileID: -8730481511350306632}
   m_Layer: 6
   m_Name: Enemy3
   m_TagString: Enemy
@@ -213,7 +214,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 829450321
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 381ef45cd2e9a394bb66c498ebea789c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -285,6 +286,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &-8730481511350306632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2311405635152409654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dd62707576ad374c9c49230a9f94b97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHP: 125
+  shipExplosion: {fileID: 6367605799563120569, guid: f62b72242e8d7314190bbf2ce0cab476, type: 3}
 --- !u!1 &5670123163795809485
 GameObject:
   m_ObjectHideFlags: 0

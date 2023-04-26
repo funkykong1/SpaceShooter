@@ -246,6 +246,7 @@ GameObject:
   - component: {fileID: 5689313122381032595}
   - component: {fileID: 5241759350137213186}
   - component: {fileID: -4408446548517584895}
+  - component: {fileID: -605332428705434302}
   m_Layer: 6
   m_Name: Enemy2
   m_TagString: Enemy
@@ -402,3 +403,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &-605332428705434302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8750742773940160162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dd62707576ad374c9c49230a9f94b97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHP: 150
+  shipExplosion: {fileID: 6367605799563120569, guid: f62b72242e8d7314190bbf2ce0cab476, type: 3}

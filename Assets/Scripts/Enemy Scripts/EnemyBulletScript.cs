@@ -21,7 +21,7 @@ public class EnemyBulletScript : MonoBehaviour
     void Update()
     {
 
-    if (transform.position.y < -25)
+    if (transform.position.y < -15)
         Destroy(gameObject); 
     
 

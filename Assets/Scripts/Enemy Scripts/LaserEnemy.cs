@@ -13,9 +13,6 @@ public class LaserEnemy : MonoBehaviour
     //bullets will phase through inactive enemies
     private bool isVisible;
 
-    //references 2 animator
-    public bool firing;
-
     public Transform enemyBarrel;
 
     void Awake()

@@ -506,9 +506,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5138874986483572917}
+  - component: {fileID: 686540959968463388}
   - component: {fileID: 7490199102123345734}
   - component: {fileID: 5408728422577144779}
-  - component: {fileID: 686540959968463388}
   m_Layer: 0
   m_Name: Beam
   m_TagString: BeamGood
@@ -531,6 +531,23 @@ Transform:
   m_Father: {fileID: 1663120771}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &686540959968463388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2172830438642355792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50a4c4b610bbe304082f1426ce1d13e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion: {fileID: 6367605799563120569, guid: f62b72242e8d7314190bbf2ce0cab476, type: 3}
+  weldEffect: {fileID: 0}
+  explosionDamage: 15
+  beamDamage: 1
+  hitDone: 0
 --- !u!212 &7490199102123345734
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -609,23 +626,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.087305546, y: 4.0127764}
   m_EdgeRadius: 0
---- !u!114 &686540959968463388
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2172830438642355792}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50a4c4b610bbe304082f1426ce1d13e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  explosion: {fileID: 6367605799563120569, guid: f62b72242e8d7314190bbf2ce0cab476, type: 3}
-  shipExplosion: {fileID: 6367605799563120569, guid: f62b72242e8d7314190bbf2ce0cab476, type: 3}
-  explosionDamage: 15
-  beamDamage: 1
-  hitDone: 0
 --- !u!1 &5498345378540306368
 GameObject:
   m_ObjectHideFlags: 0
@@ -744,7 +744,7 @@ MonoBehaviour:
   verticalInput: 0
   xRange: 14
   yRange: 10
-  shipSpeed: 10
+  shipSpeed: 13
   playerBarrel: {fileID: 1138077063155436120}
 --- !u!114 &4963278362751990495
 MonoBehaviour:
