@@ -236,9 +236,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 686540959968463388, guid: 5edf27bd6ee705946bd012460eda3cf3, type: 3}
-      propertyPath: weldEffect
-      value: 
-      objectReference: {fileID: 6367605799563120569, guid: f62b72242e8d7314190bbf2ce0cab476, type: 3}
+      propertyPath: beamDamage
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8095083837175839639, guid: 5edf27bd6ee705946bd012460eda3cf3, type: 3}
       propertyPath: m_Name
       value: Player
@@ -634,60 +634,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed0663f95247040408b0893b8745b67f, type: 3}
---- !u!1001 &8410164570790577350
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 7789931906491202625, guid: 84d5f19e36f03eb43b48dfb495dde8b6, type: 3}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 7789931906491202625, guid: 84d5f19e36f03eb43b48dfb495dde8b6, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -20.265299
-      objectReference: {fileID: 0}
-    - target: {fileID: 7789931906491202625, guid: 84d5f19e36f03eb43b48dfb495dde8b6, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.423524
-      objectReference: {fileID: 0}
-    - target: {fileID: 7789931906491202625, guid: 84d5f19e36f03eb43b48dfb495dde8b6, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7789931906491202625, guid: 84d5f19e36f03eb43b48dfb495dde8b6, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7789931906491202625, guid: 84d5f19e36f03eb43b48dfb495dde8b6, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7789931906491202625, guid: 84d5f19e36f03eb43b48dfb495dde8b6, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7789931906491202625, guid: 84d5f19e36f03eb43b48dfb495dde8b6, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7789931906491202625, guid: 84d5f19e36f03eb43b48dfb495dde8b6, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7789931906491202625, guid: 84d5f19e36f03eb43b48dfb495dde8b6, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7789931906491202625, guid: 84d5f19e36f03eb43b48dfb495dde8b6, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7831160485610608302, guid: 84d5f19e36f03eb43b48dfb495dde8b6, type: 3}
-      propertyPath: m_Name
-      value: BeamWeld_0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 84d5f19e36f03eb43b48dfb495dde8b6, type: 3}

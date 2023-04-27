@@ -20,12 +20,9 @@ public class BeamExplosion : MonoBehaviour
 
         if (dmgComponent)
         {
-            Debug.Log(other.gameObject + " hit by beam explosion!");
-
             dmgComponent.doDamage(explosionDMG);
             //Instantiate(laserExplosion, transform.position, transform.rotation);
 
-            Destroy(gameObject);
         }
     }
 }
