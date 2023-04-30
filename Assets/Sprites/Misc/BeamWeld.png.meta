@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3ab9c5e8e05ab6b43be9626790b6e7e6
+guid: 5be9a61083bedf645b7f7b8e9450a4f9
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -136,15 +136,15 @@ TextureImporter:
         y: 0
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 706f748136090674498379d3e2b1ca8e
-      internalID: 294870642
+      spriteID: 67ff2bff9dce7c24dbcb36300b8e92e5
+      internalID: 761407678
       vertices: []
       indices: 
       edges: []
@@ -157,15 +157,15 @@ TextureImporter:
         y: 0
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 332d042b7174bd14eba80768fd1391bc
-      internalID: 36197241
+      spriteID: 186181eb2b350ff45811fbf1ef265299
+      internalID: 1464737984
       vertices: []
       indices: 
       edges: []
@@ -178,15 +178,36 @@ TextureImporter:
         y: 0
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8aab417f5a8d1ac4c80f3f483de6621c
-      internalID: 676312274
+      spriteID: f08df484f48618447966406cdef7b7c7
+      internalID: 1313357794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BeamWeld_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bde229449ce31d43b94fe87396e9a4f
+      internalID: -2096255372
       vertices: []
       indices: 
       edges: []
@@ -202,9 +223,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      BeamWeld_2: 676312274
-      BeamWeld_0: 294870642
-      BeamWeld_1: 36197241
+      BeamWeld_2: 1313357794
+      BeamWeld_0: 761407678
+      BeamWeld_1: 1464737984
+      BeamWeld_3: -2096255372
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

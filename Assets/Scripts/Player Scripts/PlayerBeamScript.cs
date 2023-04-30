@@ -47,19 +47,16 @@ public class PlayerBeamScript : MonoBehaviour
         if (dmgComponent)
         {
             dmgComponent.doDamage(beamDamage);
-            Debug.Log("Hit the bad guy for " + beamDamage + " tick damage!");
+            Debug.Log("Hit the bad guy for " + beamDamage + " tick damage");
         }
         if (other.CompareTag("LaserBad"))
         {
             //fuck off enemy laser if it dares touch the beam and make a really cool explosion spawn where the intercept happened
             Instantiate(explosion, other.transform.position, transform.rotation);
             Destroy(other.gameObject);
-            Debug.Log("get it up you laser sucker");
+            Debug.Log("get it up you laser");
         }
-
         Fire();
-
-
     }
 
 
@@ -92,15 +89,22 @@ public class PlayerBeamScript : MonoBehaviour
     {
         RaycastHit2D[] hits;
         hits = Physics2D.RaycastAll(barrel.transform.position, transform.up, Mathf.Infinity, LayerMask.GetMask("Enemy"));
-
+        
+        welds = new List<GameObject>();
         for (int i = 0; i < hits.Length; i++)
         {
+            
             RaycastHit2D hit = hits[i];
             GameObject objectCollided = hit.transform.gameObject;
             Damageable dmgComponent = objectCollided.GetComponent<Damageable>();
 
-            Instantiate(weldEffect, hit.point, transform.rotation);
             dmgComponent.doDamage(beamDamage);
+
+            if(dmgComponent.welded == false) 
+            {
+                Instantiate(weldEffect, hit.point, transform.rotation);
+                dmgComponent.welded = true;
+            }
         }        
     }
 
