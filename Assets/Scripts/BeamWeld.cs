@@ -10,4 +10,9 @@ public class BeamWeld : MonoBehaviour
         Destroy(gameObject);
     }
 
+    void OnTriggerExit2D()
+    {
+
+    }
+
 }

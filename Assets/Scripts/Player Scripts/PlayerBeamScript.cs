@@ -25,8 +25,7 @@ public class PlayerBeamScript : MonoBehaviour
     }
     void Update()
     {
-        if(this.isActiveAndEnabled)
-            Weld();
+        Weld();
     }
     
     //initial bit of damage, explosion here
@@ -89,11 +88,13 @@ public class PlayerBeamScript : MonoBehaviour
     {
         RaycastHit2D[] hits;
         hits = Physics2D.RaycastAll(barrel.transform.position, transform.up, Mathf.Infinity, LayerMask.GetMask("Enemy"));
-        
+
+        GameObject[] welds = new GameObject[hits.Length];
+
         for (int i = 0; i < hits.Length; i++)
         {
-            GameObject[] welds = new GameObject[i];
             RaycastHit2D hit = hits[i];
+
             GameObject objectCollided = hit.transform.gameObject;
             Damageable dmgComponent = objectCollided.GetComponent<Damageable>();
 
@@ -104,8 +105,7 @@ public class PlayerBeamScript : MonoBehaviour
             }
 
             welds[i].transform.position = hit.point; 
-            dmgComponent.doDamage(beamDamage);       
-            
+            dmgComponent.doDamage(beamDamage);
         }        
     }
 
