@@ -57,12 +57,5 @@ public class LaserEnemy : MonoBehaviour
         Instantiate(bulletBad, enemyBarrel.transform.position, bulletBad.transform.rotation);
     }
     
-    public void Die()
-    {
-        Destroy(gameObject);
-       
-        //FindObjectOfType<AudioManager>().Play("EnemyDeath");
-    }
-    
 }
 

@@ -6,6 +6,7 @@ public class Damageable : MonoBehaviour
 {
     public float maxHP;       // This has to be set in the inspector
     public float currentHP;
+    public bool welded;
 
     public GameObject shipExplosion;
 
@@ -17,6 +18,7 @@ public class Damageable : MonoBehaviour
     void Start()
     {
         currentHP = maxHP;
+        welded = false;
     }
 
     public void doDamage(float damage)
@@ -24,7 +26,7 @@ public class Damageable : MonoBehaviour
         currentHP -= damage;
         if (currentHP <= 0)
         {
-            Instantiate(shipExplosion, transform.position, transform.rotation);
+            //Instantiate(shipExplosion, transform.position, transform.rotation);
             Destroy(gameObject);
         }
         

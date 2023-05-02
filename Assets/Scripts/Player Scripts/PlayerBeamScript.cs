@@ -52,7 +52,7 @@ public class PlayerBeamScript : MonoBehaviour
         if (other.CompareTag("LaserBad"))
         {
             //fuck off enemy laser if it dares touch the beam and make a really cool explosion spawn where the intercept happened
-            Instantiate(explosion, other.transform.position, transform.rotation);
+            //Instantiate(explosion, other.transform.position, transform.rotation);
             Destroy(other.gameObject);
             Debug.Log("get it up you laser");
         }
@@ -92,13 +92,19 @@ public class PlayerBeamScript : MonoBehaviour
         
         for (int i = 0; i < hits.Length; i++)
         {
-            
+            GameObject[] welds = new GameObject[i];
             RaycastHit2D hit = hits[i];
             GameObject objectCollided = hit.transform.gameObject;
             Damageable dmgComponent = objectCollided.GetComponent<Damageable>();
 
-            dmgComponent.doDamage(beamDamage);
-            Instantiate(weldEffect, hit.point, transform.rotation);          
+            if (!dmgComponent.welded)
+            {
+                dmgComponent.welded = true;
+                welds[i] = Instantiate(weldEffect, hit.point, transform.rotation);
+            }
+
+            welds[i].transform.position = hit.point; 
+            dmgComponent.doDamage(beamDamage);       
             
         }        
     }

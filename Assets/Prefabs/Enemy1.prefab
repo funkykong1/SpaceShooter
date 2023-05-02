@@ -145,12 +145,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8549378977495851963}
+  - component: {fileID: -2969204601411094861}
   - component: {fileID: 5890778636982782848}
   - component: {fileID: 7888656577379554730}
   - component: {fileID: 3354526121319833853}
   - component: {fileID: 4182390980075834403}
   - component: {fileID: -5131879567644727584}
-  - component: {fileID: -2969204601411094861}
   m_Layer: 6
   m_Name: Enemy1
   m_TagString: Enemy
@@ -175,6 +175,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+--- !u!114 &-2969204601411094861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7339741673325006680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dd62707576ad374c9c49230a9f94b97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHP: 100
+  currentHP: 0
+  welded: 0
+  shipExplosion: {fileID: 6367605799563120569, guid: f62b72242e8d7314190bbf2ce0cab476, type: 3}
 --- !u!114 &5890778636982782848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -308,17 +324,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &-2969204601411094861
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7339741673325006680}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5dd62707576ad374c9c49230a9f94b97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHP: 100
-  shipExplosion: {fileID: 6367605799563120569, guid: f62b72242e8d7314190bbf2ce0cab476, type: 3}
