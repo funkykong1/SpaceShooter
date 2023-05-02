@@ -9,7 +9,6 @@ TagManager:
   - BeamBad
   - BeamGood
   - LaserBad
-  - LaserBadSmall
   layers:
   - Default
   - TransparentFX

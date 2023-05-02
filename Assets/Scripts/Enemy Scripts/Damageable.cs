@@ -8,7 +8,6 @@ public class Damageable : MonoBehaviour
     public float currentHP;
 
     public GameObject shipExplosion;
-    public bool welded;
 
     void Awake()
     {

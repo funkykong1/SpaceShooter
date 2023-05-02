@@ -90,7 +90,6 @@ public class PlayerBeamScript : MonoBehaviour
         RaycastHit2D[] hits;
         hits = Physics2D.RaycastAll(barrel.transform.position, transform.up, Mathf.Infinity, LayerMask.GetMask("Enemy"));
         
-        welds = new List<GameObject>();
         for (int i = 0; i < hits.Length; i++)
         {
             
@@ -99,12 +98,8 @@ public class PlayerBeamScript : MonoBehaviour
             Damageable dmgComponent = objectCollided.GetComponent<Damageable>();
 
             dmgComponent.doDamage(beamDamage);
-
-            if(dmgComponent.welded == false) 
-            {
-                Instantiate(weldEffect, hit.point, transform.rotation);
-                dmgComponent.welded = true;
-            }
+            Instantiate(weldEffect, hit.point, transform.rotation);          
+            
         }        
     }
 
