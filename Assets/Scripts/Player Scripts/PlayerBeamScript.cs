@@ -89,7 +89,6 @@ public class PlayerBeamScript : MonoBehaviour
         RaycastHit2D[] hits;
         hits = Physics2D.RaycastAll(barrel.transform.position, transform.up, Mathf.Infinity, LayerMask.GetMask("Enemy"));
 
-        GameObject[] welds = new GameObject[hits.Length];
 
         for (int i = 0; i < hits.Length; i++)
         {
@@ -98,51 +97,8 @@ public class PlayerBeamScript : MonoBehaviour
             GameObject objectCollided = hit.transform.gameObject;
             Damageable dmgComponent = objectCollided.GetComponent<Damageable>();
 
-            if (!dmgComponent.welded)
-            {
-                dmgComponent.welded = true;
-                welds[i] = Instantiate(weldEffect, hit.point, transform.rotation);
-            }
-
-            welds[i].transform.position = hit.point; 
+            Instantiate(weldEffect, hit.point, transform.rotation);
             dmgComponent.doDamage(beamDamage);
         }        
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    //OLD LINES HERE
-    
-    //FIRST RAYCAST
-
-            // if(Physics2D.Raycast(barrel.transform.position, transform.up, Mathf.Infinity, LayerMask.GetMask("Enemy")))
-        // {
-        //     RaycastHit2D hit = Physics2D.Raycast(barrel.transform.position, transform.up, Mathf.Infinity, LayerMask.GetMask("Enemy"));
-        //     Instantiate(explosion, hit.point, transform.rotation);
-        //     Debug.Log("yea hit i think mmm");
-        // } else
-        // {
-        //     Debug.Log("ignored");
-        // }
-
-
-                //RANDOM EXPLOSION ROTATION
-
-                // float randomZ = Random.Range(0, 359);
-                // GameObject spawned = Instantiate(explosion);
-
-                // spawned.transform.position = hit.point;
-                // spawned.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, randomZ));
-
 }
