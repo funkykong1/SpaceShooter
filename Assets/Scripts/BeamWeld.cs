@@ -5,9 +5,10 @@ using UnityEngine;
 public class BeamWeld : MonoBehaviour
 {
 
+    public float endTime;
     void End()
     {
-        Destroy(gameObject);
+        Destroy(gameObject, endTime);
     }
 
     void OnTriggerExit2D()
