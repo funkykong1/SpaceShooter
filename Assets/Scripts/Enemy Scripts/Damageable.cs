@@ -6,12 +6,13 @@ public class Damageable : MonoBehaviour
 {
     public float maxHP;       // This has to be set in the inspector
     public float currentHP;
+    public float weldTimer;
 
     public GameObject shipExplosion;
 
-    void Awake()
+    void Update()
     {
-
+        weldTimer--;
     }
 
     void Start()

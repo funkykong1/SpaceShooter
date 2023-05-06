@@ -4,16 +4,14 @@ using UnityEngine;
 
 public class BeamWeld : MonoBehaviour
 {
-
-    public float endTime;
+    void Awake()
+    {
+        int rand = Random.Range(0, 1);
+        if(rand == 1)
+            transform.rotation = Quaternion.Euler(0, 0, 180);
+    }
     void End()
     {
-        Destroy(gameObject, endTime);
+        Destroy(gameObject);
     }
-
-    void OnTriggerExit2D()
-    {
-
-    }
-
 }

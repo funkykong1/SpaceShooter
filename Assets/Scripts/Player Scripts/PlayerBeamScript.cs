@@ -20,7 +20,6 @@ public class PlayerBeamScript : MonoBehaviour
         turret = GameObject.Find("Player Beam").GetComponent<BeamTurret>();
         barrel = GameObject.Find("Barrel").GetComponent<Transform>();
         this.gameObject.SetActive(false);
-        explosion.GetComponent<BeamExplosion>().explosionDMG = explosionDamage;
         hitDone = false;
     }
     void Update()
@@ -40,22 +39,13 @@ public class PlayerBeamScript : MonoBehaviour
     //secondary bit of damage, welding effect? here
     void OnTriggerStay2D(Collider2D other)
     {
-        GameObject objectCollided = other.gameObject;
-        Damageable dmgComponent = objectCollided.GetComponent<Damageable>();
-
-        if (dmgComponent)
-        {
-            dmgComponent.doDamage(beamDamage);
-            Debug.Log("Hit the bad guy for " + beamDamage + " tick damage");
-        }
         if (other.CompareTag("LaserBad"))
         {
             //fuck off enemy laser if it dares touch the beam and make a really cool explosion spawn where the intercept happened
-            //Instantiate(explosion, other.transform.position, transform.rotation);
+            Instantiate(weldEffect, other.transform.position, transform.rotation);
             Destroy(other.gameObject);
             Debug.Log("get it up you laser");
         }
-        Fire();
     }
 
 
@@ -70,17 +60,22 @@ public class PlayerBeamScript : MonoBehaviour
     //spawn beam explosions if its the first tick
     for (int i = 0; i < hits.Length; i++)
         {
+
         RaycastHit2D hit = hits[i];
+        GameObject objectCollided = hit.transform.gameObject;
+        Damageable dmgComponent = objectCollided.GetComponent<Damageable>();
 
             //this is the explosion
             if(!hitDone)
             {
                 Instantiate(explosion, hit.point, transform.rotation);
-                Debug.Log("initial pierce hit " + (i+1) + " times!");
-                hitDone = true;
-            }
+                dmgComponent.doDamage(explosionDamage);
+                dmgComponent.weldTimer = 100;
 
+                Debug.Log("initial pierce hit " + (i+1) + " times!");
+            }
         }
+    hitDone = true;
 }
 
 
@@ -97,8 +92,14 @@ public class PlayerBeamScript : MonoBehaviour
             GameObject objectCollided = hit.transform.gameObject;
             Damageable dmgComponent = objectCollided.GetComponent<Damageable>();
 
-            Instantiate(weldEffect, hit.point, transform.rotation);
-            dmgComponent.doDamage(beamDamage);
+            if(dmgComponent.weldTimer <= 0)
+            {
+                Instantiate(weldEffect, hit.point, transform.rotation);
+                dmgComponent.doDamage(beamDamage);
+                Debug.Log("Hit the bad guy for " + beamDamage + " tick damage");
+                dmgComponent.weldTimer = 40;
+            }
+
         }        
     }
 }
