@@ -545,8 +545,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosion: {fileID: 6367605799563120569, guid: f62b72242e8d7314190bbf2ce0cab476, type: 3}
   weldEffect: {fileID: 7831160485610608302, guid: 84d5f19e36f03eb43b48dfb495dde8b6, type: 3}
-  explosionDamage: 1
-  beamDamage: 0.1
+  explosionDamage: 20
+  beamDamage: 7
   hitDone: 0
 --- !u!212 &7490199102123345734
 SpriteRenderer:

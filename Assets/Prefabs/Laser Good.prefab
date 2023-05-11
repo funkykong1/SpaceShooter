@@ -147,4 +147,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 25
-  bulletDamage: 30
+  bulletDamage: 20
+  topBorder: 13

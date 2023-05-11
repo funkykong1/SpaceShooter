@@ -38,6 +38,10 @@ public class EnemyMaster : MonoBehaviour
             entering = false;
 
         }
+
+
     }
+
+
 
 }

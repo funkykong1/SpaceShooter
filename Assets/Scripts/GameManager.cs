@@ -20,11 +20,11 @@ public class GameManager : MonoBehaviour
         else
             Destroy(gameObject);
 
-        currentWave = 0;
     }
 
     private void Start()
     {
+        currentWave = 0;
         SpawnNewWave();
     }
 
@@ -35,9 +35,8 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator SpawnWave()
     {
-        if(currentSet != null)
-            Destroy(currentSet);
-
+        
+        Destroy(currentSet);
 
         yield return new WaitForSeconds(3);
 
