@@ -6,6 +6,7 @@ public class DroneBulletScript : MonoBehaviour
 {
     private float speed = 20f;
     private int droneBulletDamage = 15;
+    public GameObject laserExplosion;
 
 
     // Update is called once per frame
@@ -23,6 +24,7 @@ public class DroneBulletScript : MonoBehaviour
         {
             Debug.Log("Taken a hit" + " for " + droneBulletDamage + " damage!!!");
             other.gameObject.GetComponent<PlayerHealth>().currHealth -= droneBulletDamage;
+            Instantiate(laserExplosion, transform.position, transform.rotation);
             Destroy(gameObject);
         } 
     }

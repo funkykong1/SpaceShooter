@@ -8,6 +8,8 @@ public class EnemyBulletScript : MonoBehaviour
     public float speed = 10f;
     public int enemyBulletDamage = 25;
 
+    public GameObject laserExplosion;
+
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +36,7 @@ public class EnemyBulletScript : MonoBehaviour
         {
             Debug.Log("Taken a hit" + " for " + enemyBulletDamage + " damage!!!");
             other.gameObject.GetComponent<PlayerHealth>().currHealth -= enemyBulletDamage;
+            Instantiate(laserExplosion, transform.position, transform.rotation);
             Destroy(gameObject);
         } 
     }

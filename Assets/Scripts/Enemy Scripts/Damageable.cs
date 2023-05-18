@@ -8,7 +8,7 @@ public class Damageable : MonoBehaviour
     public float currentHP;
     public float weldTimer;
 
-    public GameObject shipExplosion;
+    //public GameObject shipExplosion;
 
     void Update()
     {

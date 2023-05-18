@@ -10,6 +10,7 @@ public class PlayerLaserScript : MonoBehaviour
     public float bulletDamage = 34;
 
     public float topBorder = 13;
+    public GameObject laserExplosion;
 
     //TODO: Replace bullet sprites
 
@@ -47,7 +48,7 @@ public class PlayerLaserScript : MonoBehaviour
 
             dmgComponent.doDamage(bulletDamage); // Here you damage the object, without knowing which type it is
 
-            //Instantiate(laserExplosion, transform.position, transform.rotation);
+            Instantiate(laserExplosion, transform.position, transform.rotation);
 
             Destroy(gameObject);
         }
@@ -56,7 +57,7 @@ public class PlayerLaserScript : MonoBehaviour
         {
             Debug.Log("Crack shot bud. Enemy bullet gone");
 
-            //Instantiate(laserExplosion, transform.position, transform.rotation);
+            Instantiate(laserExplosion, transform.position, transform.rotation);
 
             Destroy(other.gameObject);
             Destroy(gameObject);

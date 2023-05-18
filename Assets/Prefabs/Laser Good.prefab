@@ -149,3 +149,4 @@ MonoBehaviour:
   speed: 25
   bulletDamage: 20
   topBorder: 13
+  laserExplosion: {fileID: 8361294535586207077, guid: 0d252562e9323f142ab9ee65ca4078ec, type: 3}
