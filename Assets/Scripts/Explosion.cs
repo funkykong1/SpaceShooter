@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BeamExplosion : MonoBehaviour
+public class Explosion : MonoBehaviour
 {
 
     public void End()
