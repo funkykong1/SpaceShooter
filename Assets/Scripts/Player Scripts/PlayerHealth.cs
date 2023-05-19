@@ -50,7 +50,7 @@ public class PlayerHealth : MonoBehaviour
         if(currHealth != tempHealth)
         {
             //make changes to hp bar
-            print(currHealth/maxHealth);
+            print(currHealth/maxHealth * 100);
             healthBar.fillAmount = Mathf.Clamp(currHealth / maxHealth, 0, 1);
             healthBar.color = gradient.Evaluate(currHealth / maxHealth);
 

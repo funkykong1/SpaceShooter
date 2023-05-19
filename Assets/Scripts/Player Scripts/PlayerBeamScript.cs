@@ -5,8 +5,6 @@ using UnityEngine;
 public class PlayerBeamScript : MonoBehaviour
 {
 
-    //Add damage scripts here!
-
     public GameObject explosion;
     public GameObject weldEffect;
     public float explosionDamage;
@@ -85,7 +83,6 @@ public class PlayerBeamScript : MonoBehaviour
                 Debug.Log("Hit the bad guy for " + beamDamage + " tick damage");
                 dmgComponent.weldTimer = 40;
             }
-
         }        
     }
 }

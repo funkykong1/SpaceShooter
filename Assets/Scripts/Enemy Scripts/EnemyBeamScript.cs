@@ -6,17 +6,15 @@ public class EnemyBeamScript : MonoBehaviour
 {
     //practically just copy pasted plr beam script stuff
 
-    public GameObject explosion;
-    private Transform barrel;
-
-    
+     public GameObject explosion;
+    public GameObject weldEffect;
     public bool hitDone;
+    public float enemyExplosionDamage;
     public float enemyBeamDamage;
 
     void Start()
     {
         gameObject.SetActive(false);
-        enemyBeamDamage = 0.5f;
         hitDone = false;
     }
 
@@ -27,23 +25,13 @@ public class EnemyBeamScript : MonoBehaviour
             Fire();
         }
     }
-    void OnTriggerStay2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            Debug.Log("Player dealt " + enemyBeamDamage + " tick damage");
-        }
-    }
 
-    //makes the explosion happen if the first frame of the beam's activation is ontop of player
     void Fire()
     {
-        //RaycastAll enables piercing
         RaycastHit2D[] hits;
-        //LaserEnemy tag will also explode le- nvm
-        hits = Physics2D.RaycastAll(barrel.transform.position, -transform.up, Mathf.Infinity, LayerMask.GetMask("Player"));
 
-        //spawn beam explosions if its the first tick
+        hits = Physics2D.RaycastAll(transform.position, -transform.up, Mathf.Infinity, LayerMask.GetMask("Player"));
+
         if (!hitDone)
         {
             for (int i = 0; i < hits.Length; i++)
@@ -55,5 +43,28 @@ public class EnemyBeamScript : MonoBehaviour
                 hitDone = true;
             }
         }
+    }
+
+    void Weld()
+    {
+        RaycastHit2D[] hits;
+        hits = Physics2D.RaycastAll(transform.position, -transform.up, Mathf.Infinity, LayerMask.GetMask("Player"));
+
+
+        for (int i = 0; i < hits.Length; i++)
+        {
+            RaycastHit2D hit = hits[i];
+
+            GameObject objectCollided = hit.transform.gameObject;
+            Damageable dmgComponent = objectCollided.GetComponent<Damageable>();
+
+            if(dmgComponent.weldTimer <= 0)
+            {
+                Instantiate(weldEffect, hit.point, transform.rotation);
+                dmgComponent.doDamage(enemyBeamDamage);
+                Debug.Log("you imbecile. You have taken " + enemyBeamDamage + " tick damage");
+                dmgComponent.weldTimer = 40;
+            }
+        }        
     }
 }

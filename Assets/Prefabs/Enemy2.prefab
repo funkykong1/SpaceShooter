@@ -125,6 +125,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosion: {fileID: 6367605799563120569, guid: f62b72242e8d7314190bbf2ce0cab476, type: 3}
+  weldEffect: {fileID: 0}
+  enemyExplosionDamage: 0
   hitDone: 0
   enemyBeamDamage: 1
 --- !u!1 &5756629854392337450
@@ -286,7 +288,6 @@ MonoBehaviour:
   maxHP: 150
   currentHP: 0
   weldTimer: 0
-  shipExplosion: {fileID: 6367605799563120569, guid: f62b72242e8d7314190bbf2ce0cab476, type: 3}
 --- !u!114 &6243359091679427360
 MonoBehaviour:
   m_ObjectHideFlags: 0
