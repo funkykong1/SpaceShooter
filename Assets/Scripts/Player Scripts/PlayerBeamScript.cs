@@ -35,20 +35,6 @@ public class PlayerBeamScript : MonoBehaviour
             Fire();
         }
     }
-
-    //secondary bit of damage, welding effect? here
-    void OnTriggerStay2D(Collider2D other)
-    {
-        if (other.CompareTag("LaserBad"))
-        {
-            //fuck off enemy laser if it dares touch the beam and make a really cool explosion spawn where the intercept happened
-            Instantiate(weldEffect, other.transform.position, transform.rotation);
-            Destroy(other.gameObject);
-            Debug.Log("get it up you laser");
-        }
-    }
-
-
     //Shoot the raycast and detect initial beam explosion
     void Fire()
     {

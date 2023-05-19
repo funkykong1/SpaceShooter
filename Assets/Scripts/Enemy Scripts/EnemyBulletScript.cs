@@ -5,29 +5,18 @@ using System;
 
 public class EnemyBulletScript : MonoBehaviour
 {
-    public float speed = 10f;
-    public int enemyBulletDamage = 25;
+    public float speed;     //set in inspector
+    public int enemyBulletDamage;
 
     public GameObject laserExplosion;
-
-
-    // Start is called before the first frame update
-    void Start()
-    {        
-        //fucking divide it into 2 cuz enemy laser wants to shoot 2 of them for no reason
-        //no longer does this? why
-        //enemyBulletDamage = enemyBulletDamage / 2;
-    }
 
     // Update is called once per frame
     void Update()
     {
+    transform.Translate(Vector3.up * Time.deltaTime * speed);
 
-    if (transform.position.y < -15)
+    if (transform.position.y < -15 || transform.position.x > 15 || transform.position.x < -15)
         Destroy(gameObject); 
-    
-
-        transform.Translate(Vector3.up * Time.deltaTime * speed);
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -39,6 +28,10 @@ public class EnemyBulletScript : MonoBehaviour
             Instantiate(laserExplosion, transform.position, transform.rotation);
             Destroy(gameObject);
         } 
+        else if (other.CompareTag("BeamGood") || other.CompareTag("BeamBad"))
+        {
+            Instantiate(laserExplosion, transform.position, Quaternion.Euler(0, 0, UnityEngine.Random.Range(0, 360)));
+        }
     }
 }
 

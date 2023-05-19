@@ -33,13 +33,6 @@ public class EnemyBeamScript : MonoBehaviour
         {
             Debug.Log("Player dealt " + enemyBeamDamage + " tick damage");
         }
-        else if (other.CompareTag("LaserPlayer"))
-        {
-            //fuck off enemy laser if it dares touch the beam
-            //make a really cool explosion spawn where the intercept happened
-            Instantiate(explosion, other.transform.position, transform.rotation);
-            Destroy(other.gameObject);
-        }
     }
 
     //makes the explosion happen if the first frame of the beam's activation is ontop of player

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7789931906491202625}
   - component: {fileID: 5493232089126575732}
   - component: {fileID: 4190765650953250199}
-  - component: {fileID: 8816132627248044523}
+  - component: {fileID: 9216794148251715371}
   m_Layer: 0
   m_Name: BeamWeld
   m_TagString: Untagged
@@ -106,7 +106,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &8816132627248044523
+--- !u!114 &9216794148251715371
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -115,6 +115,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 7831160485610608302}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fb172b3266325c4e9b80767951c7d5a, type: 3}
+  m_Script: {fileID: 11500000, guid: 3ec34d2806ad4594886d30ace6143a18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

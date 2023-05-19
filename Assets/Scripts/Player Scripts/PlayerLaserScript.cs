@@ -5,11 +5,8 @@ using System;
 
 public class PlayerLaserScript : MonoBehaviour
 {
-    public float speed = 7f;
-
-    public float bulletDamage = 34;
-
-    public float topBorder = 13;
+    public float speed;
+    public float bulletDamage;
     public GameObject laserExplosion;
 
     //TODO: Replace bullet sprites
@@ -33,9 +30,11 @@ public class PlayerLaserScript : MonoBehaviour
 
     // fucks off bullet when it goes offscreen
     // prevents player from cheesing foes
-    if (transform.position.y > topBorder)
+    if (transform.position.y > 15)
         Destroy(gameObject);
     }
+
+
         void OnTriggerEnter2D(Collider2D other)
     {
 

@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4982151391274141043}
   - component: {fileID: 4982151391274141044}
-  - component: {fileID: 2462800343590212120}
   - component: {fileID: 7339998068942389890}
+  - component: {fileID: 2755724712543781660}
   m_Layer: 0
   m_Name: Laser Drone
   m_TagString: LaserBad
@@ -86,19 +86,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2462800343590212120
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4982151391274141045}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e396b473086667b43a47d60ec53693e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  laserExplosion: {fileID: 3664457839165002405, guid: 130061057ac531344a730e52fa144c37, type: 3}
 --- !u!61 &7339998068942389890
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -125,3 +112,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.06363964, y: 0.25}
   m_EdgeRadius: 0
+--- !u!114 &2755724712543781660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4982151391274141045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f90fd447b9d564644a25f5938a3185dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 20
+  enemyBulletDamage: 15
+  laserExplosion: {fileID: 3664457839165002405, guid: 130061057ac531344a730e52fa144c37, type: 3}
