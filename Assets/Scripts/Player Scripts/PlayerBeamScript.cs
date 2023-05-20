@@ -53,6 +53,7 @@ public class PlayerBeamScript : MonoBehaviour
             if(!hitDone)
             {
                 Instantiate(explosion, hit.point, transform.rotation);
+                print(hit.point);
                 dmgComponent.doDamage(explosionDamage);
                 dmgComponent.weldTimer = 100;
 
@@ -60,7 +61,7 @@ public class PlayerBeamScript : MonoBehaviour
             }
         }
     hitDone = true;
-}
+    }
 
 
     void Weld()

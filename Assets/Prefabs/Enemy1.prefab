@@ -189,8 +189,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 100
   currentHP: 0
-  welded: 0
-  shipExplosion: {fileID: 6367605799563120569, guid: f62b72242e8d7314190bbf2ce0cab476, type: 3}
+  weldTimer: 0
+  shipExplosion: {fileID: 65783002544266891, guid: 5db34f625fde9e1409f3c965b6ff6f29, type: 3}
 --- !u!114 &5890778636982782848
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -147,7 +147,6 @@ GameObject:
   - component: {fileID: 1398443790781607885}
   - component: {fileID: -8730481511350306632}
   - component: {fileID: 6185644849906758783}
-  - component: {fileID: 6260931543060310351}
   - component: {fileID: 4035463663780997425}
   - component: {fileID: -6403549864719980318}
   m_Layer: 6
@@ -189,7 +188,7 @@ MonoBehaviour:
   maxHP: 125
   currentHP: 0
   weldTimer: 0
-  shipExplosion: {fileID: 6367605799563120569, guid: f62b72242e8d7314190bbf2ce0cab476, type: 3}
+  shipExplosion: {fileID: 65783002544266891, guid: 5db34f625fde9e1409f3c965b6ff6f29, type: 3}
 --- !u!212 &6185644849906758783
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -242,18 +241,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6260931543060310351
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2311405635152409654}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a81777089baf3c43b8a4ea92285cc9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!68 &4035463663780997425
 EdgeCollider2D:
   m_ObjectHideFlags: 0

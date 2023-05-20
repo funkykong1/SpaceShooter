@@ -8,7 +8,7 @@ public class Damageable : MonoBehaviour
     public float currentHP;
     public float weldTimer;
 
-    //public GameObject shipExplosion;
+    public GameObject shipExplosion;
 
     void Update()
     {
@@ -28,7 +28,7 @@ public class Damageable : MonoBehaviour
             if(EnemyMaster.allEnemies.Count <= 0)
                 GameManager.SpawnNewWave();
 
-            //Instantiate(shipExplosion, transform.position, transform.rotation);
+            Instantiate(shipExplosion, transform.position, transform.rotation);
             Destroy(gameObject);
         }
         
