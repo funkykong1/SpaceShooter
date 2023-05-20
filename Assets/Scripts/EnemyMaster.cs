@@ -39,9 +39,9 @@ public class EnemyMaster : MonoBehaviour
 
         }
 
+        if(allEnemies.Count == 0)
+            GameManager.SpawnNewWave();
 
     }
-
-
 
 }

@@ -35,13 +35,13 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator SpawnWave()
     {
-        
-        Destroy(currentSet);
+        if(currentSet != null)
+            Destroy(currentSet);
 
+        
         yield return new WaitForSeconds(3);
 
         currentSet = Instantiate(allEnemySets[currentWave], spawnPos, Quaternion.identity);
-
         currentWave++;
     }
 }

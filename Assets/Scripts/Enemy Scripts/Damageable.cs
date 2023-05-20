@@ -26,9 +26,6 @@ public class Damageable : MonoBehaviour
         if (currentHP <= 0)
         {
             EnemyMaster.allEnemies.Remove(gameObject);
-            if(EnemyMaster.allEnemies.Count <= 0)
-                GameManager.SpawnNewWave();
-
             Instantiate(shipExplosion, transform.position, transform.rotation);
             Destroy(gameObject);
         }
