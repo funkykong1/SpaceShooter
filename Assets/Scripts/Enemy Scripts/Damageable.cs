@@ -25,6 +25,7 @@ public class Damageable : MonoBehaviour
         currentHP -= damage;
         if (currentHP <= 0)
         {
+            EnemyMaster.allEnemies.Remove(gameObject);
             if(EnemyMaster.allEnemies.Count <= 0)
                 GameManager.SpawnNewWave();
 

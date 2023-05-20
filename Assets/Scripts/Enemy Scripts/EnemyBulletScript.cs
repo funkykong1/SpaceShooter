@@ -30,7 +30,7 @@ public class EnemyBulletScript : MonoBehaviour
         } 
         else if (other.CompareTag("BeamGood") || other.CompareTag("BeamBad"))
         {
-            Instantiate(laserExplosion, transform.position, Quaternion.Euler(0, 0, UnityEngine.Random.Range(0, 360)));
+            Instantiate(laserExplosion, transform.position, transform.rotation);
         }
     }
 }

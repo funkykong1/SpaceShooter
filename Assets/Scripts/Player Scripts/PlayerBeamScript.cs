@@ -82,7 +82,7 @@ public class PlayerBeamScript : MonoBehaviour
                 Instantiate(weldEffect, hit.point, transform.rotation);
                 dmgComponent.doDamage(beamDamage);
                 Debug.Log("Hit the bad guy for " + beamDamage + " tick damage");
-                dmgComponent.weldTimer = 40;
+                dmgComponent.weldTimer = 70;
             }
         }        
     }
