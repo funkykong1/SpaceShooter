@@ -24,9 +24,6 @@ public class PlayerController : MonoBehaviour
     private PlayerHealth playerHealth;
 
 
-    //note: make the guns separate gameobjects
-    //put the firing script there when its time
-    //note: ok done
     public Transform playerBarrel;
     private GameManager gameManager;
     void Awake()

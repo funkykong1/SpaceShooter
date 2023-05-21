@@ -2,12 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-    //--CTRL C + CTRL K to apply comments to lines
-    //This is the player's fast charging assault weapon
-
 public class LaserTurret : MonoBehaviour
 {
-    //where the bullet comes from
     public Transform playerBarrel;
     //laser prefab
     public GameObject playerLaser;
@@ -15,10 +11,9 @@ public class LaserTurret : MonoBehaviour
     //fuck this one
     private Animator anim;
 
-    //how many lazers playa allowed ta shoot? Powerup here?
+    //how many lazers play allowed to shoot?
     public int burstCount;
 
-    // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -40,13 +35,10 @@ public class LaserTurret : MonoBehaviour
             burstCount = 0;
             anim.SetInteger("burstCount", burstCount);
         }
-
-        //prints animator state -> 1 = 100%
-        //Debug.Log(anim.GetCurrentAnimatorStateInfo(0).normalizedTime);
     }
 
 
-    //use animation events instead of manual timing!
+    //use animation events instead of manual timing
     void Shoot() 
     {
         Instantiate(playerLaser, playerBarrel.transform.position, playerLaser.transform.rotation);
@@ -56,7 +48,6 @@ public class LaserTurret : MonoBehaviour
         
     }
 
-    //single bool function to house the horrible if statement
     bool firingReady()
     {
         if((anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1) && anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerLaserCharge") || (anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerLaserStart")
