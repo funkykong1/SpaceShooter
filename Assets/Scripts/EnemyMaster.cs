@@ -11,7 +11,7 @@ public class EnemyMaster : MonoBehaviour
     public float enterSpeed;
 
 
-    private bool entering = true;
+    public bool entering = true;
 
     public static List<GameObject> allEnemies = new List<GameObject>();
 

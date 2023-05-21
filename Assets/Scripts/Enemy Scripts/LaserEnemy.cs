@@ -8,36 +8,30 @@ public class LaserEnemy : MonoBehaviour
     
     public GameObject bulletBad;
     private Animator anim;
-
-
-    //bullets will phase through inactive enemies
-    private bool isVisible;
-
+    private EnemyMaster enemyMaster;
     public Transform enemyBarrel;
 
     void Awake()
     {
         //tell script which is what
         anim = GetComponent<Animator>();
+        enemyMaster = GetComponentInParent<EnemyMaster>();
     }
     
-    void Update() {
-        
-        //fucking KILL yourself
-        // if(firing)
-        // anim.SetBool("firing", true);
-        // else 
-        // anim.SetBool("firing", false);
-        
-        if (transform.position.y < 17)
+    void Update()
+    {
+        if(enemyMaster.entering == true)
         {
-            //start firing and become hittable
-            isVisible = true;
+            this.GetComponent<EdgeCollider2D>().enabled = false;
+        }
+        else
+        {
+            this.GetComponent<EdgeCollider2D>().enabled = true;
         }
 
-
         //normalized time means value of 0.00-1.00 dictates anim length
-        if (isVisible == true) {
+        if (enemyMaster.entering == false) 
+        {
 
             if(anim.GetCurrentAnimatorStateInfo(0).IsName("EnemyLaserFire") &&
             anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1)
@@ -51,7 +45,7 @@ public class LaserEnemy : MonoBehaviour
                     }
         }
     }
-    
+        
     void ShootLaser()
     {
         Instantiate(bulletBad, enemyBarrel.transform.position, bulletBad.transform.rotation);

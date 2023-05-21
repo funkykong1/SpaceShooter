@@ -31,6 +31,7 @@ public class EnemyBulletScript : MonoBehaviour
         else if (other.CompareTag("BeamGood") || other.CompareTag("BeamBad"))
         {
             Instantiate(laserExplosion, transform.position, transform.rotation);
+            Destroy(gameObject);
         }
     }
 }

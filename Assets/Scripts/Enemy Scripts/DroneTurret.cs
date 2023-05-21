@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class DroneTurret : MonoBehaviour
 {
-    //copypasted from the player one
 
     //where the bullet comes from
     public Transform droneBarrel;
@@ -16,6 +15,7 @@ public class DroneTurret : MonoBehaviour
 
     private Transform target;
     Vector2 lastRotation;
+    private EnemyMaster enemyMaster;
 
     //2
     public int burstCount;
@@ -23,6 +23,7 @@ public class DroneTurret : MonoBehaviour
     void Awake()
     {
         target = GameObject.Find("Player").GetComponent<Transform>();
+        enemyMaster = GetComponentInParent<EnemyMaster>();
     }
     void Start()
     {
@@ -35,7 +36,7 @@ public class DroneTurret : MonoBehaviour
 
         LookAtPlayer();
 
-        if (firingReady())
+        if (firingReady() && enemyMaster.entering == false)
         {
             anim.SetTrigger("firing");
         }
@@ -63,7 +64,6 @@ public class DroneTurret : MonoBehaviour
     }
 
 
-    //use animation events instead of manual timing!
     void Shoot() 
     {
         Instantiate(droneLaser, droneBarrel.transform.position, this.transform.rotation);

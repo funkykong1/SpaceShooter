@@ -10,19 +10,30 @@ public class BeamEnemy : MonoBehaviour
     private float health;
     public GameObject enemyBeam;
     private EnemyBeamScript enemyBeamScript;
+    private EnemyMaster enemyMaster;
     
     
     void Awake()
     {
         anim = GetComponent<Animator>();
         enemyBeamScript = enemyBeam.GetComponent<EnemyBeamScript>();
+        enemyMaster = GetComponentInParent<EnemyMaster>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (firingReady())
+        if (firingReady() && enemyMaster.entering == false)
             ShootEnemyBeam();
+
+        if(enemyMaster.entering == true)
+        {
+            this.GetComponent<EdgeCollider2D>().enabled = false;
+        }
+        else
+        {
+            this.GetComponent<EdgeCollider2D>().enabled = true;
+        }
     }
 
     public void ShootEnemyBeam()

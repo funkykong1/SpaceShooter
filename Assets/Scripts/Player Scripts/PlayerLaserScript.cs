@@ -61,5 +61,10 @@ public class PlayerLaserScript : MonoBehaviour
             Destroy(other.gameObject);
             Destroy(gameObject);
         }
+        else if (other.CompareTag("BeamBad"))
+        {
+            Instantiate(laserExplosion, transform.position, transform.rotation);
+            Destroy(gameObject);
+        }
     }
 }
