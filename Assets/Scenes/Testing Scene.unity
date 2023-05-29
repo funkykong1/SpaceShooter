@@ -235,6 +235,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7593905045070226577, guid: 5edf27bd6ee705946bd012460eda3cf3, type: 3}
+      propertyPath: maxHP
+      value: 999
+      objectReference: {fileID: 0}
+    - target: {fileID: 7593905045070226577, guid: 5edf27bd6ee705946bd012460eda3cf3, type: 3}
+      propertyPath: shipExplosion
+      value: 
+      objectReference: {fileID: 65783002544266891, guid: 5db34f625fde9e1409f3c965b6ff6f29, type: 3}
     - target: {fileID: 8095083837175839639, guid: 5edf27bd6ee705946bd012460eda3cf3, type: 3}
       propertyPath: m_Name
       value: Player

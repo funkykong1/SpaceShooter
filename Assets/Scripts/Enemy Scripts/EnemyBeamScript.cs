@@ -67,4 +67,8 @@ public class EnemyBeamScript : MonoBehaviour
             }
         }        
     }
+    IEnumerator doWelding()
+    {
+        yield return new WaitForSeconds(0.3f);
+    }
 }

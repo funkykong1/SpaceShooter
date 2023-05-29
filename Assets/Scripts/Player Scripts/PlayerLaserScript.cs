@@ -26,7 +26,7 @@ public class PlayerLaserScript : MonoBehaviour
         GameObject objectCollided = other.gameObject;
         Damageable dmgComponent = objectCollided.GetComponent<Damageable>();
 
-        if (dmgComponent)
+        if (dmgComponent && other.CompareTag("Enemy"))
         {
             Debug.Log("Hit the bad guy for " + bulletDamage + " damage!");
 
@@ -39,7 +39,6 @@ public class PlayerLaserScript : MonoBehaviour
         
         else if (other.CompareTag("LaserBad"))
         {
-            Debug.Log("Crack shot bud. Enemy bullet gone");
 
             Instantiate(laserExplosion, transform.position, transform.rotation);
 
