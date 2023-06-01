@@ -26,6 +26,7 @@ public class PlayerHealth : MonoBehaviour
     public float currHealth;
     public float maxHealth;
     private float tempHealth;
+    private Damageable damageable;
 
 
 
@@ -39,7 +40,7 @@ public class PlayerHealth : MonoBehaviour
         healthBar.color = gradient.Evaluate(currHealth / 100);
         //hp bar fade out timer
         ResetTimer();
-
+        damageable = this.GetComponent<Damageable>();
     }
 
     // Update is called once per frame
@@ -57,6 +58,11 @@ public class PlayerHealth : MonoBehaviour
             StartCoroutine(FadeIn());
             tempHealth = currHealth;
             ResetTimer();
+
+            if(currHealth <= 0)
+            {
+                damageable.doDamage(999);
+            }
         }
 
         //timer which tells us if plr taken damage recently

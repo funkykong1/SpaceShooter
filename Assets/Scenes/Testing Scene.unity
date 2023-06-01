@@ -392,7 +392,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allEnemySets:
   - {fileID: 1531993382395285027, guid: d2db8cac01ac70342aebdb036888b286, type: 3}
-  - {fileID: 1830135092808588884, guid: 0f053cce0882de449b471ce80542d10c, type: 3}
   - {fileID: 2950028933072472854, guid: 31c0567b6b9e84c418652e76e0dbe3a9, type: 3}
   - {fileID: 711125420389478726, guid: 4472eb4477825af4189b9d835c896da2, type: 3}
   - {fileID: 5550785839600545022, guid: 7182f268e90f6a4488cb1224d1ccd6da, type: 3}
