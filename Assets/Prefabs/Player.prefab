@@ -936,6 +936,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dd62707576ad374c9c49230a9f94b97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 0
+  maxHP: 100
   currentHP: 0
   weldTimer: 0
+  shipExplosion: {fileID: 0}

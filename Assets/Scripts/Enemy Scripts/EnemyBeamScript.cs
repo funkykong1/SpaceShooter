@@ -36,9 +36,14 @@ public class EnemyBeamScript : MonoBehaviour
         {
             for (int i = 0; i < hits.Length; i++)
             {
+               
                 RaycastHit2D hit = hits[i];
+                GameObject objectCollided = hit.transform.gameObject;
+                PlayerHealth playerHealth = objectCollided.GetComponent<PlayerHealth>();
+                
                 Instantiate(explosion, hit.point, transform.rotation);
-                Debug.Log("Player directly hit by enemy beam!");
+                playerHealth.currHealth -= enemyExplosionDamage;
+
 
                 hitDone = true;
             }
@@ -57,18 +62,16 @@ public class EnemyBeamScript : MonoBehaviour
 
             GameObject objectCollided = hit.transform.gameObject;
             Damageable dmgComponent = objectCollided.GetComponent<Damageable>();
+            PlayerHealth playerHealth = objectCollided.GetComponent<PlayerHealth>();
 
             if(dmgComponent.weldTimer <= 0)
             {
                 Instantiate(weldEffect, hit.point, transform.rotation);
+                playerHealth.currHealth -= enemyBeamDamage;
                 dmgComponent.doDamage(enemyBeamDamage);
                 Debug.Log("you imbecile. You have taken " + enemyBeamDamage + " tick damage");
                 dmgComponent.weldTimer = 40;
             }
         }        
-    }
-    IEnumerator doWelding()
-    {
-        yield return new WaitForSeconds(0.3f);
     }
 }
