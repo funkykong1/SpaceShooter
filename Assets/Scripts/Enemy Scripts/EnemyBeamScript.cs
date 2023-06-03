@@ -18,6 +18,11 @@ public class EnemyBeamScript : MonoBehaviour
         hitDone = false;
     }
 
+    void Update()
+    {
+        Weld();
+    }
+
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player") && !hitDone)
@@ -70,7 +75,7 @@ public class EnemyBeamScript : MonoBehaviour
                 playerHealth.currHealth -= enemyBeamDamage;
                 dmgComponent.doDamage(enemyBeamDamage);
                 Debug.Log("you imbecile. You have taken " + enemyBeamDamage + " tick damage");
-                dmgComponent.weldTimer = 40;
+                dmgComponent.weldTimer = 80;
             }
         }        
     }
