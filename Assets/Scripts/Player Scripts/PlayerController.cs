@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
     //used for movement
     public float horizontalInput;
     public float verticalInput;
+
+    private Camera mainCamera;
     
 
     //adjust via editor
@@ -28,6 +30,7 @@ public class PlayerController : MonoBehaviour
     private GameManager gameManager;
     void Awake()
     {
+        mainCamera = GameObject.Find("Main Camera").GetComponent<Camera>();
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
         playerHealth = this.GetComponent<PlayerHealth>();
     }
@@ -35,6 +38,10 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        Vector2 mousePosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
+        transform.position = mousePosition;
+
         if(playerHealth.currHealth <= 0)
         {
             // nuh gameManager.GameOver();
