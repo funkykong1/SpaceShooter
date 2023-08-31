@@ -10,14 +10,12 @@ public class DroneTurret : MonoBehaviour
     //laser prefab
     public GameObject droneLaser;
 
-    //fuck this one
     private Animator anim;
 
     private Transform target;
     Vector2 lastRotation;
     private EnemyMaster enemyMaster;
 
-    //2
     public int burstCount;
 
     void Awake()

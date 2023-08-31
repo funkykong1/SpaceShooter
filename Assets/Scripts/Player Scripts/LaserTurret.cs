@@ -8,7 +8,6 @@ public class LaserTurret : MonoBehaviour
     //laser prefab
     public GameObject playerLaser;
 
-    //fuck this one
     private Animator anim;
 
     //how many lazers play allowed to shoot?

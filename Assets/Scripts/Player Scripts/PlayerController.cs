@@ -39,12 +39,16 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
 
+        
         Vector2 mousePosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
-        transform.position = mousePosition;
+        if(gameManager.gameActive)
+            transform.position = mousePosition;
+        else
+            transform.position = new Vector2(0, 50);
 
         if(playerHealth.currHealth <= 0)
         {
-            // nuh gameManager.GameOver();
+            gameManager.gameActive = false;
         }
         //handles game screen borders
         if (transform.position.x < -xRange)
@@ -61,7 +65,7 @@ public class PlayerController : MonoBehaviour
             transform.position = new Vector3(transform.position.x, -yRange, transform.position.z);
         }
 
-        if (transform.position.y > yRange)
+        if (transform.position.y > yRange && gameManager.gameActive)
         {
             transform.position = new Vector3(transform.position.x, yRange, transform.position.z);
         }

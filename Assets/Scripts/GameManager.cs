@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
 
     private static GameManager instance;
 
+    public bool gameActive;
+
     private int currentWave;
 
     private void Awake()
@@ -22,10 +24,11 @@ public class GameManager : MonoBehaviour
 
     }
 
-    private void Start()
+    public void StartGame()
     {
         currentWave = 0;
         SpawnNewWave();
+        gameActive = true;
     }
 
     public static void SpawnNewWave()
