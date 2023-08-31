@@ -127,8 +127,8 @@ MonoBehaviour:
   explosion: {fileID: 6367605799563120569, guid: f62b72242e8d7314190bbf2ce0cab476, type: 3}
   weldEffect: {fileID: 7831160485610608302, guid: 84d5f19e36f03eb43b48dfb495dde8b6, type: 3}
   hitDone: 0
-  enemyExplosionDamage: 0
-  enemyBeamDamage: 1
+  enemyExplosionDamage: 25
+  enemyBeamDamage: 5
 --- !u!1 &5756629854392337450
 GameObject:
   m_ObjectHideFlags: 0

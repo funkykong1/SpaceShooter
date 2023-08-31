@@ -125,5 +125,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
-  enemyBulletDamage: 15
+  enemyBulletDamage: 7
   laserExplosion: {fileID: 3664457839165002405, guid: 130061057ac531344a730e52fa144c37, type: 3}
