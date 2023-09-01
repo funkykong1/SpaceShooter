@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class GameManager : MonoBehaviour
     public bool gameActive;
 
     private int currentWave;
+    private GameObject plr;
 
     private void Awake()
     {
@@ -22,6 +24,16 @@ public class GameManager : MonoBehaviour
         else
             Destroy(gameObject);
 
+        plr = GameObject.Find("Player");
+
+    }
+
+    void Update()
+    {
+        if(plr == null)
+        {
+            instance.StartCoroutine(Restart());
+        }
     }
 
     public void StartGame()
@@ -46,5 +58,11 @@ public class GameManager : MonoBehaviour
 
         currentSet = Instantiate(allEnemySets[currentWave], spawnPos, Quaternion.identity);
         currentWave++;
+    }
+
+    public IEnumerator Restart()
+    {
+        yield return new WaitForSeconds(2.5f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
