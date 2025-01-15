@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -38,6 +40,7 @@ public class GameManager : MonoBehaviour
 
     public void StartGame()
     {
+        plr.transform.position = new Vector2(0,-5);
         currentWave = 0;
         SpawnNewWave();
         gameActive = true;
@@ -50,6 +53,11 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator SpawnWave()
     {
+        if(currentWave > allEnemySets.Count())
+        {
+            plr.GetComponent<PlayerHealth>().currHealth -= 125;
+            yield return null;
+        }
         if(currentSet != null)
             Destroy(currentSet);
 
@@ -58,6 +66,7 @@ public class GameManager : MonoBehaviour
 
         currentSet = Instantiate(allEnemySets[currentWave], spawnPos, Quaternion.identity);
         currentWave++;
+        
     }
 
     public IEnumerator Restart()

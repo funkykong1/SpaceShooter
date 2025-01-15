@@ -11,6 +11,7 @@ public class BeamEnemy : MonoBehaviour
     public GameObject enemyBeam;
     private EnemyBeamScript enemyBeamScript;
     private EnemyMaster enemyMaster;
+
     
     
     void Awake()
@@ -18,12 +19,17 @@ public class BeamEnemy : MonoBehaviour
         anim = GetComponent<Animator>();
         enemyBeamScript = enemyBeam.GetComponent<EnemyBeamScript>();
         enemyMaster = GetComponentInParent<EnemyMaster>();
+        anim.speed = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (firingReady() && enemyMaster.entering == false)
+        if (enemyMaster.entering == false)
+        {
+            anim.speed = 1;
+        }
+        if(firingReady())
             ShootEnemyBeam();
 
         if(enemyMaster.entering == true)

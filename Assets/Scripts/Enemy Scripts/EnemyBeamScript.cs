@@ -11,54 +11,62 @@ public class EnemyBeamScript : MonoBehaviour
     public bool hitDone;
     public float enemyExplosionDamage;
     public float enemyBeamDamage;
-
+    public Transform ship;
+    
     void Start()
     {
         gameObject.SetActive(false);
         hitDone = false;
+        ship = GetComponentInParent<Transform>();
     }
 
     void Update()
     {
         Weld();
     }
-
+    
+    //initial bit of damage, explosion here
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player") && !hitDone)
+        if (other.CompareTag("Enemy") && !hitDone)
         {
             Fire();
         }
     }
-
+    //Shoot the raycast and detect initial beam explosion
     void Fire()
     {
-        RaycastHit2D[] hits;
+        
+    //RaycastAll enables piercing
+    RaycastHit2D[] hits;
+    hits = Physics2D.RaycastAll(ship.transform.position, Vector2.down, Mathf.Infinity, LayerMask.GetMask("Player"));
 
-        hits = Physics2D.RaycastAll(transform.position, -transform.up, Mathf.Infinity, LayerMask.GetMask("Player"));
-
-        if (!hitDone)
+    //spawn beam explosions if its the first tick
+    for (int i = 0; i < hits.Length; i++)
         {
-            for (int i = 0; i < hits.Length; i++)
+
+        RaycastHit2D hit = hits[i];
+        GameObject objectCollided = hit.transform.gameObject;
+        Damageable dmgComponent = objectCollided.GetComponent<Damageable>();
+        PlayerHealth hp = objectCollided.gameObject.GetComponent<PlayerHealth>();
+
+            //this is the explosion
+            if(!hitDone)
             {
-               
-                RaycastHit2D hit = hits[i];
-                GameObject objectCollided = hit.transform.gameObject;
-                PlayerHealth playerHealth = objectCollided.GetComponent<PlayerHealth>();
-                
                 Instantiate(explosion, hit.point, transform.rotation);
-                playerHealth.currHealth -= enemyExplosionDamage;
-
-
-                hitDone = true;
+                print(hit.point);
+                hp.currHealth -= enemyBeamDamage;
+                dmgComponent.weldTimer = 70;
             }
         }
+    hitDone = true;
     }
+
 
     void Weld()
     {
         RaycastHit2D[] hits;
-        hits = Physics2D.RaycastAll(transform.position, -transform.up, Mathf.Infinity, LayerMask.GetMask("Player"));
+        hits = Physics2D.RaycastAll(ship.transform.position, Vector2.down, Mathf.Infinity, LayerMask.GetMask("Player"));
 
 
         for (int i = 0; i < hits.Length; i++)
@@ -67,15 +75,13 @@ public class EnemyBeamScript : MonoBehaviour
 
             GameObject objectCollided = hit.transform.gameObject;
             Damageable dmgComponent = objectCollided.GetComponent<Damageable>();
-            PlayerHealth playerHealth = objectCollided.GetComponent<PlayerHealth>();
+            PlayerHealth hp = objectCollided.gameObject.GetComponent<PlayerHealth>();
 
             if(dmgComponent.weldTimer <= 0)
             {
                 Instantiate(weldEffect, hit.point, transform.rotation);
-                playerHealth.currHealth -= enemyBeamDamage;
-                dmgComponent.doDamage(enemyBeamDamage);
-                Debug.Log("you imbecile. You have taken " + enemyBeamDamage + " tick damage");
-                dmgComponent.weldTimer = 80;
+                hp.currHealth -= enemyBeamDamage;
+                dmgComponent.weldTimer = 70;
             }
         }        
     }

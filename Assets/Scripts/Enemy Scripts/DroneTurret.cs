@@ -34,7 +34,7 @@ public class DroneTurret : MonoBehaviour
 
         LookAtPlayer();
 
-        if (firingReady() && enemyMaster.entering == false)
+        if (firingReady())
         {
             anim.SetTrigger("firing");
         }

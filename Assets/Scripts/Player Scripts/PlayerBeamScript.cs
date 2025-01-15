@@ -16,7 +16,7 @@ public class PlayerBeamScript : MonoBehaviour
     void Awake()
     {
         turret = GameObject.Find("Player Beam").GetComponent<BeamTurret>();
-        barrel = GameObject.Find("Barrel").GetComponent<Transform>();
+        barrel = GameObject.Find("Beam Barrel").GetComponent<Transform>();
         this.gameObject.SetActive(false);
         hitDone = false;
     }

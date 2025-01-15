@@ -38,13 +38,14 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if(!gameManager.gameActive)
+            return;
         
-        Vector2 mousePosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
-        if(gameManager.gameActive)
-            transform.position = mousePosition;
-        else
-            transform.position = new Vector2(0, 50);
+        // Vector2 mousePosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
+        // if(gameManager.gameActive)
+        //     transform.position = mousePosition;
+        // else
+        //     transform.position = new Vector2(0, 50);
 
         if(playerHealth.currHealth <= 0)
         {
@@ -65,9 +66,9 @@ public class PlayerController : MonoBehaviour
             transform.position = new Vector3(transform.position.x, -yRange, transform.position.z);
         }
 
-        if (transform.position.y > yRange && gameManager.gameActive)
+        if (transform.position.y > -1 && gameManager.gameActive)
         {
-            transform.position = new Vector3(transform.position.x, yRange, transform.position.z);
+            transform.position = new Vector3(transform.position.x, -1, transform.position.z);
         }
 
         //moves the plane
