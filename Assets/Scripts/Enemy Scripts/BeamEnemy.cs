@@ -32,14 +32,6 @@ public class BeamEnemy : MonoBehaviour
         if(firingReady())
             ShootEnemyBeam();
 
-        if(enemyMaster.entering == true)
-        {
-            this.GetComponent<EdgeCollider2D>().enabled = false;
-        }
-        else
-        {
-            this.GetComponent<EdgeCollider2D>().enabled = true;
-        }
     }
 
     public void ShootEnemyBeam()

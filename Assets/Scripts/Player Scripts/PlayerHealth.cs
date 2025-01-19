@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.Serialization;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -27,7 +28,10 @@ public class PlayerHealth : MonoBehaviour
     public float maxHealth;
     private float tempHealth;
     private Damageable damageable;
+    private SpriteRenderer rend;
+    private Color clr = new Color(1, 0.55f, 0.55f, 1);
 
+    private bool colorRunning = false;
 
 
     void Start()
@@ -40,7 +44,8 @@ public class PlayerHealth : MonoBehaviour
         healthBar.color = gradient.Evaluate(currHealth / 100);
         //hp bar fade out timer
         ResetTimer();
-        damageable = this.GetComponent<Damageable>();
+        damageable = GetComponent<Damageable>();
+        rend = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -62,6 +67,15 @@ public class PlayerHealth : MonoBehaviour
             {
                 damageable.doDamage(999);
             }
+            
+            //player color red upon taking damage
+            if(colorRunning)
+            {
+                StopCoroutine(ColorRoutine());
+                colorRunning = false;
+            }
+            
+            StartCoroutine(ColorRoutine());
         }
 
         //timer which tells us if plr taken damage recently
@@ -78,6 +92,25 @@ public class PlayerHealth : MonoBehaviour
     void ResetTimer()
     {
         fadeTimer = 600f;
+    }
+
+    IEnumerator ColorRoutine()
+    {
+        colorRunning = true;
+        rend.color = clr;
+
+        while(clr.g < 1)
+        {
+            clr.b+= Time.deltaTime * fadeSpeed;
+            clr.g+= Time.deltaTime * fadeSpeed;
+            rend.color = clr;
+            yield return new WaitForFixedUpdate();
+        }
+
+
+        colorRunning = false;
+        clr = new Color(1,0.55f,0.55f,1);
+        yield return rend.color = new Color(1,1,1,1);
     }
 
     IEnumerator FadeIn()
