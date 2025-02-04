@@ -31,8 +31,8 @@ public class DroneTurret : MonoBehaviour
 
     void Update()
     {
-
-        LookAtPlayer();
+        if(target)
+            LookAtPlayer();
 
         if (firingReady())
         {

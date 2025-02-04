@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
     private int currentWave;
     private GameObject plr;
 
-    private void Awake()
+    private void Start()
     {
         if (instance == null)
             instance = this;
@@ -42,6 +42,7 @@ public class GameManager : MonoBehaviour
     {
         plr.transform.position = new Vector2(0,-5);
         currentWave = 0;
+        GameObject.Find("Text").SetActive(false);
         SpawnNewWave();
         gameActive = true;
     }
@@ -53,7 +54,7 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator SpawnWave()
     {
-        if(currentWave > allEnemySets.Count())
+        if(currentWave > allEnemySets.Count()-1)
         {
             plr.GetComponent<PlayerHealth>().currHealth -= 125;
             yield return null;

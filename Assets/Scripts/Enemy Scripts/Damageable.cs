@@ -14,6 +14,7 @@ public class Damageable : MonoBehaviour
     private Color clr = new Color(1, 0.55f, 0.55f, 1);
 
     private bool colorRunning = false;
+    private EnemyMaster master;
 
 
     void Update()
@@ -25,6 +26,7 @@ public class Damageable : MonoBehaviour
     {
         currentHP = maxHP;
         rend = GetComponent<SpriteRenderer>();
+        master = GetComponentInParent<EnemyMaster>();
     }
 
     public void doDamage(float damage)
@@ -32,7 +34,8 @@ public class Damageable : MonoBehaviour
         currentHP -= damage;
         if (currentHP <= 0)
         {
-            EnemyMaster.allEnemies.Remove(gameObject);
+            if(this.gameObject.name != "Player")
+                master.allEnemies.Remove(gameObject);
             Instantiate(shipExplosion, transform.position, transform.rotation);
             Destroy(gameObject);
         }

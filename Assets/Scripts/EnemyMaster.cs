@@ -13,7 +13,10 @@ public class EnemyMaster : MonoBehaviour
 
     public bool entering = true;
 
-    public static List<GameObject> allEnemies = new List<GameObject>();
+    public int enemies;
+
+    [SerializeField]
+    public List<GameObject> allEnemies = new List<GameObject>();
 
 
 
@@ -30,6 +33,7 @@ public class EnemyMaster : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        enemies = allEnemies.Capacity;
         if(entering)
         {
             transform.Translate(Vector2.down * Time.deltaTime * enterSpeed);
